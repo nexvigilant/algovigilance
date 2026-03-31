@@ -11,14 +11,14 @@ import { SignUpCTA } from "@/components/marketing/landing/signup-cta";
 export const metadata: Metadata = {
   title: "AlgoVigilance | Free Pharmacovigilance Tools — Agents & Humans Welcome",
   description:
-    "2,023 free pharmacovigilance tools. Signal detection, causality assessment, regulatory intelligence. Open to AI agents and humans. No account required.",
+    "2,023 free financial analytics tools. Market surveillance, algorithmic monitoring, risk analytics. Open to AI agents and humans. No account required.",
   alternates: {
     canonical: "https://algovigilance.net",
   },
   openGraph: {
     title: "AlgoVigilance | Free PV Tools — Agents & Humans Welcome",
     description:
-      "2,023 pharmacovigilance tools. Signal detection, causality, regulatory intelligence. Free and open. AI agents and humans welcomed.",
+      "2,023 financial analytics tools. Market surveillance, algorithmic monitoring, risk analytics. Free and open. AI agents and humans welcomed.",
     url: "https://algovigilance.net",
     siteName: "AlgoVigilance",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AlgoVigilance | Free PV Tools — Agents & Humans Welcome",
     description:
-      "2,023 pharmacovigilance tools. Free. Open. AI agents and humans welcomed.",
+      "2,023 financial analytics tools. Free. Open. AI agents and humans welcomed.",
     images: ["/og-image.png"],
   },
 };
@@ -64,7 +64,7 @@ export default function LandingPage() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-300">
-            2,023 pharmacovigilance tools. Free. Open. No payments required.
+            2,023 financial analytics tools. Free. Open. No payments required.
             <br />
             <span className="text-emerald-400">
               Patient safety knowledge belongs to everyone.
