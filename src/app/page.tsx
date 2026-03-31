@@ -9,7 +9,7 @@ import { ConnectAICTA } from "@/components/marketing/landing/connect-ai-cta";
 import { SignUpCTA } from "@/components/marketing/landing/signup-cta";
 
 export const metadata: Metadata = {
-  title: "AlgoVigilance | Free Pharmacovigilance Tools — Agents & Humans Welcome",
+  title: "AlgoVigilance | Free Financial Analytics Tools — Agents & Humans Welcome",
   description:
     "2,023 free financial analytics tools. Market surveillance, algorithmic monitoring, risk analytics. Open to AI agents and humans. No account required.",
   alternates: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AlgoVigilance — Free Pharmacovigilance Tools for Agents & Humans",
+        alt: "AlgoVigilance — Free Financial Analytics Tools for Agents & Humans",
       },
     ],
   },
