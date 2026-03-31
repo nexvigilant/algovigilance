@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://algovigilance.net",
   },
   openGraph: {
-    title: "AlgoVigilance | Free PV Tools — Agents & Humans Welcome",
+    title: "AlgoVigilance | Free Financial Analytics Tools — Agents & Humans Welcome",
     description:
       "2,023 financial analytics tools. Market surveillance, algorithmic monitoring, risk analytics. Free and open. AI agents and humans welcomed.",
     url: "https://algovigilance.net",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AlgoVigilance | Free PV Tools — Agents & Humans Welcome",
+    title: "AlgoVigilance | Free Financial Analytics Tools — Agents & Humans Welcome",
     description:
       "2,023 financial analytics tools. Free. Open. AI agents and humans welcomed.",
     images: ["/og-image.png"],
