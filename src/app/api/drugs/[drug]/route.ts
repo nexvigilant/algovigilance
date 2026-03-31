@@ -93,8 +93,8 @@ export async function GET(
       ? ((labelData.adverse_reactions as string) ?? "").slice(0, 2000)
       : null,
     links: {
-      profile: `https://algovigilance.com/drugs/${drug}`,
-      live_feed: "https://algovigilance.com/live-feed",
+      profile: `https://algovigilance.net/drugs/${drug}`,
+      live_feed: "https://algovigilance.net/live-feed",
       station: "https://mcp.nexvigilant.com",
       mcp_endpoint: "https://mcp.nexvigilant.com/mcp",
     },

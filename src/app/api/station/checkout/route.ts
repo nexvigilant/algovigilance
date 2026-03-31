@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
 
     // Create Stripe Checkout session
     const stripe = await getServerStripe();
-    const origin = request.headers.get("origin") || "https://algovigilance.com";
+    const origin = request.headers.get("origin") || "https://algovigilance.net";
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",

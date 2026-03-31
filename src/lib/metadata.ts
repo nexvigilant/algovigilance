@@ -49,7 +49,7 @@ export function getBaseUrl(): string {
   }
 
   // Final fallback
-  return 'https://algovigilance.com';
+  return 'https://algovigilance.net';
 }
 
 const BASE_URL = getBaseUrl();

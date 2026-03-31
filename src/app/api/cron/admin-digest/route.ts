@@ -218,7 +218,7 @@ async function getAdminDigestStats(): Promise<AdminDigestStats> {
 }
 
 function generateDigestHtml(stats: AdminDigestStats): string {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net';
   const date = new Date().toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',

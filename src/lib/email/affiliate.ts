@@ -123,7 +123,7 @@ export async function sendAffiliateApplicationConfirmation(
           </div>
         </div>
 
-        <p>In the meantime, explore our <a href="https://algovigilance.com/intelligence" style="color: ${accentColor};">Intelligence Hub</a> for insights on safety careers and industry trends.</p>
+        <p>In the meantime, explore our <a href="https://algovigilance.net/intelligence" style="color: ${accentColor};">Intelligence Hub</a> for insights on safety careers and industry trends.</p>
 
         <p style="margin-top: 24px;">Best regards,<br/><strong>The AlgoVigilance Team</strong></p>
       </div>
@@ -190,7 +190,7 @@ export async function sendAffiliateStatusUpdate(
       message: `We're thrilled to welcome you to the AlgoVigilance ${programLabel} Program. Your application has been approved, and we're excited to have you join our community of safety professionals.`,
       cta: {
         text: "Access Your Dashboard",
-        url: "https://algovigilance.com/nucleus",
+        url: "https://algovigilance.net/nucleus",
       },
     },
     declined: {
@@ -199,7 +199,7 @@ export async function sendAffiliateStatusUpdate(
       message: `After careful review, we've decided not to move forward with your application at this time. This doesn't reflect on your qualifications—we receive many strong applications and have limited capacity. We encourage you to explore our community resources and reapply in the future.`,
       cta: {
         text: "Explore Our Community",
-        url: "https://algovigilance.com/community",
+        url: "https://algovigilance.net/community",
       },
     },
     interview: {
@@ -217,7 +217,7 @@ export async function sendAffiliateStatusUpdate(
       message: `Your application to the ${programLabel} Program has been placed on our waitlist. We were impressed with your profile and will reach out as soon as a spot becomes available. In the meantime, we encourage you to stay engaged with our community.`,
       cta: {
         text: "Join Our Newsletter",
-        url: "https://algovigilance.com/newsletter",
+        url: "https://algovigilance.net/newsletter",
       },
     },
   };

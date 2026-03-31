@@ -8,7 +8,7 @@
  * Env vars required:
  *   GCAL_CLIENT_ID — Google OAuth2 client ID
  *   GCAL_CLIENT_SECRET — Google OAuth2 client secret
- *   NEXT_PUBLIC_APP_URL — Base URL for redirect (e.g. https://algovigilance.com)
+ *   NEXT_PUBLIC_APP_URL — Base URL for redirect (e.g. https://algovigilance.net)
  *
  * Firestore collections:
  *   circles/{circleId}/gcal_tokens/{userId} — OAuth2 refresh tokens

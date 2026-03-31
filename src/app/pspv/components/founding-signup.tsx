@@ -55,7 +55,7 @@ export function FoundingSignup() {
         <p className="text-slate-300 text-sm">
           We will reach out when PSPV formally incorporates. Watch{' '}
           <a
-            href="https://algovigilance.com"
+            href="https://algovigilance.net"
             className="text-cyan underline hover:text-cyan/80"
             target="_blank"
             rel="noopener noreferrer"

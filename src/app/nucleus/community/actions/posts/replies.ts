@@ -238,7 +238,7 @@ export async function createReply(data: z.infer<typeof CreateReplySchema>) {
         const emailEnabled = postAuthorData?.preferences?.emailNotifications?.replies !== false; // Default to true
 
         if (postAuthorEmail && emailEnabled) {
-          const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com';
+          const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net';
           // Fire and forget - don't block on email sending
           sendCommunityReplyNotification({
             recipientEmail: postAuthorEmail,

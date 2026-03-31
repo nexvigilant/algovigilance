@@ -59,7 +59,7 @@ export async function sendWizardBrochure(
   }[data.branch];
 
   const subject = `Your AlgoVigilance Consulting Recommendations — Next Steps`;
-  const baseUrl = "https://algovigilance.com";
+  const baseUrl = "https://algovigilance.net";
 
   // Escape user-provided content to prevent XSS
   const safeFirstName = escapeHtml(data.firstName);

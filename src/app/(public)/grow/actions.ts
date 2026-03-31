@@ -70,7 +70,7 @@ async function notifyNewApplication(
                 <p style="margin: 8px 0 0 0;"><strong>Program:</strong> ${programLabel}</p>
               </div>
               <p>
-                <a href="https://algovigilance.com/nucleus/admin/affiliate-applications"
+                <a href="https://algovigilance.net/nucleus/admin/affiliate-applications"
                    style="display: inline-block; background-color: #00d4ff; color: #0d1117; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold;">
                   Review Application
                 </a>

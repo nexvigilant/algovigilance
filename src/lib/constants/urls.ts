@@ -3,9 +3,9 @@
  */
 
 export const SITE_CONFIG = {
-  url: 'https://algovigilance.com',
-  domain: 'algovigilance.com',
-  supportEmail: 'support@algovigilance.com',
+  url: 'https://algovigilance.net',
+  domain: 'algovigilance.net',
+  supportEmail: 'support@algovigilance.net',
 };
 
 export const EXTERNAL_APIS = {

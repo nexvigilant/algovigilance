@@ -191,7 +191,7 @@ export default function PSPVPage() {
 
           <blockquote
             className="relative rounded-2xl border border-cyan/30 bg-gradient-to-br from-cyan/10 via-white/[0.04] to-white/[0.04] p-8 md:p-12"
-            cite="https://algovigilance.com/pspv"
+            cite="https://algovigilance.net/pspv"
           >
             <div
               className="absolute top-6 left-8 text-cyan/20 font-headline text-7xl leading-none select-none"
@@ -450,7 +450,7 @@ export default function PSPVPage() {
             aria-label="Footer navigation"
           >
             <a
-              href="https://algovigilance.com"
+              href="https://algovigilance.net"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyan transition-colors"

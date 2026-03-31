@@ -556,7 +556,7 @@ export function StatusDashboard() {
             </a>{" "}
             and{" "}
             <a
-              href="https://algovigilance.com"
+              href="https://algovigilance.net"
               className="text-cyan hover:underline"
             >
               nexvigilant.com

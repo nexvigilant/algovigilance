@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Browse live pharmacovigilance safety profiles for 50+ drugs. Real-time adverse event data from FDA FAERS with disproportionality analysis. Powered by AlgoVigilance Station.",
   alternates: {
-    canonical: "https://algovigilance.com/drugs",
+    canonical: "https://algovigilance.net/drugs",
   },
 };
 
@@ -284,11 +284,11 @@ export default function DrugsIndexPage() {
             "@type": "CollectionPage",
             name: "Drug Safety Profiles",
             description: `Pharmacovigilance safety profiles for ${totalDrugs} drugs`,
-            url: "https://algovigilance.com/drugs",
+            url: "https://algovigilance.net/drugs",
             publisher: {
               "@type": "Organization",
               name: "AlgoVigilance",
-              url: "https://algovigilance.com",
+              url: "https://algovigilance.net",
             },
           }),
         }}

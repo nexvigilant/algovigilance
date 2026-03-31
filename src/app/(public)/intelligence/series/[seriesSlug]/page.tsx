@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${series.title} - ${series.subtitle}`,
       description: series.description,
-      url: `https://algovigilance.com/intelligence/series/${series.slug}`,
+      url: `https://algovigilance.net/intelligence/series/${series.slug}`,
       siteName: 'AlgoVigilance',
       type: 'website',
       images: [series.heroImage],

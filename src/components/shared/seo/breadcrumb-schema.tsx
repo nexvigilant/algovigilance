@@ -16,7 +16,7 @@
 import type { BreadcrumbItem } from '@/components/layout/navigation';
 
 // Use consistent base URL for SSR/CSR to prevent hydration mismatch
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net';
 
 interface BreadcrumbSchemaProps {
   /** Array of breadcrumb items */

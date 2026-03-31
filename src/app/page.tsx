@@ -13,13 +13,13 @@ export const metadata: Metadata = {
   description:
     "2,023 free pharmacovigilance tools. Signal detection, causality assessment, regulatory intelligence. Open to AI agents and humans. No account required.",
   alternates: {
-    canonical: "https://algovigilance.com",
+    canonical: "https://algovigilance.net",
   },
   openGraph: {
     title: "AlgoVigilance | Free PV Tools — Agents & Humans Welcome",
     description:
       "2,023 pharmacovigilance tools. Signal detection, causality, regulatory intelligence. Free and open. AI agents and humans welcomed.",
-    url: "https://algovigilance.com",
+    url: "https://algovigilance.net",
     siteName: "AlgoVigilance",
     type: "website",
     images: [

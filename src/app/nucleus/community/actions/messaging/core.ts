@@ -295,7 +295,7 @@ export async function sendMessage(
 
       if (recipientEmail && emailEnabled) {
         const baseUrl =
-          process.env.NEXT_PUBLIC_BASE_URL || "https://algovigilance.com";
+          process.env.NEXT_PUBLIC_BASE_URL || "https://algovigilance.net";
         // Fire and forget - don't block on email sending
         sendCommunityMessageNotification({
           recipientEmail,

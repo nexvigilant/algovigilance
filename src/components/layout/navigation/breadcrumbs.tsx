@@ -14,7 +14,7 @@ interface BreadcrumbsProps {
 }
 
 // Use consistent base URL for SSR/CSR to prevent hydration mismatch
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net';
 
 export function Breadcrumbs({ items, className, showHome = true }: BreadcrumbsProps) {
   // Generate Schema.org BreadcrumbList structured data

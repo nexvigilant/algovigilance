@@ -8,7 +8,7 @@ import { PublicPageWrapper } from '@/components/layout';
  * Individual pages can override title/description while inheriting social card defaults.
  */
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net'),
   title: {
     default: 'AlgoVigilance',
     template: '%s | AlgoVigilance',

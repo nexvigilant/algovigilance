@@ -111,7 +111,7 @@ export async function sendCommunityReplyNotification(
       </div>
       <div class="footer">
         <p>AlgoVigilance Community</p>
-        <p class="unsubscribe">You're receiving this because you have a post in the community. <a href="https://algovigilance.com/nucleus/settings/notifications">Manage notifications</a></p>
+        <p class="unsubscribe">You're receiving this because you have a post in the community. <a href="https://algovigilance.net/nucleus/settings/notifications">Manage notifications</a></p>
       </div>
     </div>
   </div>
@@ -206,7 +206,7 @@ export async function sendCommunityMentionNotification(
       </div>
       <div class="footer">
         <p>AlgoVigilance Community</p>
-        <p class="unsubscribe">You're receiving this because you were @mentioned. <a href="https://algovigilance.com/nucleus/settings/notifications">Manage notifications</a></p>
+        <p class="unsubscribe">You're receiving this because you were @mentioned. <a href="https://algovigilance.net/nucleus/settings/notifications">Manage notifications</a></p>
       </div>
     </div>
   </div>
@@ -303,7 +303,7 @@ export async function sendCommunityMessageNotification(
       </div>
       <div class="footer">
         <p>AlgoVigilance Community</p>
-        <p class="unsubscribe">You're receiving this because someone messaged you. <a href="https://algovigilance.com/nucleus/settings/notifications">Manage notifications</a></p>
+        <p class="unsubscribe">You're receiving this because someone messaged you. <a href="https://algovigilance.net/nucleus/settings/notifications">Manage notifications</a></p>
       </div>
     </div>
   </div>

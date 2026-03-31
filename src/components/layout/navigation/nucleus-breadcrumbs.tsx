@@ -13,7 +13,7 @@ import { useBreadcrumbs } from '@/hooks/use-breadcrumbs';
 import { cn } from '@/lib/utils';
 
 // Consistent base URL for Schema.org (SSR/CSR hydration safety)
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net';
 
 interface NucleusBreadcrumbsProps {
   className?: string;

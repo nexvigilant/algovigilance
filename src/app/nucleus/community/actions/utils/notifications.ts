@@ -67,7 +67,7 @@ export async function createMentionNotifications(input: {
   const userIdsToNotify = mentionedUserIds.filter(id => id !== authorId);
   if (userIdsToNotify.length === 0) return;
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net';
 
   try {
     const userRefs = userIdsToNotify.map(id => adminDb.collection('users').doc(id));

@@ -527,11 +527,11 @@ export function DrugSafetyProfile({ drug }: { drug: string }) {
                 "@type": "MedicalWebPage",
                 name: `${displayName} Safety Profile`,
                 description: `Pharmacovigilance data and signal detection for ${displayName}`,
-                url: `https://algovigilance.com/drugs/${drug}`,
+                url: `https://algovigilance.net/drugs/${drug}`,
                 publisher: {
                   "@type": "Organization",
                   name: "AlgoVigilance",
-                  url: "https://algovigilance.com",
+                  url: "https://algovigilance.net",
                 },
                 about: {
                   "@type": "Drug",

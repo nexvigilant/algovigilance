@@ -294,7 +294,7 @@ export default async function VerifyCapabilityPage({ params }: VerifyCapabilityP
           <div className="pt-4 border-t">
             <div className="text-sm font-medium text-muted-foreground mb-2">Verification URL</div>
             <code className="text-xs bg-muted px-2 py-1 rounded block break-all">
-              {capability.verificationUrl || `https://algovigilance.com/verify/${capabilityNumber}`}
+              {capability.verificationUrl || `https://algovigilance.net/verify/${capabilityNumber}`}
             </code>
           </div>
         </CardContent>

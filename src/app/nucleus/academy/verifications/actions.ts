@@ -22,7 +22,7 @@ function generateCertificateNumber(): string {
  * Generate verification URL for certificate
  */
 function generateVerificationUrl(certificateId: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net';
   return `${baseUrl}/verify/certificate/${certificateId}`;
 }
 

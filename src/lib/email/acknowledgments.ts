@@ -93,7 +93,7 @@ export async function sendConsultingLeadAcknowledgment(data: {
           </div>
         </div>
 
-        <p>In the meantime, feel free to explore our <a href="https://algovigilance.com/intelligence" style="color: #D4AF37;">Intelligence Hub</a> for insights on pharmacovigilance and regulatory strategy.</p>
+        <p>In the meantime, feel free to explore our <a href="https://algovigilance.net/intelligence" style="color: #D4AF37;">Intelligence Hub</a> for insights on pharmacovigilance and regulatory strategy.</p>
 
         <p style="margin-top: 24px;">Best regards,<br/><strong>The AlgoVigilance Team</strong></p>
       </div>

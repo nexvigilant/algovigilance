@@ -75,7 +75,7 @@ export async function generateMetadata({
       title: `${name} Safety Profile | AlgoVigilance`,
       description: `Real-time adverse event analysis for ${name} from FDA FAERS, DailyMed, and PubMed.`,
       type: "article",
-      url: `https://algovigilance.com/drugs/${drug}`,
+      url: `https://algovigilance.net/drugs/${drug}`,
     },
     twitter: {
       card: "summary_large_image",
@@ -83,7 +83,7 @@ export async function generateMetadata({
       description: `Live signal detection for ${name} — PRR, ROR, IC, EBGM across FDA FAERS data.`,
     },
     alternates: {
-      canonical: `https://algovigilance.com/drugs/${drug}`,
+      canonical: `https://algovigilance.net/drugs/${drug}`,
     },
   };
 }

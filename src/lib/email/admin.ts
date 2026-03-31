@@ -147,13 +147,13 @@ export async function sendConsultingLeadNotification(
         <div class="value" style="margin-top: 8px;">${safeChallengeDescription}</div>
       </div>
 
-      <a href="https://algovigilance.com/nucleus/admin/consulting-leads" class="cta">
+      <a href="https://algovigilance.net/nucleus/admin/consulting-leads" class="cta">
         View in Dashboard →
       </a>
     </div>
     <div class="footer">
       AlgoVigilance Consulting Lead Notification<br/>
-      <a href="https://algovigilance.com/nucleus/admin/consulting-leads">Manage Leads</a>
+      <a href="https://algovigilance.net/nucleus/admin/consulting-leads">Manage Leads</a>
     </div>
   </div>
 </body>
@@ -261,7 +261,7 @@ export async function sendContactFormNotification(
         <div class="label">Message</div>
         <div class="value" style="margin-top: 8px; white-space: pre-wrap;">${safeMessage}</div>
       </div>
-      <a href="https://algovigilance.com/nucleus/admin/contact-submissions" class="cta">
+      <a href="https://algovigilance.net/nucleus/admin/contact-submissions" class="cta">
         View in Dashboard →
       </a>
     </div>
@@ -340,7 +340,7 @@ export async function sendWaitlistNotification(
         <div class="label">Source</div>
         <div class="value">${escapeHtml(source)}</div>
       </div>
-      <a href="https://algovigilance.com/nucleus/admin/waitlist" class="cta">
+      <a href="https://algovigilance.net/nucleus/admin/waitlist" class="cta">
         View Waitlist →
       </a>
     </div>

@@ -26,7 +26,7 @@ const EMAIL_TEMPLATES = {
           <p style="margin: 0;"><strong>Reason:</strong> ${data.reason}</p>
           ${data.expiresAt ? `<p style="margin: 8px 0 0 0;"><strong>Expires:</strong> ${data.expiresAt}</p>` : ''}
         </div>
-        <p>Please review our <a href="https://algovigilance.com/community-guidelines">Community Guidelines</a> to ensure future compliance.</p>
+        <p>Please review our <a href="https://algovigilance.net/community-guidelines">Community Guidelines</a> to ensure future compliance.</p>
         <p>If you believe this warning was issued in error, you can submit an appeal through your account settings.</p>
         <hr style="margin: 24px 0; border: none; border-top: 1px solid #e0e0e0;" />
         <p style="color: #666; font-size: 12px;">
@@ -150,7 +150,7 @@ const EMAIL_TEMPLATES = {
           <p style="margin: 0;"><strong>Violation:</strong> ${data.violationCategory}</p>
           <p style="margin: 8px 0 0 0;"><strong>Content:</strong> "${data.contentSnippet}..."</p>
         </div>
-        <p>Please review our <a href="https://algovigilance.com/community-guidelines">Community Guidelines</a> before posting again.</p>
+        <p>Please review our <a href="https://algovigilance.net/community-guidelines">Community Guidelines</a> before posting again.</p>
         <p>Repeated violations may result in warnings or account suspension.</p>
         <hr style="margin: 24px 0; border: none; border-top: 1px solid #e0e0e0;" />
         <p style="color: #666; font-size: 12px;">
@@ -176,7 +176,7 @@ const EMAIL_TEMPLATES = {
         `
             : ''
         }
-        <p>Please continue to follow our <a href="https://algovigilance.com/community-guidelines">Community Guidelines</a> to maintain good standing.</p>
+        <p>Please continue to follow our <a href="https://algovigilance.net/community-guidelines">Community Guidelines</a> to maintain good standing.</p>
         <p>Welcome back!</p>
         <hr style="margin: 24px 0; border: none; border-top: 1px solid #e0e0e0;" />
         <p style="color: #666; font-size: 12px;">

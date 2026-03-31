@@ -115,7 +115,7 @@ export function McpConnectionCard({
       <p className="mt-3 text-[10px] text-slate-500">
         135 free PV tools at{" "}
         <a
-          href="https://algovigilance.com/station"
+          href="https://algovigilance.net/station"
           className="text-cyan-400 hover:text-cyan-300"
         >
           nexvigilant.com/station

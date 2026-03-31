@@ -7,7 +7,7 @@ import { getChangelog } from '@/data/changelog-loader';
  * Access at: /changelog/feed or /changelog/feed.xml
  */
 
-const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.com';
+const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://algovigilance.net';
 
 export async function GET() {
   const changelog = getChangelog();

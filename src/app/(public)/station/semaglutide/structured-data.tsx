@@ -13,21 +13,21 @@ export function SemaglutideStructuredData() {
     name: "Semaglutide Signal Investigation — Pharmacovigilance Worked Example",
     description:
       "Step-by-step pharmacovigilance signal investigation for semaglutide and pancreatitis using live FDA FAERS data, PRR/ROR/IC/EBGM disproportionality analysis, DailyMed labeling review, and PubMed literature search.",
-    url: "https://algovigilance.com/station/semaglutide",
+    url: "https://algovigilance.net/station/semaglutide",
     datePublished: "2026-03-26",
     dateModified: "2026-03-31",
     author: {
       "@type": "Organization",
       name: "AlgoVigilance",
-      url: "https://algovigilance.com",
+      url: "https://algovigilance.net",
     },
     publisher: {
       "@type": "Organization",
       name: "AlgoVigilance",
-      url: "https://algovigilance.com",
+      url: "https://algovigilance.net",
       logo: {
         "@type": "ImageObject",
-        url: "https://algovigilance.com/logo.png",
+        url: "https://algovigilance.net/logo.png",
       },
     },
     about: {
