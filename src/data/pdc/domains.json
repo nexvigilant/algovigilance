@@ -1,0 +1,137 @@
+[
+  {
+    "id": "D01",
+    "name": "Foundations of Pharmacovigilance in the AI Era",
+    "thematicCluster": 1,
+    "clusterName": "Foundational Domains",
+    "definition": "Understanding of the historical context, public health importance, and basic concepts of pharmacovigilance, integrating traditional principles with emerging AI applications.",
+    "totalKSBs": 49,
+    "hasAssessment": true
+  },
+  {
+    "id": "D02",
+    "name": "Clinical Aspects of ADRs with AI-Enhanced Analysis",
+    "thematicCluster": 1,
+    "clusterName": "Foundational Domains",
+    "definition": "Knowledge of the classification, mechanisms, risk factors, and clinical management of adverse drug reactions, with understanding of AI applications for enhanced detection and assessment.",
+    "totalKSBs": 73,
+    "hasAssessment": true
+  },
+  {
+    "id": "D03",
+    "name": "Important ADRs and Their Recognition Using AI",
+    "thematicCluster": 1,
+    "clusterName": "Foundational Domains",
+    "definition": "Knowledge of specific adverse reaction patterns affecting various organ systems and the application of AI for enhanced recognition and prediction.",
+    "totalKSBs": 88,
+    "hasAssessment": true
+  },
+  {
+    "id": "D04",
+    "name": "Individual Case Safety Reports (ICSRs) in the AI Era",
+    "thematicCluster": 2,
+    "clusterName": "Process and Methodology Domains",
+    "definition": "Understanding and application of processes for collecting, evaluating, and reporting individual adverse event cases with AI-augmented capabilities.",
+    "totalKSBs": 84,
+    "hasAssessment": true
+  },
+  {
+    "id": "D05",
+    "name": "Pharmacovigilance in Clinical Trials with AI Integration",
+    "thematicCluster": 2,
+    "clusterName": "Process and Methodology Domains",
+    "definition": "Knowledge of safety monitoring in clinical trials and the application of AI to enhance trial safety surveillance.",
+    "totalKSBs": 101,
+    "hasAssessment": true
+  },
+  {
+    "id": "D06",
+    "name": "Medication Errors, Quality Issues and AI Detection",
+    "thematicCluster": 2,
+    "clusterName": "Process and Methodology Domains",
+    "definition": "Understanding of medication error patterns, product quality concerns, and AI applications for detection and prevention.",
+    "totalKSBs": 97,
+    "hasAssessment": true
+  },
+  {
+    "id": "D07",
+    "name": "Spontaneous Reporting Systems with AI Enhancement",
+    "thematicCluster": 2,
+    "clusterName": "Process and Methodology Domains",
+    "definition": "Knowledge of database systems, processes, and analytics for managing spontaneous adverse event reports with AI enhancements.",
+    "totalKSBs": 91,
+    "hasAssessment": true
+  },
+  {
+    "id": "D08",
+    "name": "Signal Detection and Management Using AI",
+    "thematicCluster": 2,
+    "clusterName": "Process and Methodology Domains",
+    "definition": "Understanding methods for identifying, validating, and evaluating potential safety signals with AI-enhanced approaches.",
+    "totalKSBs": 92,
+    "hasAssessment": true
+  },
+  {
+    "id": "D09",
+    "name": "Post-Authorization Observational Studies and Clinical Trials in PV",
+    "thematicCluster": 2,
+    "clusterName": "Process and Methodology Domains",
+    "definition": "Knowledge of study designs and methodologies for evaluating safety in the post-marketing environment with AI applications.",
+    "totalKSBs": 101,
+    "hasAssessment": true
+  },
+  {
+    "id": "D10",
+    "name": "Benefit-Risk Assessment in the AI Era",
+    "thematicCluster": 3,
+    "clusterName": "Assessment and Strategy Domains",
+    "definition": "Understanding approaches for evaluating and balancing benefits and risks of medications with AI-enhanced capabilities.",
+    "totalKSBs": 97,
+    "hasAssessment": true
+  },
+  {
+    "id": "D11",
+    "name": "Risk Management with AI Integration",
+    "thematicCluster": 3,
+    "clusterName": "Assessment and Strategy Domains",
+    "definition": "Knowledge of strategies and tools for minimizing identified risks with AI applications for enhanced effectiveness.",
+    "totalKSBs": 100,
+    "hasAssessment": true
+  },
+  {
+    "id": "D12",
+    "name": "Industry and Regulatory Authorities, Mandatory Procedures from Legislation",
+    "thematicCluster": 3,
+    "clusterName": "Assessment and Strategy Domains",
+    "definition": "Understanding regulatory requirements, industry obligations, and inspection processes related to pharmacovigilance.",
+    "totalKSBs": 85,
+    "hasAssessment": true
+  },
+  {
+    "id": "D13",
+    "name": "Global Pharmacovigilance and Public Health with AI Support",
+    "thematicCluster": 4,
+    "clusterName": "Integration and Communication Domains",
+    "definition": "Knowledge of international pharmacovigilance systems, public health integration, and AI applications for global safety monitoring.",
+    "totalKSBs": 87,
+    "hasAssessment": true
+  },
+  {
+    "id": "D14",
+    "name": "Communication in the AI Era",
+    "thematicCluster": 4,
+    "clusterName": "Integration and Communication Domains",
+    "definition": "Understanding principles, channels, and strategies for effective safety communication with AI enhancements.",
+    "totalKSBs": 60,
+    "hasAssessment": true
+  },
+  {
+    "id": "D15",
+    "name": "Sources of Information in the AI Era",
+    "thematicCluster": 4,
+    "clusterName": "Integration and Communication Domains",
+    "definition": "Knowledge of data sources, retrieval methods, and evaluation approaches for pharmacovigilance information with AI enhancements.",
+    "totalKSBs": 60,
+    "hasAssessment": true
+  }
+]

@@ -1,0 +1,176 @@
+/**
+ * Circuit Utilities & Accessibility
+ *
+ * Loading states, scroll reveal, stagger animations, and reduced motion support
+ */
+
+/* =============================================================================
+   LOADING & ANIMATION UTILITIES
+   ============================================================================= */
+
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--nex-cyan-rgb), 0.1) 0%,
+    rgba(var(--nex-cyan-rgb), 0.3) 50%,
+    rgba(var(--nex-cyan-rgb), 0.1) 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+.counter-pulse {
+  display: inline-block;
+  animation: counter-pulse 2s ease-in-out infinite;
+}
+
+.magnetic-button {
+  transition: all var(--duration-fast) var(--ease-smooth);
+  position: relative;
+}
+
+.magnetic-button:hover {
+  transform: translateY(-2px);
+}
+
+.magnetic-button:active {
+  transform: translateY(0);
+}
+
+/* =============================================================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================================================= */
+
+/**
+ * Scroll Reveal Animation
+ *
+ * ⚠️ VISIBILITY WARNING:
+ * Uses progressive enhancement: visible by default, animated only when JS ready.
+ * Add `js-ready` class to <html> or parent container after JS initializes.
+ *
+ * Implementation:
+ * 1. Add to _app.tsx or layout: document.documentElement.classList.add('js-ready')
+ * 2. Or use useEffect: useEffect(() => document.body.classList.add('js-ready'), [])
+ */
+
+/* Default: visible (no JS required) */
+.scroll-reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced: animate only when JS confirms ready */
+/* animation-timeline: auto prevents scroll-driven.css from hijacking this time-based animation */
+.js-ready .scroll-reveal {
+  opacity: 0;
+  animation: fade-in-up 0.6s var(--ease-smooth) forwards;
+  animation-timeline: auto;
+}
+
+/* Noscript fallback for extra safety */
+noscript + .scroll-reveal,
+noscript ~ .scroll-reveal {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.scroll-reveal-fade {
+  opacity: 0;
+  animation: fade-in 0.8s var(--ease-smooth) forwards;
+}
+
+/**
+ * Staggered delays for scroll-reveal and stagger-item
+ *
+ * Preferred: Set --stagger-delay via inline style or JS
+ * Example: style={{ '--stagger-delay': `${index * 0.1}s` } as React.CSSProperties}
+ *
+ * Legacy nth-child fallbacks provide defaults when custom property not set.
+ */
+.js-ready .scroll-reveal {
+  animation-delay: var(--stagger-delay, 0s);
+}
+
+/* Legacy fallback for scroll-reveal */
+.scroll-reveal:nth-child(1) { --stagger-delay: 0.1s; }
+.scroll-reveal:nth-child(2) { --stagger-delay: 0.2s; }
+.scroll-reveal:nth-child(3) { --stagger-delay: 0.3s; }
+.scroll-reveal:nth-child(4) { --stagger-delay: 0.4s; }
+.scroll-reveal:nth-child(5) { --stagger-delay: 0.5s; }
+.scroll-reveal:nth-child(6) { --stagger-delay: 0.6s; }
+
+.stagger-item {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slide-in-right 0.4s var(--ease-smooth) forwards;
+  animation-delay: var(--stagger-delay, 0s);
+}
+
+/* Legacy fallback for stagger-item */
+.stagger-item:nth-child(1) { --stagger-delay: 0.1s; }
+.stagger-item:nth-child(2) { --stagger-delay: 0.2s; }
+.stagger-item:nth-child(3) { --stagger-delay: 0.3s; }
+.stagger-item:nth-child(4) { --stagger-delay: 0.4s; }
+.stagger-item:nth-child(5) { --stagger-delay: 0.5s; }
+.stagger-item:nth-child(6) { --stagger-delay: 0.6s; }
+.stagger-item:nth-child(7) { --stagger-delay: 0.7s; }
+.stagger-item:nth-child(8) { --stagger-delay: 0.8s; }
+
+/* =============================================================================
+   REDUCED MOTION SUPPORT
+   ============================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .data-node,
+  .radial-energy,
+  .circuit-button,
+  .circuit-input,
+  .circuit-card,
+  .scroll-reveal,
+  .scroll-reveal-fade,
+  .circuit-link,
+  .counter-pulse,
+  .magnetic-button,
+  .loading-shimmer,
+  .stagger-item {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* Preserve hover feedback without motion */
+  .circuit-button:hover,
+  .circuit-card:hover {
+    transform: none;
+    /* Keep visual feedback via color/shadow, just no movement */
+    box-shadow: 0 0 15px rgba(var(--nex-cyan-rgb), 0.2);
+  }
+
+  .pcb-grid::before {
+    opacity: 0.3;
+  }
+
+  /* Focus states always visible for accessibility */
+  .circuit-button:focus-visible,
+  .circuit-card:focus-visible,
+  .circuit-input:focus-visible,
+  .circuit-link:focus-visible {
+    outline: 2px solid hsl(var(--nex-cyan-500));
+    outline-offset: 2px;
+    animation: none;
+  }
+
+  .dark .circuit-button:focus-visible,
+  .dark .circuit-card:focus-visible,
+  .dark .circuit-input:focus-visible,
+  .dark .circuit-link:focus-visible {
+    outline: 2px solid hsl(var(--nex-cyan-400));
+    outline-offset: 2px;
+  }
+}

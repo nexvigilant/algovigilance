@@ -1,0 +1,1177 @@
+{
+  "timelines": [
+    {
+      "eventReportType": "Serious Unexpected ADR - Domestic (Spontaneous)",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "15 calendar days",
+        "authority": "21 CFR 314.80(c)(1)(i); 21 CFR 600.80"
+      },
+      "ema": {
+        "timeframe": "15 calendar days",
+        "authority": "Dir 2001/83/EC Art 107(3); GVP VI.C.2.2.1"
+      },
+      "ichReference": "ICH E2D",
+      "whoReference": "Per national requirements",
+      "day0Definition": "Date MAH/Sponsor first receives minimum information constituting valid case",
+      "keyDifferences": "Aligned on 15-day timeline; validity criteria similar",
+      "notes": "Clock starts on Day 0 (awareness date); submission by Day 15"
+    },
+    {
+      "eventReportType": "Serious Unexpected ADR - Foreign",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "15 calendar days",
+        "authority": "21 CFR 314.80(c)(1)(ii); 21 CFR 600.80"
+      },
+      "ema": {
+        "timeframe": "15 calendar days",
+        "authority": "GVP VI.C.2.2.1"
+      },
+      "ichReference": "ICH E2D",
+      "whoReference": "Per national requirements",
+      "day0Definition": "Date MAH/Sponsor first receives minimum information",
+      "keyDifferences": "FDA: Foreign serious unexpected to FAERS; EMA: All regions to EudraVigilance",
+      "notes": "EMA requires global submission; FDA foreign only if serious+unexpected"
+    },
+    {
+      "eventReportType": "Fatal/Life-Threatening IND Safety Report",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "7 calendar days (alert) + 8 days (follow-up)",
+        "authority": "21 CFR 312.32(c)(2)"
+      },
+      "ema": {
+        "timeframe": "7 calendar days + 8 days follow-up",
+        "authority": "CT Reg 536/2014 Art 42(2)"
+      },
+      "ichReference": "ICH E2A",
+      "whoReference": null,
+      "day0Definition": "Date sponsor first learns of event",
+      "keyDifferences": "Aligned 7-day initial + 15-day total for fatal/life-threatening SUSARs",
+      "notes": "Initial notification within 7 days; complete report within 15 days total"
+    },
+    {
+      "eventReportType": "SUSAR (Clinical Trial) - Non-fatal",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "15 calendar days",
+        "authority": "21 CFR 312.32(c)(1)"
+      },
+      "ema": {
+        "timeframe": "15 calendar days",
+        "authority": "CT Reg 536/2014 Art 42(1)"
+      },
+      "ichReference": "ICH E2A",
+      "whoReference": null,
+      "day0Definition": "Date sponsor first learns of event",
+      "keyDifferences": "Harmonized 15-day timeline for serious unexpected not fatal/life-threatening",
+      "notes": "Submit to all regulatory authorities where trial ongoing"
+    },
+    {
+      "eventReportType": "Field Alert Report (Product Quality)",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "3 working days",
+        "authority": "21 CFR 314.81(b)(1)"
+      },
+      "ema": {
+        "timeframe": "Urgent safety restriction - immediate",
+        "authority": "Dir 2001/83/EC Art 123(2)"
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "Date of determination of event",
+      "keyDifferences": "FDA specific 3-day field alert; EMA uses urgent safety restriction process",
+      "notes": "FDA: For bacteriological contamination, significant chemical/physical issues, or labeling mix-ups"
+    },
+    {
+      "eventReportType": "Non-Serious ADR",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Included in periodic reports",
+        "authority": "21 CFR 314.80(c)(2)"
+      },
+      "ema": {
+        "timeframe": "90 calendar days",
+        "authority": "GVP VI.C.2.2.2"
+      },
+      "ichReference": "ICH E2D",
+      "whoReference": null,
+      "day0Definition": "Date of receipt",
+      "keyDifferences": "Major difference: EMA requires 90-day individual submission; FDA aggregates in periodic",
+      "notes": "EMA: All non-serious to EudraVigilance within 90 days; FDA: In periodic reports only"
+    },
+    {
+      "eventReportType": "Periodic Adverse Drug Experience Report (PADER)",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Quarterly (Years 1-3); Annual (thereafter)",
+        "authority": "21 CFR 314.80(c)(2)(i)"
+      },
+      "ema": {
+        "timeframe": "N/A - Use PBRER",
+        "authority": ""
+      },
+      "ichReference": "Superseded by E2C(R2)",
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "FDA still accepts PADER but prefers PBRER; EMA mandates PBRER format",
+      "notes": "FDA: Within 30 days of end of reporting interval"
+    },
+    {
+      "eventReportType": "PSUR/PBRER",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Per EURD List (FDA accepts PBRER)",
+        "authority": "21 CFR 314.81 (accepts PBRER)"
+      },
+      "ema": {
+        "timeframe": "Per EU Reference Dates List",
+        "authority": "GVP VII; Reg 520/2012"
+      },
+      "ichReference": "ICH E2C(R2)",
+      "whoReference": null,
+      "day0Definition": "Data Lock Point (DLP)",
+      "keyDifferences": "FDA accepts PBRER in lieu of PADER; EMA mandates PBRER per EURD",
+      "notes": "Submit within 70 days (6-month/annual) or 90 days (3-year) after DLP"
+    },
+    {
+      "eventReportType": "DSUR (Development Safety Update Report)",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Annual, within 60 days of DIBD anniversary",
+        "authority": "21 CFR 312.33 (FDA accepts DSUR)"
+      },
+      "ema": {
+        "timeframe": "Annual, within 60 days of DIBD",
+        "authority": "CT Reg 536/2014 Art 44"
+      },
+      "ichReference": "ICH E2F",
+      "whoReference": null,
+      "day0Definition": "Development International Birth Date (DIBD)",
+      "keyDifferences": "Harmonized annual DSUR; replaces IND annual report safety section",
+      "notes": "DIBD = date of first authorization to conduct clinical trial anywhere globally"
+    },
+    {
+      "eventReportType": "IND Annual Report",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Within 60 days of IND anniversary",
+        "authority": "21 CFR 312.33"
+      },
+      "ema": {
+        "timeframe": "N/A - DSUR used in EU",
+        "authority": "CT Reg 536/2014"
+      },
+      "ichReference": "Superseded by E2F",
+      "whoReference": null,
+      "day0Definition": "IND anniversary date",
+      "keyDifferences": "FDA IND annual report predates DSUR; DSUR accepted as safety section",
+      "notes": "Full IND annual report has broader scope than DSUR"
+    },
+    {
+      "eventReportType": "PMR/PMC Status Report",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Annual, within 60 days of approval anniversary",
+        "authority": "21 CFR 314.81(b)(2)(vii); FDCA 506B"
+      },
+      "ema": {
+        "timeframe": "Per conditions of MA",
+        "authority": "Reg 726/2004; specific obligations"
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "Approval anniversary date",
+      "keyDifferences": "FDA PMR/PMC tracking unique; EMA uses MA conditions and PASS",
+      "notes": "FDA publishes annual PMR/PMC compliance status in Federal Register"
+    },
+    {
+      "eventReportType": "REMS Assessment",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "18 months, 3 years, 7 years minimum; more frequent if specified",
+        "authority": "21 U.S.C. 355-1(d)"
+      },
+      "ema": {
+        "timeframe": "N/A - RMP updates instead",
+        "authority": "GVP V (RMP)"
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "REMS approval date",
+      "keyDifferences": "REMS-specific assessment; EMA uses RMP updates per variation schedule",
+      "notes": "FDA may require more frequent assessments; eliminates REMS if goals met"
+    },
+    {
+      "eventReportType": "RMP Update",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "N/A - REMS used in US",
+        "authority": ""
+      },
+      "ema": {
+        "timeframe": "With PSUR, post-referral, major change, or at EMA request",
+        "authority": "GVP V; Reg 520/2012"
+      },
+      "ichReference": "ICH E2E (basis)",
+      "whoReference": null,
+      "day0Definition": "Various triggers",
+      "keyDifferences": "RMP updated more dynamically than REMS; integrated with PSURs",
+      "notes": "Submit updated RMP with Type II variation for significant changes"
+    },
+    {
+      "eventReportType": "VAERS Manufacturer Report (Vaccines)",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "15 calendar days (serious/unlabeled)",
+        "authority": "42 USC 300aa-25; 21 CFR 600.80"
+      },
+      "ema": {
+        "timeframe": "15 calendar days to EudraVigilance",
+        "authority": "GVP Module P.I"
+      },
+      "ichReference": null,
+      "whoReference": "24 hours for AEFI clusters",
+      "day0Definition": "Date of receipt",
+      "keyDifferences": "VAERS unique to US; EMA uses EudraVigilance; WHO coordinates globally",
+      "notes": "US HCPs also have mandatory VAERS reporting for Vaccine Injury Table events"
+    },
+    {
+      "eventReportType": "Biological Product Deviation Report",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "45 calendar days from discovery",
+        "authority": "21 CFR 600.14"
+      },
+      "ema": {
+        "timeframe": "Per GMP deviation requirements",
+        "authority": "EU GMP Annex 1"
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "Date of discovery",
+      "keyDifferences": "FDA-specific BPDR; EMA handles via GMP deviation reporting",
+      "notes": "Report deviations affecting distributed products; eBPDR electronic system"
+    },
+    {
+      "eventReportType": "Safety Labeling Change - Type II Variation",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "CBE-0 (immediate) or CBE-30 (30 days)",
+        "authority": "21 CFR 314.70"
+      },
+      "ema": {
+        "timeframe": "Type II variation; urgent safety restriction",
+        "authority": "Commission Reg 1234/2008; GVP XVI"
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "Date of safety signal determination",
+      "keyDifferences": "FDA CBE faster for urgent changes; EMA Type II variation standard",
+      "notes": "FDA CBE-0 for immediate safety labeling; EMA urgent safety restriction for critical"
+    },
+    {
+      "eventReportType": "Signal Communication to Authority",
+      "reportCategory": "Signal",
+      "fda": {
+        "timeframe": "Per FDA request/PDUFA meetings",
+        "authority": "FDAAA; PDUFA commitments"
+      },
+      "ema": {
+        "timeframe": "Upon request; via PSUR signal summary",
+        "authority": "GVP IX.C.2"
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "Signal detection",
+      "keyDifferences": "EMA more structured signal communication; FDA via meetings and submissions",
+      "notes": "MAH must respond to regulatory signal queries promptly"
+    },
+    {
+      "eventReportType": "Urgent Safety Restriction",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "Immediate implementation; notify FDA",
+        "authority": "21 CFR 314.70(c)(6)(iii)"
+      },
+      "ema": {
+        "timeframe": "Immediate implementation; notify within 24 hours",
+        "authority": "CT Reg 536/2014 Art 54; GVP XVI"
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "Date of determination of urgent safety issue",
+      "keyDifferences": "Both allow immediate action; EU has specific 24-hour notification",
+      "notes": "Used for serious and imminent risk to subjects/patients"
+    },
+    {
+      "eventReportType": "Safety Variation - Type II",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "",
+        "authority": ""
+      },
+      "ema": {
+        "timeframe": "",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Urgent Safety Restriction",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "",
+        "authority": ""
+      },
+      "ema": {
+        "timeframe": "",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "UK Emerging Safety Issue",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Without undue delay",
+        "authority": "Not specified"
+      },
+      "ema": {
+        "timeframe": "3 working days",
+        "authority": "Date MAH establishes safety issue meets emerging safety issue definition"
+      },
+      "ichReference": "UK has most prescriptive timeline (3 working days vs EU \"without undue delay\")",
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "UK ICSR - Serious Domestic",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "15 calendar days",
+        "authority": "15 calendar days"
+      },
+      "ema": {
+        "timeframe": "15 calendar days",
+        "authority": "Date MAH first becomes aware"
+      },
+      "ichReference": "Harmonized timeline; UK requires submission via MHRA Gateway",
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "UK ICSR - Non-Serious Domestic",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "90 calendar days",
+        "authority": "Not specified"
+      },
+      "ema": {
+        "timeframe": "90 calendar days",
+        "authority": "Date MAH first becomes aware"
+      },
+      "ichReference": "UK follows EU 90-day timeline; FDA periodic only",
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "UK PSUR Category 1 Products",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Per EURD list",
+        "authority": "Per E2C(R2)"
+      },
+      "ema": {
+        "timeframe": "Per EURD list or MHRA request",
+        "authority": "Data Lock Point per schedule"
+      },
+      "ichReference": "Category 1 products follow UK requirements; submit to MHRA",
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "UK PSUR Category 2 Products",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Per EURD list",
+        "authority": "Per E2C(R2)"
+      },
+      "ema": {
+        "timeframe": "Per EU requirements (to EMA)",
+        "authority": "Data Lock Point per EURD list"
+      },
+      "ichReference": "Category 2 generally not submitted to MHRA unless UK-only product",
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "NI Dual ICSR Submission",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "15/90 days to EudraVigilance",
+        "authority": ""
+      },
+      "ema": {
+        "timeframe": "15/90 days to MHRA Gateway AND EudraVigilance",
+        "authority": "Date MAH first becomes aware"
+      },
+      "ichReference": "NI ICSRs require dual submission to both UK and EU systems; XI country code",
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Safety Labeling Update - CBE-0 (FDA)",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Immediate upon submission",
+        "authority": "N/A (EU uses Type II variation - requires approval)"
+      },
+      "ema": {
+        "timeframe": "N/A (UK follows EU Type II variation system)",
+        "authority": "21 CFR 314.70(c)(6)(iii)"
+      },
+      "ichReference": "FDA CBE-0 allows immediate implementation of safety labeling strengthening without waiting for approval; EU/UK require pre-approval for equivalent changes",
+      "whoReference": "FDA fastest; EU/UK slower due to approval requirement",
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Safety Labeling Update - CBE-30 (FDA)",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "30 days post-submission (unless FDA objects)",
+        "authority": ""
+      },
+      "ema": {
+        "timeframe": "",
+        "authority": "21 CFR 314.70(c)"
+      },
+      "ichReference": "Certain labeling changes may be implemented 30 days after submission unless FDA notifies otherwise",
+      "whoReference": "FDA unique mechanism",
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "FDA 505(o)(4) Safety Labeling Change Response",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "30 days from notification",
+        "authority": ""
+      },
+      "ema": {
+        "timeframe": "",
+        "authority": "FD&C Act Section 505(o)(4)"
+      },
+      "ichReference": "When FDA issues safety labeling change notification, sponsor must respond within 30 days with proposed labeling or explanation",
+      "whoReference": "FDA authority to require safety labeling changes",
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Literature Case - Serious Unexpected",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "15 calendar days (FDA)",
+        "authority": "15 calendar days (EU)"
+      },
+      "ema": {
+        "timeframe": "15 calendar days (UK)",
+        "authority": "21 CFR 314.80(c)(1)(i), EU GVP VI"
+      },
+      "ichReference": "Serious unexpected cases from literature reported same as spontaneous reports; Day 0 = date MAH becomes aware; Must include copy of article",
+      "whoReference": "Harmonized 15-day timeline across regions",
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Literature Screening Frequency",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Weekly recommended",
+        "authority": "Weekly recommended"
+      },
+      "ema": {
+        "timeframe": "Weekly recommended",
+        "authority": "Best practice; GVP VI"
+      },
+      "ichReference": "Weekly screening enables timely identification of expedited cases; frequency should be justified based on product risk profile",
+      "whoReference": "No prescriptive regulatory requirement but weekly is industry standard",
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Investigator SAE Report to Sponsor",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Immediate (typically 24 hours)",
+        "authority": "Immediate (typically 24 hours)"
+      },
+      "ema": {
+        "timeframe": "Immediate (typically 24 hours)",
+        "authority": "ICH E6(R2) Section 4.11"
+      },
+      "ichReference": "GCP requires immediate reporting of SAEs to sponsor; protocol typically specifies 24-hour timeline; exceptions may be protocol-defined",
+      "whoReference": "Harmonized under ICH GCP",
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Clinical Hold - Complete Response",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "No statutory deadline; FDA responds within 30 days of complete submission",
+        "authority": "N/A (EU uses urgent safety measures)"
+      },
+      "ema": {
+        "timeframe": "N/A (UK uses urgent safety measures)",
+        "authority": "21 CFR 312.42(e)"
+      },
+      "ichReference": "Sponsor should respond promptly to clinical hold; FDA commits to 30-day response to complete submission",
+      "whoReference": "US-specific clinical hold mechanism; EU/UK have equivalent urgent safety measure authorities",
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Pregnancy Testing - PPP",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "FDA: As specified in REMS; EU: Per GVP XVI Addendum I; UK: Per EU approach",
+        "authority": "Per product-specific programme"
+      },
+      "ema": {
+        "timeframe": "EU PPP specifies testing schedule based on teratogenic risk",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "PPP Patient Acknowledgment",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "FDA: iPLEDGE monthly; EU: Per programme",
+        "authority": "Before each prescription (high-risk products)"
+      },
+      "ema": {
+        "timeframe": "Written acknowledgment of risks and contraception requirements",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "PPP Contraception Verification",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "All regions: Verify effective contraception in place",
+        "authority": "Per programme requirements"
+      },
+      "ema": {
+        "timeframe": "Two effective methods required for highly teratogenic products",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Type IA Variation - Annual Update",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "EU only; Grouped notification permitted",
+        "authority": "Annual for non-IAIN"
+      },
+      "ema": {
+        "timeframe": "New from Reg 2024/1701; IAIN requires immediate notification",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Type II Safety Variation",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "EU requires pre-approval; FDA CBE-0 allows immediate",
+        "authority": "FDA fastest for urgent safety"
+      },
+      "ema": {
+        "timeframe": "Critical divergence: EU slower for safety labeling changes",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "Estimand Documentation",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Harmonized: ICH E9(R1) requires pre-specification",
+        "authority": "Before trial starts"
+      },
+      "ema": {
+        "timeframe": "All estimands with intercurrent event strategies documented",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "MRCT Regional Analysis Plan",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Harmonized: ICH E17",
+        "authority": "Before database lock"
+      },
+      "ema": {
+        "timeframe": "Pre-specify pooling strategies and consistency evaluation",
+        "authority": ""
+      },
+      "ichReference": null,
+      "whoReference": null,
+      "day0Definition": "",
+      "keyDifferences": "",
+      "notes": null
+    },
+    {
+      "eventReportType": "ANDA PMR/PMC Annual Status Report",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Within 60 days of ANDA approval anniversary",
+        "authority": "21 CFR 314.98; 21 CFR 314.81(b)(2)(vii)"
+      },
+      "ema": {
+        "timeframe": "N/A - EU generic pathway different",
+        "authority": "N/A"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "ANDA approval anniversary date",
+      "keyDifferences": "US-specific; EU generics have different PV obligations under decentralized/MRP",
+      "notes": "Extends NDA PMR/PMC framework to generics; Public posting of compliance status"
+    },
+    {
+      "eventReportType": "Biologics PMC Annual Progress Report",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Within 60 days of BLA approval anniversary",
+        "authority": "21 CFR 601.70"
+      },
+      "ema": {
+        "timeframe": "Per MA conditions; RMP update schedule",
+        "authority": "Reg 726/2004; GVP Module VIII"
+      },
+      "ichReference": "ICH E2E basis",
+      "whoReference": "Per prequalification",
+      "day0Definition": "BLA approval anniversary date",
+      "keyDifferences": "FDA annual report format; EMA uses PASS/RMP framework",
+      "notes": "Biologics-specific; Immunogenicity studies often required"
+    },
+    {
+      "eventReportType": "Quality Complaint with AE - PV Routing",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "Per 314.80 timelines once AE identified",
+        "authority": "21 CFR 211.198; 21 CFR 314.80"
+      },
+      "ema": {
+        "timeframe": "Per GVP VI once AE identified",
+        "authority": "EU GMP Chapter 8; GVP Module VI"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Date of AE awareness from complaint",
+      "keyDifferences": "Quality/PV interface critical; Complaint may precede AE identification",
+      "notes": "Manufacturing quality complaints must be screened for AE content"
+    },
+    {
+      "eventReportType": "GCP Safety Reporting (E6(R3))",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "SAE: Immediate (24h); SUSAR: 7/15 days",
+        "authority": "21 CFR 312.32; 21 CFR 312.64"
+      },
+      "ema": {
+        "timeframe": "SAE: Immediate; SUSAR: 7/15 days",
+        "authority": "EU CTR 536/2014; ICH E6(R3)"
+      },
+      "ichReference": "ICH E6(R3); ICH E2A",
+      "whoReference": "WHO GCP guidelines",
+      "day0Definition": "Date investigator becomes aware of SAE",
+      "keyDifferences": "E6(R3) modernizes approach; Principles-based with fit-for-purpose documentation",
+      "notes": "2025 update; Addresses decentralized trials; Risk-proportionate monitoring"
+    },
+    {
+      "eventReportType": "Selective Safety Collection (E19)",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "SAEs/AESIs per standard; Non-serious per protocol",
+        "authority": "21 CFR 312.32; FDA guidance"
+      },
+      "ema": {
+        "timeframe": "Per protocol; Regulatory agreement advised",
+        "authority": "EU CTR implementation; ICH E19"
+      },
+      "ichReference": "ICH E19",
+      "whoReference": "N/A",
+      "day0Definition": "Per protocol definition",
+      "keyDifferences": "Late-stage trials only; Well-characterized safety profile required",
+      "notes": "Reduces routine AE collection while maintaining signal detection"
+    },
+    {
+      "eventReportType": "Blood Product Haemovigilance Report",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "Per BPDR: 45 days",
+        "authority": "21 CFR 600.14; 21 CFR 606"
+      },
+      "ema": {
+        "timeframe": "15 days serious; National haemovigilance timelines",
+        "authority": "Directive 2002/98/EC; GVP P.IV"
+      },
+      "ichReference": "N/A",
+      "whoReference": "WHO blood safety",
+      "day0Definition": "Date of awareness; Batch/donation link required",
+      "keyDifferences": "Haemovigilance systems vary; Traceability critical",
+      "notes": "Coordination between MAH PV and blood establishments required"
+    },
+    {
+      "eventReportType": "eCTD Safety Module Submission",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "NDA/BLA submission deadline",
+        "authority": "21 CFR 314.50; 21 CFR 601.2"
+      },
+      "ema": {
+        "timeframe": "MAA submission deadline",
+        "authority": "Notice to Applicants Vol 2B"
+      },
+      "ichReference": "ICH M2; ICH M4E",
+      "whoReference": "WHO prequalification",
+      "day0Definition": "Application submission date",
+      "keyDifferences": "Format harmonized via ICH CTD; Regional Module 1 variations",
+      "notes": "ISS format per M4E; Electronic submission via regional gateways"
+    },
+    {
+      "eventReportType": "ILAP Innovation Passport Application",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "N/A",
+        "authority": "N/A"
+      },
+      "ema": {
+        "timeframe": "Rolling submission enabled",
+        "authority": "MHRA ILAP Guidance"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Application date",
+      "keyDifferences": "UK-specific pathway; FDA Breakthrough/EMA PRIME are comparators",
+      "notes": "Enhanced regulatory support; TDP integrates NICE/SMC"
+    },
+    {
+      "eventReportType": "Conditional MA Annual Renewal",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "FDA Accelerated Approval: Annual review",
+        "authority": "FDA Accelerated Approval guidance"
+      },
+      "ema": {
+        "timeframe": "Annual renewal application",
+        "authority": "EU CMA: Reg 726/2004 Art 14-a; UK CMA guidance"
+      },
+      "ichReference": "N/A",
+      "whoReference": "WHO EUL",
+      "day0Definition": "Approval anniversary",
+      "keyDifferences": "All regions require annual review of conditional approvals; Specific obligations tracked",
+      "notes": "Failure to meet obligations may result in MA withdrawal"
+    },
+    {
+      "eventReportType": "EVDAS eRMR Generation",
+      "reportCategory": "Signal",
+      "fda": {
+        "timeframe": "N/A (FDA FAERS different)",
+        "authority": "OpenFDA; FAERS dashboard"
+      },
+      "ema": {
+        "timeframe": "Per GVP IX schedule",
+        "authority": "EudraVigilance Access Policy"
+      },
+      "ichReference": "N/A",
+      "whoReference": "VigiBase access",
+      "day0Definition": "Per signal detection cycle",
+      "keyDifferences": "EU provides most comprehensive MAH access via EVDAS; FDA more limited",
+      "notes": "eRMRs support signal detection; Statistical outputs available"
+    },
+    {
+      "eventReportType": "PSMF Inspection Availability",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "N/A (no PSMF equivalent)",
+        "authority": "21 CFR 314.80(b) written procedures"
+      },
+      "ema": {
+        "timeframe": "Within 7 days of request",
+        "authority": "GVP Module II; Annex II"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Inspection notification date",
+      "keyDifferences": "PSMF is EU/UK-specific; US requires procedures but no master file",
+      "notes": "Primary inspection document; Must reflect current system accurately"
+    },
+    {
+      "eventReportType": "Adaptive Trial Safety Adaptation",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Per protocol; FDA engagement recommended",
+        "authority": "FDA Adaptive Designs Guidance"
+      },
+      "ema": {
+        "timeframe": "Per protocol; DMC recommendation",
+        "authority": "ICH E20; EMA Reflection Paper"
+      },
+      "ichReference": "ICH E20",
+      "whoReference": "WHO R&D Blueprint",
+      "day0Definition": "Per pre-specified triggers",
+      "keyDifferences": "Safety-driven adaptations per DMC; Pre-specification critical",
+      "notes": "Includes stopping rules, sample size changes, arm dropping"
+    },
+    {
+      "eventReportType": "Regional E2B(R3) Validation",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "FDA ESG validation",
+        "authority": "FDA E2B(R3) IG v3.5"
+      },
+      "ema": {
+        "timeframe": "EudraVigilance validation",
+        "authority": "EU E2B(R3) IG"
+      },
+      "ichReference": "ICH E2B(R3)",
+      "whoReference": "VigiFlow",
+      "day0Definition": "Submission timestamp",
+      "keyDifferences": "Core E2B(R3) harmonized; Regional IGs add specific rules",
+      "notes": "Validation failures = rejected submission; Monitor acknowledgments"
+    },
+    {
+      "eventReportType": "Medical Device Report (MDR) - Standard",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "30 calendar days",
+        "authority": "21 CFR 803"
+      },
+      "ema": {
+        "timeframe": "Per EU MDR 2017/745",
+        "authority": "EUDAMED vigilance"
+      },
+      "ichReference": "N/A",
+      "whoReference": "IMDRF",
+      "day0Definition": "Date manufacturer becomes aware",
+      "keyDifferences": "Device timelines (30 days) differ from drug (15 days); Forms differ",
+      "notes": "Combination products may require dual reporting"
+    },
+    {
+      "eventReportType": "Medical Device Report (MDR) - Expedited",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "5 work days",
+        "authority": "21 CFR 803.53"
+      },
+      "ema": {
+        "timeframe": "Immediate for serious public health threat",
+        "authority": "EU MDR Art. 87"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Date remedial action initiated or FDA request",
+      "keyDifferences": "FDA 5-day expedited for remedial action; EU immediate for serious threats",
+      "notes": "Triggered by remedial action need or FDA written request"
+    },
+    {
+      "eventReportType": "Combination Product Safety Report",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Drug PMOA: 15 days; Device PMOA: 30 days",
+        "authority": "21 CFR Part 4"
+      },
+      "ema": {
+        "timeframe": "Per constituent regulations",
+        "authority": "EU combined approach"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Per applicable regulations",
+      "keyDifferences": "PMOA determines primary timeline; May report to multiple centers",
+      "notes": "Request for Designation (RFD) clarifies requirements"
+    },
+    {
+      "eventReportType": "VigiBase National Submission",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Per national requirements",
+        "authority": "N/A - National centre data"
+      },
+      "ema": {
+        "timeframe": "Per national requirements",
+        "authority": "N/A"
+      },
+      "ichReference": "N/A",
+      "whoReference": "WHO PIDM membership",
+      "day0Definition": "Per national centre",
+      "keyDifferences": "Not MAH submission; National centres contribute",
+      "notes": "WHO-UMC aggregates global data for signal detection"
+    },
+    {
+      "eventReportType": "SPOR Data Maintenance",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Continuous; Updates within 30 days of changes",
+        "authority": "N/A"
+      },
+      "ema": {
+        "timeframe": "Per SPOR implementation",
+        "authority": "EMA SPOR; IDMP timeline"
+      },
+      "ichReference": "ISO IDMP",
+      "whoReference": "WHO Drug Dictionary",
+      "day0Definition": "Date of organizational/product change",
+      "keyDifferences": "EU most advanced IDMP implementation; Global adoption evolving",
+      "notes": "OMS, RMS, SMS, PMS maintenance requirements"
+    },
+    {
+      "eventReportType": "CIOMS Clinical Trial Safety Review",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Per protocol; Typically monthly/quarterly",
+        "authority": "21 CFR 312.32; 312.33"
+      },
+      "ema": {
+        "timeframe": "Per protocol; DSUR annually",
+        "authority": "ICH E2F; CIOMS VI"
+      },
+      "ichReference": "CIOMS VI",
+      "whoReference": "WHO GCP",
+      "day0Definition": "Protocol-defined intervals",
+      "keyDifferences": "CIOMS VI provides practical guidance beyond ICH requirements",
+      "notes": "Aggregate safety reviews; DMC interactions; Signal detection"
+    },
+    {
+      "eventReportType": "ISO IDMP Implementation",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "EU: Per SPOR phases; Others: TBD",
+        "authority": "FDA UNII timeline"
+      },
+      "ema": {
+        "timeframe": "Per SPOR implementation phases",
+        "authority": "EU IDMP implementation"
+      },
+      "ichReference": "ISO 11615/11616/11238/11239/11240",
+      "whoReference": "WHO Drug Dictionary",
+      "day0Definition": "Regional implementation dates",
+      "keyDifferences": "EU leading implementation; Global timeline uncertain",
+      "notes": "Foundation for global PV data interoperability"
+    },
+    {
+      "eventReportType": "Biologics CBE-0 Safety Labeling Change",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "Immediate upon submission",
+        "authority": "21 CFR 601.12(f)(2)"
+      },
+      "ema": {
+        "timeframe": "Type II variation (requires approval)",
+        "authority": "EC 1234/2008"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Date of safety signal determination",
+      "keyDifferences": "FDA CBE-0 allows immediate implementation; EU Type II requires pre-approval (60-90 days)",
+      "notes": "Parallel to 314.70 for drugs; Critical for rapid biologics labeling response"
+    },
+    {
+      "eventReportType": "Annual Product Review (APR)",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Yearly per 21 CFR 211.180(e)",
+        "authority": "21 CFR 211.180(e)"
+      },
+      "ema": {
+        "timeframe": "Product Quality Review per GMP",
+        "authority": "EU GMP Chapter 1"
+      },
+      "ichReference": "N/A",
+      "whoReference": "WHO GMP",
+      "day0Definition": "Annual from first batch release",
+      "keyDifferences": "US APR includes complaint review; EU PQR has similar scope",
+      "notes": "Must include complaint trends - PV-relevant findings"
+    },
+    {
+      "eventReportType": "Pregnancy Registry Interim Report",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Annually per PMC/PMR",
+        "authority": "FDA Pregnancy Registry Guidance"
+      },
+      "ema": {
+        "timeframe": "Per RMP/PASS schedule",
+        "authority": "GVP Module P.III"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Registry anniversary",
+      "keyDifferences": "FDA registry-focused; EU PPP more prescriptive for teratogens",
+      "notes": "Supports PLLR labeling updates"
+    },
+    {
+      "eventReportType": "Drug Safety Communication Response",
+      "reportCategory": "Expedited",
+      "fda": {
+        "timeframe": "Immediate monitoring; Labeling per 314.70/601.12",
+        "authority": "FDA DSC process"
+      },
+      "ema": {
+        "timeframe": "DHPC with NCA approval",
+        "authority": "GVP Module XV"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Date of DSC publication",
+      "keyDifferences": "FDA proactive; EU requires DHPC approval before distribution",
+      "notes": "Must have process to monitor and respond to DSCs"
+    },
+    {
+      "eventReportType": "REMS Assessment",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "18 months, 3 years, 7 years minimum",
+        "authority": "FDCA 505-1(d); 21 CFR 314.520"
+      },
+      "ema": {
+        "timeframe": "N/A (RMP updates instead)",
+        "authority": "GVP Module XVI"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "REMS approval date",
+      "keyDifferences": "REMS assessment US-specific; EU uses RMP effectiveness evaluation",
+      "notes": "May be required more frequently based on REMS"
+    },
+    {
+      "eventReportType": "Part 11 System Audit",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Per internal audit schedule",
+        "authority": "21 CFR Part 11"
+      },
+      "ema": {
+        "timeframe": "Per GMP Annex 11 schedule",
+        "authority": "EU GMP Annex 11"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Per SOP",
+      "keyDifferences": "Part 11 most prescriptive; EU Annex 11 principles-based",
+      "notes": "PV databases must comply; Audit trail review critical"
+    },
+    {
+      "eventReportType": "OTC Monograph AE Annual Report",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Annual per 21 CFR 310.305",
+        "authority": "21 CFR 310.305(c)"
+      },
+      "ema": {
+        "timeframe": "N/A (OTC monograph US-specific)",
+        "authority": "N/A"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Calendar year end",
+      "keyDifferences": "OTC monograph system unique to US",
+      "notes": "Different requirements from NDA products"
+    },
+    {
+      "eventReportType": "Sentinel Query Response",
+      "reportCategory": "Labeling",
+      "fda": {
+        "timeframe": "Per FDA request",
+        "authority": "FDAAA Section 905; FDA query"
+      },
+      "ema": {
+        "timeframe": "N/A (ENCePP is EU equivalent)",
+        "authority": "N/A"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Date of FDA query",
+      "keyDifferences": "FDA active surveillance; May use to support PMR requirements",
+      "notes": "MAH should understand Sentinel methodology"
+    },
+    {
+      "eventReportType": "Biosimilar Immunogenicity Monitoring",
+      "reportCategory": "Periodic",
+      "fda": {
+        "timeframe": "Per PMR/label commitment",
+        "authority": "BPCIA 351(k); FDA biosimilar guidance"
+      },
+      "ema": {
+        "timeframe": "Per RMP",
+        "authority": "EMA biosimilar guidelines"
+      },
+      "ichReference": "N/A",
+      "whoReference": "N/A",
+      "day0Definition": "Per protocol",
+      "keyDifferences": "Immunogenicity focus for all biosimilars; Interchangeability US-specific",
+      "notes": "Enhanced PV for anti-drug antibody monitoring"
+    }
+  ]
+}

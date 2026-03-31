@@ -1,0 +1,15 @@
+/**
+ * Design Tokens Index
+ *
+ * Central import for all design token files.
+ * Import this file to get access to all token CSS custom properties.
+ *
+ * Load order:
+ * 1. golden-scale.css - Core tokens (colors, typography, spacing)
+ * 2. dark-mode.css        - Theme overrides (prefers-color-scheme + .dark/.light)
+ * 3. container-queries.css - Component-level responsive utilities
+ */
+
+@import './golden-scale.css';
+@import './dark-mode.css';
+@import './container-queries.css';

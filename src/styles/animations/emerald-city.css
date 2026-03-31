@@ -1,0 +1,129 @@
+/**
+ * Emerald City Effects
+ *
+ * Premium visual effects for the NexVigilant brand:
+ * - Metallic sweeps and holographic effects
+ * - Ambient particles and bokeh
+ * - City glow and prismatic pulses
+ *
+ * SOURCE OF TRUTH: This file is the canonical source for complex keyframes.
+ *
+ * TAILWIND RELATIONSHIP:
+ * Some keyframes exist in both places. The rules are:
+ * - CSS keyframes → Use when you need CSS variables (rgba(var(--token), opacity))
+ * - Tailwind keyframes → Use for simple transforms without variables
+ *
+ * Duplicates (CSS preferred):
+ * - metallic-sweep: CSS uses background-position with variables
+ * - float-particle: CSS has full 4-step animation
+ *
+ * Complementary (both valid):
+ * - shimmer: CSS uses background-position, Tailwind uses translateX
+ * - city-glow: CSS uses box-shadow, Tailwind uses opacity/transform
+ */
+
+@keyframes metallic-sweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes prismatic-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    opacity: 0.5;
+    filter: hue-rotate(10deg);
+  }
+}
+
+@keyframes light-ray-drift {
+  0%, 100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translateY(-5px) scaleY(1.05);
+    opacity: 0.25;
+  }
+}
+
+@keyframes bokeh-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.4;
+  }
+  33% {
+    transform: translate(10px, -15px) scale(1.1);
+    opacity: 0.6;
+  }
+  66% {
+    transform: translate(-5px, -10px) scale(0.95);
+    opacity: 0.5;
+  }
+}
+
+@keyframes city-glow {
+  0%, 100% {
+    opacity: 0.4;
+    box-shadow: 0 0 60px rgba(var(--nex-cyan-glow-rgb), 0.15), 0 0 120px rgba(var(--nex-cyan-rgb), 0.1);
+  }
+  50% {
+    opacity: 0.6;
+    box-shadow: 0 0 80px rgba(var(--nex-cyan-glow-rgb), 0.2), 0 0 160px rgba(var(--nex-cyan-rgb), 0.15);
+  }
+}
+
+@keyframes float-particle {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-30px) translateX(5px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes ambient-float {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translate(20px, -30px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-15px, -20px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translate(10px, -40px);
+    opacity: 0.6;
+  }
+}
+
+@keyframes holographic {
+  0%, 100% {
+    background-position: 0% 50%;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    background-position: 100% 50%;
+    filter: hue-rotate(30deg);
+  }
+}

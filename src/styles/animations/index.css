@@ -1,0 +1,19 @@
+/**
+ * Animations Index
+ *
+ * Imports all animation modules in logical order:
+ * 1. General UI - basic fade, float, pulse (foundational)
+ * 2. Line/Path - SVG stroke animations
+ * 3. Emerald City - brand-specific premium effects
+ * 4. Circuits - tech/PCB visual effects
+ * 5. Text Effects - gradients, glitch, morphing
+ * 6. UI Components - component-specific animations
+ */
+
+@import './general-ui.css';
+@import './line-path.css';
+@import './emerald-city.css';
+@import './circuits.css';
+@import './text-effects.css';
+@import './ui-components.css';
+@import './scroll-driven.css';

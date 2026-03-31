@@ -1,0 +1,679 @@
+{
+  "lastUpdated": "2025-11-27T12:00:00Z",
+  "currentVersion": "0.12.0",
+  "entries": [
+    {
+      "version": "0.12.0",
+      "date": "2025-11-27",
+      "title": "Community Platform Launch",
+      "description": "Major platform release with enhanced circle system, multi-dimensional discovery, and comprehensive community features. This release transforms NexVigilant into a complete professional development ecosystem.",
+      "isMajor": true,
+      "changes": {
+        "features": [
+          {
+            "description": "Enhanced circle system with multi-dimensional discovery",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "Template-based circle creation wizard",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "Discovery Quiz for personalized circle matching",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "Direct messaging with real-time conversations",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "User profiles with contribution scores and badges",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "Notification system with preference controls",
+            "category": "community",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "Brand tagline added to documentation",
+            "category": "platform",
+            "type": "improvement"
+          },
+          {
+            "description": "Complete PostHog cleanup from config and diagnostics",
+            "category": "platform",
+            "type": "improvement"
+          },
+          {
+            "description": "Remote patterns added for user avatars and Firebase Storage",
+            "category": "platform",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [
+          {
+            "description": "View Circle routing correctly uses forum ID",
+            "category": "community",
+            "type": "fix"
+          },
+          {
+            "description": "Create Circle validation shows visible inline errors",
+            "category": "community",
+            "type": "fix"
+          },
+          {
+            "description": "Discovery Quiz enhanced with visual feedback on selections",
+            "category": "community",
+            "type": "fix"
+          }
+        ],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      },
+      "highlights": [
+        {
+          "title": "Professional Circles",
+          "description": "Join topic-based circles to connect with peers in Signal Detection, Regulatory Affairs, Medical Writing, and more. Find your professional community.",
+          "category": "community",
+          "icon": "Users"
+        },
+        {
+          "title": "Discovery Quiz",
+          "description": "Take our personalized quiz to find circles that match your expertise, interests, and career stage. Get matched with the right communities.",
+          "category": "community",
+          "icon": "Search"
+        },
+        {
+          "title": "Direct Messaging",
+          "description": "Connect privately with other professionals. Start conversations, share insights, and build your network directly within the platform.",
+          "category": "community",
+          "icon": "MessageSquare"
+        },
+        {
+          "title": "Contribution Badges",
+          "description": "Earn recognition for your contributions. Build your reputation with badges that showcase your expertise and community involvement.",
+          "category": "community",
+          "icon": "Award"
+        },
+        {
+          "title": "Smart Notifications",
+          "description": "Stay informed with customizable notifications. Control what you see and when, so you never miss important updates from your circles.",
+          "category": "community",
+          "icon": "Bell"
+        }
+      ]
+    },
+    {
+      "version": "0.11.0",
+      "date": "2025-11-25",
+      "title": "UAT Polish & Intelligence Hub",
+      "description": "User acceptance testing fixes and Intelligence Hub content delivery. Complete MDX-powered article system with multiple content types.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "Intelligence Hub with MDX-powered articles",
+            "category": "intelligence",
+            "type": "feature"
+          },
+          {
+            "description": "Field Notes, Perspectives, Podcasts, and Publications content types",
+            "category": "intelligence",
+            "type": "feature"
+          },
+          {
+            "description": "Newsletter signup with interest-based preferences",
+            "category": "intelligence",
+            "type": "feature"
+          },
+          {
+            "description": "Content cards with category filtering",
+            "category": "intelligence",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "UAT bug fixes across community platform",
+            "category": "community",
+            "type": "improvement"
+          },
+          {
+            "description": "Form validation improvements with visible errors",
+            "category": "platform",
+            "type": "improvement"
+          },
+          {
+            "description": "Enhanced visual feedback for interactive elements",
+            "category": "platform",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [
+          {
+            "description": "Pricing CTA enables signup with plan pre-selection",
+            "category": "platform",
+            "type": "fix"
+          },
+          {
+            "description": "Back button navigates to parent route instead of browser history",
+            "category": "platform",
+            "type": "fix"
+          },
+          {
+            "description": "Admin Community Card enabled with link to dashboard",
+            "category": "community",
+            "type": "fix"
+          }
+        ],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.10.0",
+      "date": "2025-11-24",
+      "title": "Security Hardening & Launch Prep",
+      "description": "Critical security vulnerabilities addressed with comprehensive hardening. GitHub security features implemented and security audit completed.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "GitHub security features and templates",
+            "category": "security",
+            "type": "feature"
+          },
+          {
+            "description": "Comprehensive security audit implementation",
+            "category": "security",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "Security hardening across platform",
+            "category": "security",
+            "type": "improvement"
+          },
+          {
+            "description": "Dependabot alerts addressed (6 vulnerabilities)",
+            "category": "security",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [],
+        "security": [
+          {
+            "description": "Admin authentication added to all admin API routes",
+            "category": "security",
+            "type": "security"
+          },
+          {
+            "description": "DOMPurify sanitization for all user-generated content",
+            "category": "security",
+            "type": "security"
+          },
+          {
+            "description": "Error boundaries added for Community, Admin, and Profile sections",
+            "category": "security",
+            "type": "security"
+          },
+          {
+            "description": "Critical security vulnerabilities patched",
+            "category": "security",
+            "type": "security"
+          }
+        ],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.9.0",
+      "date": "2025-11-23",
+      "title": "Admin Suite & KSB Builder",
+      "description": "Complete admin dashboard suite with KSB management, course builder, and pipeline monitoring. Full CRUD operations for all content types.",
+      "isMajor": true,
+      "changes": {
+        "features": [
+          {
+            "description": "KSB Management system with framework integration",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Course builder with module/lesson CRUD",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Pipeline monitoring dashboard",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Badge management system",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "Admin dashboards for Academy, Community, and Content",
+            "category": "platform",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "Lazy-loaded Recharts components for faster loads",
+            "category": "platform",
+            "type": "improvement"
+          },
+          {
+            "description": "Real-time stats visualization",
+            "category": "platform",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.8.0",
+      "date": "2025-11-18",
+      "title": "KSB Framework Integration",
+      "description": "Complete PV framework integration with 1,286 KSBs across 15 domains. EPA, CPA, and Domain competency mapping.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "PV Framework with 15 competency domains (D01-D15)",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "1,286 Knowledge/Skills/Behaviors mapped to domains",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "EPA alignment (10 core + 10 executive)",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "CPA integration (8 Critical Practice Activities)",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Proficiency levels L1-L5++ with behavioral anchors",
+            "category": "academy",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "Framework browser in admin UI",
+            "category": "platform",
+            "type": "improvement"
+          },
+          {
+            "description": "Guardian rebrand from Sentinel",
+            "category": "platform",
+            "type": "improvement"
+          },
+          {
+            "description": "Charter documentation updated to v1.02",
+            "category": "platform",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [
+          {
+            "description": "Credibility review fixes on landing pages",
+            "category": "platform",
+            "type": "fix"
+          }
+        ],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.7.0",
+      "date": "2025-11-16",
+      "title": "Pipeline Management & Admin Tools",
+      "description": "Course generation pipeline with stage monitoring. Admin tools for content creation and quality assurance.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "Course generation pipeline with Genkit AI",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Pipeline stage monitoring dashboard",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Content quality validation system",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Admin tools for batch operations",
+            "category": "platform",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "Genkit AI integration with Gemini 2.5",
+            "category": "academy",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.6.0",
+      "date": "2025-11-14",
+      "title": "Assessment Tools & Nucleus Redesign",
+      "description": "Competency assessment tools and complete Nucleus member portal redesign with metallic orb navigation.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "Competency Assessment tool with EPA/CPA alignment",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Fellowship Evaluator for program readiness",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Maturity Model assessment for organizations",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Skills tracker with career path matching",
+            "category": "academy",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "Nucleus Hub redesign with metallic orbs",
+            "category": "platform",
+            "type": "improvement"
+          },
+          {
+            "description": "Responsive layout improvements",
+            "category": "platform",
+            "type": "improvement"
+          },
+          {
+            "description": "Brand color alignment across sections",
+            "category": "platform",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [],
+        "security": [],
+        "accessibility": [
+          {
+            "description": "WCAG 2.1 Level AA compliance improvements",
+            "category": "accessibility",
+            "type": "accessibility"
+          },
+          {
+            "description": "Keyboard navigation for interactive elements",
+            "category": "accessibility",
+            "type": "accessibility"
+          }
+        ],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.5.0",
+      "date": "2025-11-12",
+      "title": "LMS Enhancement",
+      "description": "Enhanced learning management system with video support, quizzes, and progress tracking.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "Video lessons with timestamp notes",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "3 quiz types with server validation",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Progress tracking with completion certificates",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Downloadable course resources",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "5-star pathway feedback system",
+            "category": "academy",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "Course enrollment flow optimization",
+            "category": "academy",
+            "type": "improvement"
+          },
+          {
+            "description": "Module navigation improvements",
+            "category": "academy",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.4.0",
+      "date": "2025-11-08",
+      "title": "Community Platform Foundation",
+      "description": "Initial community platform with forums, posts, and user interactions.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "Community forums with topic categories",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "Rich text posts with markdown support",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "5 reaction types (like, love, insightful, helpful, celebrate)",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "For You Feed with trending posts",
+            "category": "community",
+            "type": "feature"
+          },
+          {
+            "description": "User contribution scoring",
+            "category": "community",
+            "type": "feature"
+          }
+        ],
+        "improvements": [
+          {
+            "description": "Post search with filters",
+            "category": "community",
+            "type": "improvement"
+          }
+        ],
+        "fixes": [],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.3.0",
+      "date": "2025-11-05",
+      "title": "Academy Phase 1",
+      "description": "Initial Academy LMS with course structure, enrollment, and basic lesson viewing.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "Academy LMS with course management",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Course enrollment system",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Module and lesson structure",
+            "category": "academy",
+            "type": "feature"
+          },
+          {
+            "description": "Course catalog with filtering",
+            "category": "academy",
+            "type": "feature"
+          }
+        ],
+        "improvements": [],
+        "fixes": [],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.2.0",
+      "date": "2025-11-04",
+      "title": "Foundation & Authentication",
+      "description": "Platform foundation with Firebase authentication, user profiles, and core marketing pages.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "Firebase Authentication (email/password, Google)",
+            "category": "platform",
+            "type": "feature"
+          },
+          {
+            "description": "User profiles with Firestore sync",
+            "category": "platform",
+            "type": "feature"
+          },
+          {
+            "description": "Waitlist signup for early access",
+            "category": "platform",
+            "type": "feature"
+          },
+          {
+            "description": "Marketing pages (About, Services, Pricing)",
+            "category": "platform",
+            "type": "feature"
+          },
+          {
+            "description": "Legal pages (Privacy, Terms)",
+            "category": "platform",
+            "type": "feature"
+          }
+        ],
+        "improvements": [],
+        "fixes": [],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    },
+    {
+      "version": "0.1.0",
+      "date": "2025-10-30",
+      "title": "Project Initialization",
+      "description": "Initial project setup with Next.js 16, TypeScript, Tailwind CSS, and shadcn/ui component library.",
+      "isMajor": false,
+      "changes": {
+        "features": [
+          {
+            "description": "Next.js 16 with App Router and Turbopack",
+            "category": "platform",
+            "type": "feature"
+          },
+          {
+            "description": "TypeScript 5 strict mode configuration",
+            "category": "platform",
+            "type": "feature"
+          },
+          {
+            "description": "Tailwind CSS with custom theme",
+            "category": "platform",
+            "type": "feature"
+          },
+          {
+            "description": "shadcn/ui component library integration",
+            "category": "platform",
+            "type": "feature"
+          },
+          {
+            "description": "Firebase project configuration",
+            "category": "platform",
+            "type": "feature"
+          }
+        ],
+        "improvements": [],
+        "fixes": [],
+        "security": [],
+        "accessibility": [],
+        "breaking": []
+      }
+    }
+  ]
+}

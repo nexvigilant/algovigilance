@@ -1,0 +1,19 @@
+/**
+ * Effects Index
+ *
+ * Imports all visual effect modules in logical order:
+ * 1. Emerald City - brand-specific ambient effects
+ * 2. Circuit modules - tech/PCB visual system
+ *    - Grid & nodes (foundational patterns)
+ *    - Controls (interactive elements)
+ *    - Effects (visual enhancements)
+ *    - Utilities (loading, scroll, a11y)
+ * 3. Crystal - glass/frost effects
+ */
+
+@import './emerald-city.css';
+@import './circuit-grid.css';
+@import './circuit-controls.css';
+@import './circuit-effects.css';
+@import './circuit-utilities.css';
+@import './crystal.css';

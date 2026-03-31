@@ -1,0 +1,32 @@
+/**
+ * NexVigilant Styles
+ *
+ * Master index file for modular CSS architecture
+ * Import this file to include all custom styles
+ *
+ * CSS LAYERS (in cascade order, lowest to highest priority):
+ * 1. tokens    - Design tokens, CSS custom properties (foundation)
+ * 2. animations - Keyframe definitions (used by effects)
+ * 3. effects   - Visual effect classes (circuit, crystal, emerald-city)
+ * 4. utilities - Override utilities (highest specificity intent)
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@layer
+ */
+
+/* Declare layer order explicitly - this controls cascade priority */
+@layer tokens, animations, effects, utilities;
+
+/* Design tokens - Golden scale typography, spacing, layout */
+@layer tokens {
+  @import './tokens/index.css';
+}
+
+/* Animation keyframes - must come before effects that use them */
+@layer animations {
+  @import './animations/index.css';
+}
+
+/* Visual effects - Emerald City, circuit, crystal */
+@layer effects {
+  @import './effects/index.css';
+}

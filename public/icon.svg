@@ -1,0 +1,103 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer eye shape -->
+  <path
+    d="M100 60C60 60 30 85 20 100C30 115 60 140 100 140C140 140 170 115 180 100C170 85 140 60 100 60Z"
+    stroke="#00D9FF"
+    stroke-width="3"
+    fill="#0A1628"
+  />
+
+  <!-- Iris outer ring -->
+  <circle
+    cx="100"
+    cy="100"
+    r="25"
+    stroke="#00D9FF"
+    stroke-width="2"
+    fill="#0F1F3D"
+  />
+
+  <!-- Iris inner detail -->
+  <circle
+    cx="100"
+    cy="100"
+    r="18"
+    stroke="#33E0FF"
+    stroke-width="1"
+    fill="none"
+    opacity="0.6"
+  />
+
+  <!-- Pupil -->
+  <circle
+    cx="100"
+    cy="100"
+    r="12"
+    fill="#050B14"
+    stroke="#00D9FF"
+    stroke-width="1"
+  />
+
+  <!-- Light reflection -->
+  <circle
+    cx="105"
+    cy="95"
+    r="4"
+    fill="#33E0FF"
+    opacity="0.8"
+  />
+
+  <!-- Scanning lines -->
+  <line
+    x1="70"
+    y1="100"
+    x2="85"
+    y2="100"
+    stroke="#00D9FF"
+    stroke-width="1"
+    opacity="0.4"
+  />
+  <line
+    x1="115"
+    y1="100"
+    x2="130"
+    y2="100"
+    stroke="#00D9FF"
+    stroke-width="1"
+    opacity="0.4"
+  />
+
+  <!-- Corner brackets -->
+  <path
+    d="M 65 75 L 55 75 L 55 85"
+    stroke="#00D9FF"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.3"
+  />
+  <path
+    d="M 135 75 L 145 75 L 145 85"
+    stroke="#00D9FF"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.3"
+  />
+  <path
+    d="M 65 125 L 55 125 L 55 115"
+    stroke="#00D9FF"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.3"
+  />
+  <path
+    d="M 135 125 L 145 125 L 145 115"
+    stroke="#00D9FF"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.3"
+  />
+</svg>

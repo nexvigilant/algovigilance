@@ -1,0 +1,698 @@
+[
+  {
+    "epaId": "EPA-01",
+    "domainId": "D04",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-01",
+    "domainId": "D02",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-01",
+    "domainId": "D03",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-01",
+    "domainId": "D01",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-01",
+    "domainId": "D14",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-01",
+    "domainId": "D06",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-02",
+    "domainId": "D15",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-02",
+    "domainId": "D08",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-02",
+    "domainId": "D02",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-02",
+    "domainId": "D05",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-02",
+    "domainId": "D09",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-02",
+    "domainId": "D14",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-03",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-03",
+    "domainId": "D10",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-03",
+    "domainId": "D01",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-03",
+    "domainId": "D13",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-03",
+    "domainId": "D02",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-03",
+    "domainId": "D03",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-04",
+    "domainId": "D07",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-04",
+    "domainId": "D09",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-04",
+    "domainId": "D08",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-04",
+    "domainId": "D05",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-04",
+    "domainId": "D15",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-04",
+    "domainId": "D10",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-04",
+    "domainId": "D06",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-05",
+    "domainId": "D08",
+    "role": "Primary",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-05",
+    "domainId": "D02",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-05",
+    "domainId": "D10",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-05",
+    "domainId": "D03",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-05",
+    "domainId": "D15",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-05",
+    "domainId": "D14",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-05",
+    "domainId": "D05",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-06",
+    "domainId": "D12",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-06",
+    "domainId": "D11",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-06",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-06",
+    "domainId": "D10",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-06",
+    "domainId": "D02",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-06",
+    "domainId": "D06",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-06",
+    "domainId": "D03",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-07",
+    "domainId": "D11",
+    "role": "Primary",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-07",
+    "domainId": "D13",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-07",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-07",
+    "domainId": "D06",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-07",
+    "domainId": "D10",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-07",
+    "domainId": "D03",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-08",
+    "domainId": "D08",
+    "role": "Primary",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-08",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-08",
+    "domainId": "D01",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-08",
+    "domainId": "D10",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-08",
+    "domainId": "D13",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-08",
+    "domainId": "D05",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-09",
+    "domainId": "D12",
+    "role": "Primary",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-09",
+    "domainId": "D01",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-09",
+    "domainId": "D11",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-09",
+    "domainId": "D04",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-09",
+    "domainId": "D07",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-09",
+    "domainId": "D05",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-09",
+    "domainId": "D06",
+    "role": "Supporting",
+    "level": "L2"
+  },
+  {
+    "epaId": "EPA-10",
+    "domainId": "D01",
+    "role": "Primary",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-10",
+    "domainId": "D08",
+    "role": "Primary",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-10",
+    "domainId": "D12",
+    "role": "Primary",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-10",
+    "domainId": "D15",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-10",
+    "domainId": "D14",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-10",
+    "domainId": "D03",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-10",
+    "domainId": "D06",
+    "role": "Supporting",
+    "level": "L3"
+  },
+  {
+    "epaId": "EPA-11",
+    "domainId": "D13",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-11",
+    "domainId": "D11",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-11",
+    "domainId": "D12",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-11",
+    "domainId": "D01",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-11",
+    "domainId": "D10",
+    "role": "Supporting",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-12",
+    "domainId": "D15",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-12",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-12",
+    "domainId": "D11",
+    "role": "Supporting",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-13",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-13",
+    "domainId": "D13",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-13",
+    "domainId": "D01",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-14",
+    "domainId": "D12",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-14",
+    "domainId": "D01",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-14",
+    "domainId": "D13",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-14",
+    "domainId": "D14",
+    "role": "Supporting",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-14",
+    "domainId": "D10",
+    "role": "Supporting",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-14",
+    "domainId": "D05",
+    "role": "Supporting",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-15",
+    "domainId": "D08",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-15",
+    "domainId": "D09",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-15",
+    "domainId": "D10",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-15",
+    "domainId": "D05",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-16",
+    "domainId": "D11",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-16",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-16",
+    "domainId": "D13",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-16",
+    "domainId": "D12",
+    "role": "Supporting",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-16",
+    "domainId": "D10",
+    "role": "Supporting",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-16",
+    "domainId": "D06",
+    "role": "Supporting",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-17",
+    "domainId": "D03",
+    "role": "Explicit Emphasis",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-17",
+    "domainId": "D05",
+    "role": "Explicit Emphasis",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-17",
+    "domainId": "D06",
+    "role": "Explicit Emphasis",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-17",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-17",
+    "domainId": "D01",
+    "role": "Supporting",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-18",
+    "domainId": "D13",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-18",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-18",
+    "domainId": "D12",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-18",
+    "domainId": "D11",
+    "role": "Supporting",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-18",
+    "domainId": "D15",
+    "role": "Supporting",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-19",
+    "domainId": "D14",
+    "role": "Primary",
+    "level": "L5++"
+  },
+  {
+    "epaId": "EPA-19",
+    "domainId": "D13",
+    "role": "Primary",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-19",
+    "domainId": "D10",
+    "role": "Primary",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-19",
+    "domainId": "D01",
+    "role": "Supporting",
+    "level": "L5"
+  },
+  {
+    "epaId": "EPA-19",
+    "domainId": "D03",
+    "role": "Supporting",
+    "level": "L4"
+  },
+  {
+    "epaId": "EPA-20",
+    "domainId": "D01",
+    "role": "Exceptional",
+    "level": "L5++"
+  },
+  {
+    "epaId": "EPA-20",
+    "domainId": "D14",
+    "role": "Exceptional",
+    "level": "L5++"
+  },
+  {
+    "epaId": "EPA-21",
+    "domainId": "D08",
+    "role": "Primary",
+    "level": "L5++"
+  },
+  {
+    "epaId": "EPA-21",
+    "domainId": "D09",
+    "role": "Primary",
+    "level": "L5++"
+  },
+  {
+    "epaId": "EPA-21",
+    "domainId": "D10",
+    "role": "Primary",
+    "level": "L5++"
+  },
+  {
+    "epaId": "EPA-21",
+    "domainId": "D04",
+    "role": "Supporting",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-21",
+    "domainId": "D07",
+    "role": "Supporting",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-21",
+    "domainId": "D13",
+    "role": "Supporting",
+    "level": "L5+"
+  },
+  {
+    "epaId": "EPA-21",
+    "domainId": "D14",
+    "role": "Supporting",
+    "level": "L5+"
+  }
+]

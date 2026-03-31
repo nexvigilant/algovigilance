@@ -1,0 +1,976 @@
+{
+  "acronyms": [
+    {
+      "acronym": "ADE",
+      "fullTerm": "Adverse Drug Experience",
+      "definition": "Any adverse event associated with the use of a drug in humans, whether or not considered drug related",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "ADR",
+      "fullTerm": "Adverse Drug Reaction",
+      "definition": "A response to a medicinal product which is noxious and unintended",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "AE",
+      "fullTerm": "Adverse Event",
+      "definition": "Any untoward medical occurrence in a patient administered a medicinal product",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "ANDA",
+      "fullTerm": "Abbreviated New Drug Application",
+      "definition": "Application for approval of a generic drug product",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "ATMP",
+      "fullTerm": "Advanced Therapy Medicinal Product",
+      "definition": "Gene therapy, somatic cell therapy, and tissue engineered products",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "BLA",
+      "fullTerm": "Biologics License Application",
+      "definition": "Application for approval of a biological product",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "CBER",
+      "fullTerm": "Center for Biologics Evaluation and Research",
+      "definition": "FDA center responsible for biologics, blood, vaccines",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "CDER",
+      "fullTerm": "Center for Drug Evaluation and Research",
+      "definition": "FDA center responsible for drugs",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "CFR",
+      "fullTerm": "Code of Federal Regulations",
+      "definition": "Codification of US federal regulations",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "CHMP",
+      "fullTerm": "Committee for Medicinal Products for Human Use",
+      "definition": "EMA scientific committee for human medicines",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "CIOMS",
+      "fullTerm": "Council for International Organizations of Medical Sciences",
+      "definition": "International organization developing PV guidance",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "DSUR",
+      "fullTerm": "Development Safety Update Report",
+      "definition": "Annual safety report during clinical development",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "E2A",
+      "fullTerm": "ICH E2A",
+      "definition": "Clinical Safety Data Management: Definitions and Standards",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "E2B",
+      "fullTerm": "ICH E2B",
+      "definition": "Data Elements for Transmission of ICSRs",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "E2C",
+      "fullTerm": "ICH E2C",
+      "definition": "Periodic Benefit-Risk Evaluation Report (PBRER)",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "E2D",
+      "fullTerm": "ICH E2D",
+      "definition": "Post-Approval Safety Data Management",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "E2E",
+      "fullTerm": "ICH E2E",
+      "definition": "Pharmacovigilance Planning",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "E2F",
+      "fullTerm": "ICH E2F",
+      "definition": "Development Safety Update Report",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "ESG",
+      "fullTerm": "Electronic Submissions Gateway",
+      "definition": "FDA portal for electronic regulatory submissions",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "ETASU",
+      "fullTerm": "Elements to Assure Safe Use",
+      "definition": "Restrictive elements within a REMS",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "EudraVigilance",
+      "fullTerm": "European Union Drug Regulating Authorities Pharmacovigilance",
+      "definition": "EU database for ADR reports",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "FAERS",
+      "fullTerm": "FDA Adverse Event Reporting System",
+      "definition": "FDA database for post-market AE reports",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "FDAAA",
+      "fullTerm": "Food and Drug Administration Amendments Act",
+      "definition": "2007 law expanding FDA safety authorities",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "FDASIA",
+      "fullTerm": "FDA Safety and Innovation Act",
+      "definition": "2012 law on drug supply chain and innovation",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "GVP",
+      "fullTerm": "Good Pharmacovigilance Practice",
+      "definition": "EU guidelines for PV activities",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "HCP",
+      "fullTerm": "Healthcare Professional",
+      "definition": "Medical professional (physician, pharmacist, nurse)",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "ICH",
+      "fullTerm": "International Council for Harmonisation",
+      "definition": "Organization harmonizing pharmaceutical regulations",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "ICSR",
+      "fullTerm": "Individual Case Safety Report",
+      "definition": "Report of a single adverse event case",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "IND",
+      "fullTerm": "Investigational New Drug",
+      "definition": "Application to conduct clinical trials",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "MAH",
+      "fullTerm": "Marketing Authorization Holder",
+      "definition": "Entity holding the marketing authorization",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "MedDRA",
+      "fullTerm": "Medical Dictionary for Regulatory Activities",
+      "definition": "Standardized medical terminology for AE coding",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "NDA",
+      "fullTerm": "New Drug Application",
+      "definition": "Application for approval of a new drug",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "PADER",
+      "fullTerm": "Periodic Adverse Drug Experience Report",
+      "definition": "US periodic safety report",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "PBRER",
+      "fullTerm": "Periodic Benefit-Risk Evaluation Report",
+      "definition": "ICH-harmonized periodic safety report",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PMC",
+      "fullTerm": "Postmarketing Commitment",
+      "definition": "Agreed-upon (not required) postmarket study",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "PMR",
+      "fullTerm": "Postmarketing Requirement",
+      "definition": "Required postmarket study or clinical trial",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "PRAC",
+      "fullTerm": "Pharmacovigilance Risk Assessment Committee",
+      "definition": "EMA committee for safety issues",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "PSMF",
+      "fullTerm": "Pharmacovigilance System Master File",
+      "definition": "Document describing MAH's PV system",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "PSUR",
+      "fullTerm": "Periodic Safety Update Report",
+      "definition": "Periodic safety report (replaced by PBRER)",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "QPPV",
+      "fullTerm": "Qualified Person for Pharmacovigilance",
+      "definition": "EU-required individual responsible for PV",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "REMS",
+      "fullTerm": "Risk Evaluation and Mitigation Strategy",
+      "definition": "US risk management program",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "RMP",
+      "fullTerm": "Risk Management Plan",
+      "definition": "EU risk management document",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "SAE",
+      "fullTerm": "Serious Adverse Event",
+      "definition": "AE resulting in death, hospitalization, disability, etc.",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "SUSAR",
+      "fullTerm": "Suspected Unexpected Serious Adverse Reaction",
+      "definition": "Serious unexpected ADR in clinical trial",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "VAERS",
+      "fullTerm": "Vaccine Adverse Event Reporting System",
+      "definition": "US system for vaccine AE reports",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "WHO",
+      "fullTerm": "World Health Organization",
+      "definition": "UN agency for international public health",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "NCP",
+      "fullTerm": "National Contact Person (for Pharmacovigilance)",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "NCPP",
+      "fullTerm": "National Contact Person for Pharmacovigilance",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "HMR",
+      "fullTerm": "Human Medicines Regulations 2012",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PLGB",
+      "fullTerm": "Product Licence Great Britain",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PLNI",
+      "fullTerm": "Product Licence Northern Ireland",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PL",
+      "fullTerm": "Product Licence (UK)",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "IRP",
+      "fullTerm": "International Recognition Procedure",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "ECDRP",
+      "fullTerm": "European Commission Decision Reliance Procedure",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "DSU",
+      "fullTerm": "Drug Safety Update",
+      "definition": "UK-MHRA",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "CBE",
+      "fullTerm": "Changes Being Effected",
+      "definition": "FDA supplement category allowing implementation of labeling changes upon submission (CBE-0) or 30 days after submission (CBE-30)",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "CBE-0",
+      "fullTerm": "Changes Being Effected (Immediate)",
+      "definition": "FDA supplement allowing immediate implementation upon submission; used for safety labeling strengthening per 21 CFR 314.70(c)(6)(iii)",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "CBE-30",
+      "fullTerm": "Changes Being Effected in 30 Days",
+      "definition": "FDA supplement allowing implementation 30 days after submission unless FDA objects",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PAS",
+      "fullTerm": "Prior Approval Supplement",
+      "definition": "FDA supplement requiring approval before implementation; used for major changes to approved applications",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PLR",
+      "fullTerm": "Physician Labeling Rule",
+      "definition": "FDA requirements for content and format of prescription drug labeling per 21 CFR 201.56/201.57",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "SmPC",
+      "fullTerm": "Summary of Product Characteristics",
+      "definition": "EU/UK equivalent of prescribing information; standardized format per QRD template",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "QRD",
+      "fullTerm": "Quality Review of Documents",
+      "definition": "EMA working group that develops templates for product information including SmPC, package leaflet",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "MLM",
+      "fullTerm": "Medical Literature Monitoring",
+      "definition": "Systematic surveillance of scientific literature for adverse event reports and safety signals",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "SAE",
+      "fullTerm": "Serious Adverse Event",
+      "definition": "Adverse event that results in death, is life-threatening, requires hospitalization, results in persistent disability, or is a congenital anomaly",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "SUSAR",
+      "fullTerm": "Suspected Unexpected Serious Adverse Reaction",
+      "definition": "SAE that is both suspected to be related to investigational product AND unexpected (not in IB/RSI)",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "IB",
+      "fullTerm": "Investigator Brochure",
+      "definition": "Document containing clinical and nonclinical data on investigational product relevant to human study",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "505(o)(4)",
+      "fullTerm": "Section 505(o)(4) of FD&C Act",
+      "definition": "FDA authority to require safety labeling changes; sponsor must respond within 30 days of notification",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PPP",
+      "fullTerm": "Pregnancy Prevention Programme",
+      "definition": "EU risk minimisation programme to prevent embryo/fetal exposure to teratogenic medicines; Includes pregnancy testing, contraception requirements, and patient acknowledgment",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "REMS",
+      "fullTerm": "Risk Evaluation and Mitigation Strategy",
+      "definition": "FDA-required programme to manage serious risks; May include ETASU for distribution/dispensing controls",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "ETASU",
+      "fullTerm": "Elements to Assure Safe Use",
+      "definition": "Component of REMS specifying distribution, dispensing, or use requirements (e.g., iPLEDGE for isotretinoin)",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "iPLEDGE",
+      "fullTerm": "Isotretinoin PPP (US)",
+      "definition": "FDA REMS programme for isotretinoin requiring registration, pregnancy testing, and contraception verification",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "CtQ",
+      "fullTerm": "Critical to Quality",
+      "definition": "Per ICH E8(R1): Attributes of a study whose integrity is fundamental to participant protection and result reliability",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "QbD",
+      "fullTerm": "Quality by Design",
+      "definition": "Approach to proactively design quality into clinical studies rather than relying solely on end-stage review",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Estimand",
+      "fullTerm": "Treatment Effect Definition",
+      "definition": "Per ICH E9(R1): Precise description of treatment effect composed of population, variable, intercurrent event handling, and summary measure",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Intercurrent Event",
+      "fullTerm": "Post-Randomization Event",
+      "definition": "Per ICH E9(R1): Event occurring after treatment initiation that affects interpretation (e.g., treatment discontinuation, rescue medication)",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "MRCT",
+      "fullTerm": "Multi-Regional Clinical Trial",
+      "definition": "Clinical trial conducted in multiple regions/countries to support global regulatory submissions per ICH E17",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Consistency of Treatment Effect",
+      "fullTerm": "Regional Uniformity",
+      "definition": "Per ICH E17: Evaluation that treatment effect is similar across regions included in MRCT",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "ALCOA",
+      "fullTerm": "Data Quality Attributes",
+      "definition": "Attributable, Legible, Contemporaneous, Original, Accurate - core data integrity requirements",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "ALCOA+",
+      "fullTerm": "Extended Data Quality Attributes",
+      "definition": "ALCOA plus Complete, Consistent, Enduring, Available - full data integrity framework",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "GCP Renovation",
+      "fullTerm": "ICH GCP Modernization",
+      "definition": "ICH initiative to modernize E6 GCP guideline; E8(R1) was first step, E6(R3) completed in 2025",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Type IA Variation",
+      "fullTerm": "Minor Variation (EU)",
+      "definition": "EU variation with minimal/no impact; \"Do and Tell\" - implement then notify within 12 months",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Type IAIN",
+      "fullTerm": "Immediate Notification Variation",
+      "definition": "EU Type IA variation requiring immediate notification after implementation for safety monitoring",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Type IB Variation",
+      "fullTerm": "Minor Variation Requiring Wait",
+      "definition": "EU variation that is neither Type IA nor Type II; \"Tell, Wait, Do\" - 30-day waiting period",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Type II Variation",
+      "fullTerm": "Major Variation (EU)",
+      "definition": "EU variation with significant impact; Requires approval before implementation (60-90 days)",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "ANDA",
+      "fullTerm": "Abbreviated New Drug Application",
+      "definition": "FDA application pathway for generic drugs; 21 CFR 314.94; Subject to PMR/PMC per 314.98",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "BPDR",
+      "fullTerm": "Biological Product Deviation Report",
+      "definition": "FDA report for deviations in manufacturing of distributed biological products; 21 CFR 600.14; 45-day timeline",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "ISS",
+      "fullTerm": "Integrated Summary of Safety",
+      "definition": "Comprehensive clinical safety analysis for marketing applications per ICH M4E(R2); Includes exposure, AEs, laboratory findings, vital signs",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "ESTRI",
+      "fullTerm": "Electronic Standards for Transfer of Regulatory Information",
+      "definition": "ICH M2 umbrella framework for electronic regulatory submissions including eCTD and ICSRs",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "Haemovigilance",
+      "fullTerm": "Blood Product Safety Surveillance",
+      "definition": "Organized surveillance of blood/plasma products from donation to transfusion; Covered by Directive 2002/98/EC and GVP P.IV",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PDMP",
+      "fullTerm": "Plasma-Derived Medicinal Product",
+      "definition": "Medicinal products derived from human blood/plasma; Subject to GVP P.IV and haemovigilance requirements",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "E6(R3)",
+      "fullTerm": "ICH Good Clinical Practice Renovation",
+      "definition": "Modernized GCP guideline finalized May 2025; Principles-based approach; Addresses decentralized trials; Replaces E6(R2)",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "E19",
+      "fullTerm": "ICH Optimization of Safety Data Collection",
+      "definition": "Guideline for selective safety data collection in late-stage trials; Allows reduced AE collection when profile well-characterized",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "AESI",
+      "fullTerm": "Adverse Event of Special Interest",
+      "definition": "Pre-specified adverse events requiring enhanced monitoring regardless of causality; Defined in protocol or safety monitoring plan",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "211.192",
+      "fullTerm": "CGMP Failure Investigation",
+      "definition": "21 CFR 211.192 - Production record review and investigation of discrepancies; #1 FDA 483 citation; Prohibits testing into compliance",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "211.198",
+      "fullTerm": "CGMP Complaint Files",
+      "definition": "21 CFR 211.198 - Requirements for handling product quality complaints; Critical PV interface for AE identification from complaints",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "DMC/DSMB",
+      "fullTerm": "Data Monitoring Committee / Data Safety Monitoring Board",
+      "definition": "Independent group monitoring safety during clinical trials; Reviews unblinded data; Can recommend trial modification or termination",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "EVDAS",
+      "fullTerm": "EudraVigilance Data Analysis System",
+      "definition": "EMA tool for MAH signal detection using EudraVigilance data; Provides eRMRs, line listings, statistical outputs",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "eRMR",
+      "fullTerm": "Electronic Reaction Monitoring Report",
+      "definition": "Automated statistical output from EVDAS for signal detection; Includes PRR, ROR calculations",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "PSMF",
+      "fullTerm": "Pharmacovigilance System Master File",
+      "definition": "EU/UK mandatory document describing MAH's PV system; Format per GVP Annex II; Location at QPPV site",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "ILAP",
+      "fullTerm": "Innovative Licensing and Access Pathway",
+      "definition": "UK post-Brexit priority pathway for innovative medicines; Includes Innovation Passport and Target Development Profile (TDP)",
+      "contextJurisdiction": "UK-MHRA"
+    },
+    {
+      "acronym": "TDP",
+      "fullTerm": "Target Development Profile",
+      "definition": "ILAP component: Agreed development roadmap with MHRA, NICE, and SMC; Includes PV and HTA requirements",
+      "contextJurisdiction": "UK-MHRA"
+    },
+    {
+      "acronym": "CMA",
+      "fullTerm": "Conditional Marketing Authorisation",
+      "definition": "Approval before complete data for serious conditions with unmet need; Annual renewal required; Enhanced PV obligations",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PRIME",
+      "fullTerm": "Priority Medicines",
+      "definition": "EMA scheme providing early and enhanced support for promising medicines addressing unmet medical needs",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "E2B(R3) IG",
+      "fullTerm": "E2B(R3) Implementation Guide",
+      "definition": "Regional specifications for ICH E2B(R3) ICSR submissions; FDA, EU, UK each have specific IGs",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "XEVMPD",
+      "fullTerm": "Extended EudraVigilance Medicinal Product Dictionary",
+      "definition": "EU database for medicinal product data; Used for ICSR product matching and identification",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "E20",
+      "fullTerm": "ICH E20 Adaptive Clinical Trials",
+      "definition": "ICH guideline on adaptive designs including safety-driven adaptations and DMC requirements",
+      "contextJurisdiction": "ICH"
+    },
+    {
+      "acronym": "Platform Trial",
+      "fullTerm": "Master Protocol Design",
+      "definition": "Trial design testing multiple interventions with shared control; May add/drop arms; Per ICH E20",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "PRR/ROR",
+      "fullTerm": "Proportional Reporting Ratio / Reporting Odds Ratio",
+      "definition": "Disproportionality statistics for signal detection in spontaneous reporting databases",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "SPOR",
+      "fullTerm": "Substance, Product, Organisation, Referentials",
+      "definition": "EMA master data management programme; Four services: OMS, RMS, SMS, PMS (XEVMPD)",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "OMS",
+      "fullTerm": "Organisations Management Service",
+      "definition": "SPOR component for unique organisation identifiers (ORG-ID, LOC-ID)",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "RMS",
+      "fullTerm": "Referentials Management Service",
+      "definition": "SPOR component for controlled vocabularies and code lists",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "SMS",
+      "fullTerm": "Substance Management Service",
+      "definition": "SPOR component for unique substance identifiers per ISO 11238",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "PMS",
+      "fullTerm": "Product Management Service",
+      "definition": "SPOR component for medicinal product data (XEVMPD successor)",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "IDMP",
+      "fullTerm": "Identification of Medicinal Products",
+      "definition": "Suite of ISO standards (11615, 11616, 11238, 11239, 11240) for global product identification",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "PIC/S",
+      "fullTerm": "Pharmaceutical Inspection Co-operation Scheme",
+      "definition": "International organisation of 54 regulatory authorities harmonizing GMP inspection",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "MDR (Device)",
+      "fullTerm": "Medical Device Reporting",
+      "definition": "FDA 21 CFR 803 requirements for reporting device-related adverse events; 30-day timeline",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "QSR",
+      "fullTerm": "Quality System Regulation",
+      "definition": "FDA 21 CFR 820 requirements for medical device manufacturers; Includes 820.198 complaints",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "PMOA",
+      "fullTerm": "Primary Mode of Action",
+      "definition": "Determination for combination products defining lead FDA center and applicable regulations",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "VigiBase",
+      "fullTerm": "WHO Global ICSR Database",
+      "definition": "World's largest ADR database (30M+ reports from 140+ countries); Maintained by WHO-UMC",
+      "contextJurisdiction": "WHO"
+    },
+    {
+      "acronym": "VigiFlow",
+      "fullTerm": "WHO National PV System",
+      "definition": "Web-based ICSR management system for national pharmacovigilance centres; 130+ countries",
+      "contextJurisdiction": "WHO"
+    },
+    {
+      "acronym": "VigiAccess",
+      "fullTerm": "Public VigiBase Interface",
+      "definition": "Public web portal for accessing aggregated VigiBase data (vigiaccess.org)",
+      "contextJurisdiction": "WHO"
+    },
+    {
+      "acronym": "CIOMS VI",
+      "fullTerm": "Clinical Trial Safety Management",
+      "definition": "CIOMS WG VI report on managing safety information from clinical trials",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "CIOMS IX",
+      "fullTerm": "Risk Minimisation Approaches",
+      "definition": "CIOMS WG IX report on practical approaches to risk minimisation for medicinal products",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "CIOMS XI",
+      "fullTerm": "Patient Involvement",
+      "definition": "CIOMS WG XI report on patient involvement in drug development and safe use",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "601.12",
+      "fullTerm": "Biologics Changes Regulation",
+      "definition": "21 CFR 601.12 - Requirements for changes to approved BLAs; CBE-0/CBE-30/PAS categories; Parallel to 314.70 for drugs",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "211.18",
+      "fullTerm": "CGMP Records Requirements",
+      "definition": "21 CFR 211.180 - Record retention and Annual Product Review; Complaints retained 1 year post-expiry",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "211.16",
+      "fullTerm": "CGMP Laboratory Controls",
+      "definition": "21 CFR 211.160 - Laboratory testing requirements; OOS investigations may reveal safety issues",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "Sentinel",
+      "fullTerm": "FDA Sentinel Initiative",
+      "definition": "FDA's active post-market surveillance system using healthcare data; 100M+ patients; Established by FDAAA 2007",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "DSC",
+      "fullTerm": "Drug Safety Communication",
+      "definition": "FDA's primary public safety announcement mechanism; MAHs must monitor and respond",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "PLLR",
+      "fullTerm": "Pregnancy and Lactation Labeling Rule",
+      "definition": "FDA labeling requirements per 21 CFR 201.57; Replaces former pregnancy categories A/B/C/D/X",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "Part 11",
+      "fullTerm": "Electronic Records/Signatures",
+      "definition": "21 CFR Part 11 - FDA regulation for electronic records and signatures; Critical for PV databases",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "ETASU",
+      "fullTerm": "Elements to Assure Safe Use",
+      "definition": "Component of REMS restricting distribution, dispensing, or use; Examples: prescriber certification, patient registry",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "APR",
+      "fullTerm": "Annual Product Review",
+      "definition": "Per 21 CFR 211.180(e) - Yearly evaluation including complaint trends; May identify safety signals",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "ADA",
+      "fullTerm": "Anti-Drug Antibody",
+      "definition": "Antibodies formed against biologic products; Key immunogenicity measure; Critical for biosimilar PV",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "ENCePP",
+      "fullTerm": "European Network of Centres for Pharmacoepidemiology and Pharmacovigilance",
+      "definition": "EU equivalent to FDA Sentinel; Coordinates post-authorization safety studies",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "OTC Monograph",
+      "fullTerm": "OTC Drug Monograph System",
+      "definition": "US framework for marketing OTC drugs without approved NDA; Subject to 21 CFR 310.305 AE reporting",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "BPCIA",
+      "fullTerm": "Biologics Price Competition and Innovation Act",
+      "definition": "2009 law creating US biosimilar approval pathway (351(k)); Includes interchangeability provisions",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "PSP",
+      "fullTerm": "Pediatric Study Plan",
+      "definition": "Required under PREA; Agreement between sponsor and FDA on pediatric development; Includes safety requirements",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "Shared REMS",
+      "fullTerm": "Shared System REMS",
+      "definition": "Single REMS covering multiple products (e.g., Opioid Analgesic REMS); Single administrator; Cost sharing",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "AI/ML",
+      "fullTerm": "Artificial Intelligence / Machine Learning",
+      "definition": "Technologies that enable systems to learn from data and make predictions/decisions; Increasingly used in PV for case processing, signal detection, literature monitoring",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "EDSTM",
+      "fullTerm": "Emerging Drug Safety Technology Meeting",
+      "definition": "FDA CDER meeting programme for discussing AI and emerging technologies in pharmacovigilance; Part of EDSTP",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "EDSTP",
+      "fullTerm": "Emerging Drug Safety Technology Program",
+      "definition": "CDER programme focused on AI and emerging technologies in PV; Administers EDSTM meetings",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "EU AI Act",
+      "fullTerm": "EU Artificial Intelligence Act (Regulation 2024/1689)",
+      "definition": "First comprehensive AI legislation; High-risk provisions apply to healthcare/PV AI; Phased implementation 2024-2027",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "CIOMS XIV",
+      "fullTerm": "CIOMS Working Group XIV on AI in PV",
+      "definition": "International working group developing best practices for AI in pharmacovigilance; Draft under consultation 2025",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "CAR-T",
+      "fullTerm": "Chimeric Antigen Receptor T-cell Therapy",
+      "definition": "Gene-modified T-cells targeting specific antigens; Key safety: CRS, ICANS, secondary malignancies; 15-year LTFU required",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "CRS",
+      "fullTerm": "Cytokine Release Syndrome",
+      "definition": "Systemic inflammatory response from CAR-T and other immune therapies; Grading per ASTCT; Boxed warning required",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "ICANS",
+      "fullTerm": "Immune Effector Cell-Associated Neurotoxicity Syndrome",
+      "definition": "Neurologic toxicity from CAR-T therapy; Grading per ASTCT; Boxed warning required",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "GTMP",
+      "fullTerm": "Gene Therapy Medicinal Product",
+      "definition": "ATMP category containing recombinant genes for therapeutic/prophylactic/diagnostic effect; Per Reg 1394/2007",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "SCTMP",
+      "fullTerm": "Somatic Cell Therapy Medicinal Product",
+      "definition": "ATMP containing manipulated somatic cells; Per Reg 1394/2007",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "TEP",
+      "fullTerm": "Tissue-Engineered Product",
+      "definition": "ATMP containing engineered cells/tissues to repair/regenerate/replace human tissues; Per Reg 1394/2007",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "CAT",
+      "fullTerm": "Committee for Advanced Therapies",
+      "definition": "EMA committee providing scientific recommendations on ATMP classification, certification, assessment",
+      "contextJurisdiction": "EMA"
+    },
+    {
+      "acronym": "LTFU",
+      "fullTerm": "Long-Term Follow-Up",
+      "definition": "Extended safety monitoring for CGT products; FDA recommends 15 years for gene therapy; Tracks delayed AEs, secondary malignancies",
+      "contextJurisdiction": "All"
+    },
+    {
+      "acronym": "PACS",
+      "fullTerm": "Post-Marketing All-Case Surveillance",
+      "definition": "Japan-specific requirement: Mandatory collection of safety/efficacy data from ALL patients receiving CGT; PMDA requirement",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "QMSR",
+      "fullTerm": "Quality Management System Regulation",
+      "definition": "FDA revision of 21 CFR 820 harmonized with ISO 13485:2016; Enforcement 02 Feb 2026; Impacts combination products",
+      "contextJurisdiction": "FDA"
+    },
+    {
+      "acronym": "Health Canada",
+      "fullTerm": "Health Canada / Santé Canada",
+      "definition": "Canadian federal regulatory authority for drugs, biologics, medical devices, natural health products. Part of Public Health Agency of Canada.",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Canada Vigilance",
+      "fullTerm": "Canada Vigilance Program",
+      "definition": "Health Canada's national ADR reporting program. Database accessible via MedEffect. E2B(R3) compatible electronic submission.",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "MedEffect",
+      "fullTerm": "MedEffect Canada",
+      "definition": "Health Canada portal for safety communications, advisories, and public access to Canada Vigilance data.",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "TGA",
+      "fullTerm": "Therapeutic Goods Administration",
+      "definition": "Australia's regulatory authority for therapeutic goods (medicines, medical devices). Part of Department of Health.",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "DAEN",
+      "fullTerm": "Database of Adverse Event Notifications",
+      "definition": "TGA's publicly searchable database of adverse event reports. Australia equivalent of FAERS/EudraVigilance public access.",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "Swissmedic",
+      "fullTerm": "Swiss Agency for Therapeutic Products",
+      "definition": "Switzerland's regulatory authority. ICH member. MRA with EU. ICH guidelines automatically applicable at Step 4.",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "ElViS",
+      "fullTerm": "Electronic Vigilance System",
+      "definition": "Swissmedic's electronic system for pharmacovigilance reporting. E2B(R3) compatible. Mandatory for electronic ICSR submission.",
+      "contextJurisdiction": "International"
+    },
+    {
+      "acronym": "HMG",
+      "fullTerm": "Heilmittelgesetz (Therapeutic Products Act)",
+      "definition": "Swiss Federal Act on Medicinal Products and Medical Devices. Core pharmaceutical legislation in Switzerland.",
+      "contextJurisdiction": "International"
+    }
+  ]
+}

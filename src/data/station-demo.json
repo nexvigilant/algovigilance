@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-03-26T00:00:00Z",
+  "metrics": [
+    {
+      "drug": "Semaglutide",
+      "event": "Pancreatitis",
+      "year": 2017,
+      "reports": 2068,
+      "prr": 6.93,
+      "ror": 7.09,
+      "ic": 2.76,
+      "ebgm": 6.76,
+      "naranjo": 4,
+      "naranjoLabel": "POSSIBLE",
+      "signal": true
+    },
+    {
+      "drug": "Liraglutide",
+      "event": "Pancreatitis",
+      "year": 2010,
+      "reports": 3219,
+      "prr": 17.39,
+      "ror": 18.53,
+      "ic": 4.06,
+      "ebgm": 16.67,
+      "naranjo": 4,
+      "naranjoLabel": "POSSIBLE",
+      "signal": true
+    },
+    {
+      "drug": "Atorvastatin",
+      "event": "Rhabdomyolysis",
+      "year": 1996,
+      "reports": 2226,
+      "prr": 4.79,
+      "ror": 4.83,
+      "ic": 2.2,
+      "ebgm": 4.58,
+      "naranjo": 4,
+      "naranjoLabel": "POSSIBLE",
+      "signal": true
+    },
+    {
+      "drug": "Metformin",
+      "event": "Lactic Acidosis",
+      "year": 1995,
+      "reports": 18417,
+      "prr": 71.42,
+      "ror": 74.58,
+      "ic": 4.83,
+      "ebgm": 28.44,
+      "naranjo": 6,
+      "naranjoLabel": "PROBABLE",
+      "signal": true
+    }
+  ],
+  "convergence": [
+    { "year": 2018, "cases": 32, "prr": 7.07 },
+    { "year": 2019, "cases": 122, "prr": 10.72 },
+    { "year": 2020, "cases": 290, "prr": 11.29 },
+    { "year": 2021, "cases": 458, "prr": 9.78 },
+    { "year": 2022, "cases": 649, "prr": 8.33 },
+    { "year": 2023, "cases": 967, "prr": 7.84 },
+    { "year": 2024, "cases": 1495, "prr": 7.63 },
+    { "year": 2025, "cases": 2067, "prr": 6.93 }
+  ]
+}

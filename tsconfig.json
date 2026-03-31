@@ -1,0 +1,76 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noUncheckedIndexedAccess": true, // Phase 3: 1595 violations — enable after indexed access audit
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/infrastructure/*": [
+        "./infrastructure/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "functions",
+    "scripts",
+    "tools",
+    "infrastructure",
+    "infrastructure.backup",
+    "agents",
+    "cypress",
+    "cypress.config.ts",
+    "nexvigilant-guardian",
+    "nexvigilant-document-system",
+    "junkyard-targets",
+    "**/__tests__/**",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.cy.ts",
+    "**/*.cy.tsx",
+    "src/components/compositions/**",
+    "src/hooks/advanced/**",
+    "src/lib/pdf/**",
+    "src/lib/academy/**",
+    "src/lib/services/**",
+    "src/lib/content/**",
+    "src/lib/eslint-rules/**",
+    "intel/**",
+    "packages/**",
+    "Vigil/**"
+  ]
+}

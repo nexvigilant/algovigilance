@@ -1,0 +1,165 @@
+/**
+ * Emerald City Visual Effects
+ *
+ * Glows, rays, particles, and atmospheric effects
+ * inspired by the crystalline city aesthetic
+ */
+
+/* =============================================================================
+   ACCESSIBILITY: REDUCED MOTION
+   Respects user preference for reduced motion (WCAG 2.3.3)
+   ============================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-metallic-sweep,
+  .animate-prismatic-pulse,
+  .animate-light-ray,
+  .animate-bokeh,
+  .animate-city-glow,
+  .glow-orb-cyan,
+  .glow-orb-gold,
+  .metallic-surface::after,
+  .light-ray,
+  .light-ray-gold,
+  .holographic {
+    animation: none !important;
+  }
+}
+
+/* =============================================================================
+   ANIMATION UTILITIES
+   ============================================================================= */
+
+.animate-metallic-sweep {
+  animation: metallic-sweep 8s ease-in-out infinite;
+}
+
+.animate-prismatic-pulse {
+  animation: prismatic-pulse 6s ease-in-out infinite;
+}
+
+.animate-light-ray {
+  animation: light-ray-drift 12s ease-in-out infinite;
+}
+
+.animate-bokeh {
+  animation: bokeh-float 20s ease-in-out infinite;
+}
+
+.animate-city-glow {
+  animation: city-glow 8s ease-in-out infinite;
+}
+
+/* =============================================================================
+   PRISMATIC LIGHT BAR
+   Horizontal accent with rainbow refraction
+   ============================================================================= */
+
+.prismatic-bar {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(var(--nex-cyan-rgb), 0.3) 20%,
+    rgba(var(--nex-gold-rgb), 0.4) 50%,
+    rgba(var(--nex-cyan-glow-rgb), 0.3) 80%,
+    transparent 100%
+  );
+}
+
+/* =============================================================================
+   GLOW ORBS
+   Bokeh-style depth-of-field effect
+   ============================================================================= */
+
+.glow-orb-cyan {
+  background: radial-gradient(circle, rgba(var(--nex-cyan-glow-rgb), 0.3) 0%, transparent 70%);
+  filter: blur(40px);
+  animation: bokeh-float 15s ease-in-out infinite;
+}
+
+.glow-orb-gold {
+  background: radial-gradient(circle, rgba(var(--nex-gold-bright-rgb), 0.25) 0%, transparent 70%);
+  filter: blur(35px);
+  animation: bokeh-float 18s ease-in-out infinite reverse;
+}
+
+/* =============================================================================
+   VERTICAL LIGHT RAYS
+   City skyline spire effect
+   ============================================================================= */
+
+.light-ray {
+  position: absolute;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(var(--nex-cyan-glow-rgb), 0.2) 30%,
+    rgba(var(--nex-cyan-glow-rgb), 0.3) 50%,
+    rgba(var(--nex-cyan-rgb), 0.2) 70%,
+    transparent 100%
+  );
+  animation: light-ray-drift 12s ease-in-out infinite;
+  pointer-events: none; /* Prevent blocking user interaction */
+}
+
+.light-ray-gold {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(var(--nex-gold-bright-rgb), 0.2) 30%,
+    rgba(var(--nex-gold-rgb), 0.25) 50%,
+    rgba(var(--nex-gold-bright-rgb), 0.15) 70%,
+    transparent 100%
+  );
+}
+
+/* =============================================================================
+   RADIAL GRADIENT BACKGROUND
+   ============================================================================= */
+
+.radial-glow {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(var(--nex-cyan-glow-rgb), 0.1) 0%,
+    transparent 70%
+  );
+}
+
+/* =============================================================================
+   HOLOGRAPHIC EFFECT
+   ============================================================================= */
+
+.holographic {
+  background: linear-gradient(
+    135deg,
+    rgba(var(--nex-cyan-glow-rgb), 0.1) 0%,
+    rgba(var(--nex-gold-rgb), 0.1) 25%,
+    rgba(var(--nex-cyan-rgb), 0.1) 50%,
+    rgba(var(--nex-gold-bright-rgb), 0.1) 75%,
+    rgba(var(--nex-cyan-glow-rgb), 0.1) 100%
+  );
+  background-size: 200% 200%;
+  animation: holographic 8s ease-in-out infinite;
+}
+
+/* =============================================================================
+   SCANLINE EFFECT
+   Retro-futuristic screen effect
+   ============================================================================= */
+
+.scanline-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(var(--nex-black-rgb), 0.1) 0px,
+    rgba(var(--nex-black-rgb), 0.1) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  opacity: 0.3;
+}

@@ -1,0 +1,127 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install --legacy-peer-deps",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "crons": [
+    {
+      "path": "/api/cron/cleanup-rate-limits",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/generate-missing-images",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/validate-content",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/admin-digest",
+      "schedule": "0 14 * * *"
+    },
+    {
+      "path": "/api/cron/process-scheduled-batches",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/refresh-demo-data",
+      "schedule": "0 5 1 * *"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/intelligence",
+      "permanent": true
+    },
+    {
+      "source": "/research",
+      "destination": "/intelligence",
+      "permanent": true
+    },
+    {
+      "source": "/research/:slug",
+      "destination": "/intelligence/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/waitlist",
+      "destination": "/auth/signup",
+      "permanent": false
+    },
+    {
+      "source": "/charter",
+      "destination": "/doctrine",
+      "permanent": true
+    },
+    {
+      "source": "/checkout",
+      "destination": "/pricing",
+      "permanent": false
+    },
+    {
+      "source": "/checkout/:path*",
+      "destination": "/pricing",
+      "permanent": false
+    },
+    {
+      "source": "/nucleus/observatory",
+      "destination": "/observatory",
+      "permanent": true
+    },
+    {
+      "source": "/nucleus/observatory/:path*",
+      "destination": "/observatory/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin-allow-popups"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://*.firebaseapp.com https://*.googleapis.com https://apis.google.com https://*.gstatic.com https://www.google.com https://www.gstatic.com https://recaptcha.google.com https://static.cloudflareinsights.com https://*.vercel-insights.com https://*.vercel-analytics.com https://api.vercel.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' blob: https://*.firebaseio.com https://*.googleapis.com https://*.cloudfunctions.net wss://*.firebaseio.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://www.google.com https://recaptcha.google.com https://*.vercel-insights.com https://*.vercel-analytics.com https://vitals.vercel-insights.com https://api.vercel.com https://*.vercel.com https://mcp.nexvigilant.com https://station.nexvigilant.com; worker-src 'self' blob:; frame-src 'self' https://*.firebaseapp.com https://accounts.google.com https://www.google.com https://www.gstatic.com https://recaptcha.google.com https://open.spotify.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self';"
+        }
+      ]
+    }
+  ]
+}

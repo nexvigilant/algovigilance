@@ -1,0 +1,464 @@
+/**
+ * Container Query System
+ *
+ * Component-level responsive design using CSS Container Queries.
+ * Unlike media queries (viewport-based), containers respond to their
+ * parent's dimensions - perfect for reusable components.
+ *
+ * BROWSER SUPPORT: Chrome 105+, Safari 16+, Firefox 110+
+ * @see https://caniuse.com/css-container-queries
+ *
+ * USAGE:
+ * 1. Add containment: .@container or data-container attribute
+ * 2. Use @container rules in component CSS
+ * 3. Or use utility classes: .cq:hidden, .cq-sm:block, etc.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries
+ */
+
+/* =============================================================================
+   CONTAINER DEFINITIONS
+   Apply to parent elements that should define query context
+   ============================================================================= */
+
+/**
+ * Named containers for targeted queries
+ * Use: <div class="@container/card"> or data-container="card"
+ */
+
+/* Generic inline-size container (most common) */
+.\@container,
+[data-container] {
+  container-type: inline-size;
+}
+
+/* Named containers for semantic targeting */
+.\@container\/card,
+[data-container="card"] {
+  container-type: inline-size;
+  container-name: card;
+}
+
+.\@container\/sidebar,
+[data-container="sidebar"] {
+  container-type: inline-size;
+  container-name: sidebar;
+}
+
+.\@container\/main,
+[data-container="main"] {
+  container-type: inline-size;
+  container-name: main;
+}
+
+.\@container\/hero,
+[data-container="hero"] {
+  container-type: inline-size;
+  container-name: hero;
+}
+
+.\@container\/modal,
+[data-container="modal"] {
+  container-type: inline-size;
+  container-name: modal;
+}
+
+.\@container\/grid-item,
+[data-container="grid-item"] {
+  container-type: inline-size;
+  container-name: grid-item;
+}
+
+/* Size containment (both dimensions - use sparingly, requires explicit height) */
+.\@container-size,
+[data-container-size] {
+  container-type: size;
+}
+
+/* =============================================================================
+   CONTAINER BREAKPOINTS
+   Aligned with Tailwind's default breakpoints for consistency
+   ============================================================================= */
+
+:root {
+  /* Container query breakpoints (component-level) */
+  --cq-xs: 320px;   /* Extra small: compact widgets */
+  --cq-sm: 384px;   /* Small: narrow cards, sidebar items */
+  --cq-md: 448px;   /* Medium: standard cards */
+  --cq-lg: 512px;   /* Large: wide cards, content blocks */
+  --cq-xl: 576px;   /* Extra large: hero sections */
+  --cq-2xl: 672px;  /* 2X large: full-width components */
+
+  /* Golden ratio container breakpoints */
+  --cq-golden-1: 320px;   /* φ⁰ base */
+  --cq-golden-2: 518px;   /* 320 × φ */
+  --cq-golden-3: 838px;   /* 320 × φ² */
+}
+
+/* =============================================================================
+   CONTAINER QUERY UTILITY CLASSES
+   Tailwind-style utilities that respond to container size
+   ============================================================================= */
+
+/**
+ * Display utilities
+ * Pattern: .cq-{breakpoint}:{utility}
+ *
+ * Note: These use @container (any ancestor container).
+ * For named containers, write custom @container card (...) rules.
+ *
+ * PROGRESSIVE ENHANCEMENT:
+ * The hiding rules are scoped to browsers that support container queries.
+ * Unsupported browsers fall back to viewport-based media queries at the
+ * bottom of this file, where content displays normally.
+ */
+
+/* Hidden by default, show at breakpoint — ONLY in supported browsers */
+@supports (container-type: inline-size) {
+  .cq-xs\:block { display: none; }
+  .cq-sm\:block { display: none; }
+  .cq-md\:block { display: none; }
+  .cq-lg\:block { display: none; }
+  .cq-xl\:block { display: none; }
+}
+
+@container (min-width: 320px) {
+  .cq-xs\:block { display: block; }
+  .cq-xs\:flex { display: flex; }
+  .cq-xs\:grid { display: grid; }
+  .cq-xs\:inline { display: inline; }
+}
+
+@container (min-width: 384px) {
+  .cq-sm\:block { display: block; }
+  .cq-sm\:flex { display: flex; }
+  .cq-sm\:grid { display: grid; }
+  .cq-sm\:inline { display: inline; }
+  .cq-sm\:hidden { display: none; }
+}
+
+@container (min-width: 448px) {
+  .cq-md\:block { display: block; }
+  .cq-md\:flex { display: flex; }
+  .cq-md\:grid { display: grid; }
+  .cq-md\:inline { display: inline; }
+  .cq-md\:hidden { display: none; }
+}
+
+@container (min-width: 512px) {
+  .cq-lg\:block { display: block; }
+  .cq-lg\:flex { display: flex; }
+  .cq-lg\:grid { display: grid; }
+  .cq-lg\:inline { display: inline; }
+  .cq-lg\:hidden { display: none; }
+}
+
+@container (min-width: 576px) {
+  .cq-xl\:block { display: block; }
+  .cq-xl\:flex { display: flex; }
+  .cq-xl\:grid { display: grid; }
+  .cq-xl\:inline { display: inline; }
+  .cq-xl\:hidden { display: none; }
+}
+
+/* =============================================================================
+   FLEX DIRECTION UTILITIES
+   Switch between row/column based on container width
+   ============================================================================= */
+
+.cq-xs\:flex-row, .cq-sm\:flex-row, .cq-md\:flex-row,
+.cq-lg\:flex-row, .cq-xl\:flex-row {
+  flex-direction: column; /* Default: stack vertically */
+}
+
+@container (min-width: 320px) {
+  .cq-xs\:flex-row { flex-direction: row; }
+  .cq-xs\:flex-col { flex-direction: column; }
+}
+
+@container (min-width: 384px) {
+  .cq-sm\:flex-row { flex-direction: row; }
+  .cq-sm\:flex-col { flex-direction: column; }
+}
+
+@container (min-width: 448px) {
+  .cq-md\:flex-row { flex-direction: row; }
+  .cq-md\:flex-col { flex-direction: column; }
+}
+
+@container (min-width: 512px) {
+  .cq-lg\:flex-row { flex-direction: row; }
+  .cq-lg\:flex-col { flex-direction: column; }
+}
+
+@container (min-width: 576px) {
+  .cq-xl\:flex-row { flex-direction: row; }
+  .cq-xl\:flex-col { flex-direction: column; }
+}
+
+/* =============================================================================
+   GRID COLUMNS UTILITIES
+   Responsive grid columns based on container width
+   ============================================================================= */
+
+.cq-grid-auto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-cards, 1.309rem);
+}
+
+@container (min-width: 384px) {
+  .cq-grid-auto {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container (min-width: 576px) {
+  .cq-grid-auto {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@container (min-width: 768px) {
+  .cq-grid-auto {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Fixed column variants */
+@container (min-width: 384px) {
+  .cq-sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@container (min-width: 448px) {
+  .cq-md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .cq-md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@container (min-width: 512px) {
+  .cq-lg\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .cq-lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .cq-lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* =============================================================================
+   TYPOGRAPHY UTILITIES
+   Font size adjustments based on container width
+   ============================================================================= */
+
+.cq-text-responsive {
+  font-size: var(--type-sm);
+}
+
+@container (min-width: 320px) {
+  .cq-text-responsive {
+    font-size: var(--type-base);
+  }
+}
+
+@container (min-width: 448px) {
+  .cq-text-responsive {
+    font-size: var(--type-lg);
+  }
+}
+
+/* Heading scale based on container */
+.cq-heading {
+  font-size: var(--type-lg);
+  line-height: var(--leading-tight);
+}
+
+@container (min-width: 384px) {
+  .cq-heading {
+    font-size: var(--type-xl);
+  }
+}
+
+@container (min-width: 512px) {
+  .cq-heading {
+    font-size: var(--type-2xl);
+  }
+}
+
+/* =============================================================================
+   SPACING UTILITIES
+   Padding/gap adjustments based on container width
+   ============================================================================= */
+
+.cq-p-responsive {
+  padding: var(--space-golden-2);
+}
+
+@container (min-width: 384px) {
+  .cq-p-responsive {
+    padding: var(--space-golden-3);
+  }
+}
+
+@container (min-width: 512px) {
+  .cq-p-responsive {
+    padding: var(--space-golden-4);
+  }
+}
+
+.cq-gap-responsive {
+  gap: var(--space-golden-2);
+}
+
+@container (min-width: 384px) {
+  .cq-gap-responsive {
+    gap: var(--space-golden-3);
+  }
+}
+
+@container (min-width: 512px) {
+  .cq-gap-responsive {
+    gap: var(--space-golden-4);
+  }
+}
+
+/* =============================================================================
+   COMPONENT PATTERNS
+   Common responsive component structures
+   ============================================================================= */
+
+/**
+ * Responsive Card Pattern
+ * Stacks content on small containers, side-by-side on larger
+ */
+.cq-card-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-golden-2);
+}
+
+@container (min-width: 448px) {
+  .cq-card-layout {
+    flex-direction: row;
+    gap: var(--space-golden-3);
+  }
+
+  .cq-card-layout > .cq-card-media {
+    flex: 0 0 40%;
+    max-width: 200px;
+  }
+
+  .cq-card-layout > .cq-card-content {
+    flex: 1;
+  }
+}
+
+/**
+ * Responsive Hero Pattern
+ * Text-only on small, with image on larger containers
+ */
+.cq-hero-layout {
+  display: grid;
+  gap: var(--space-golden-4);
+}
+
+@container (min-width: 576px) {
+  .cq-hero-layout {
+    grid-template-columns: var(--layout-major) var(--layout-minor);
+    align-items: center;
+  }
+}
+
+/**
+ * Responsive Stat Grid
+ * 2 columns on small, 4 columns on large
+ */
+.cq-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-golden-2);
+}
+
+@container (min-width: 512px) {
+  .cq-stat-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-golden-3);
+  }
+}
+
+/* =============================================================================
+   CONTAINER QUERY UNITS
+   cqw, cqh, cqi, cqb, cqmin, cqmax
+   ============================================================================= */
+
+/**
+ * Container-relative sizing examples
+ * These units are relative to the container's dimensions:
+ * - cqw: 1% of container width
+ * - cqh: 1% of container height (requires size containment)
+ * - cqi: 1% of container inline size
+ * - cqb: 1% of container block size
+ */
+
+.cq-w-full { width: 100cqi; }
+.cq-w-half { width: 50cqi; }
+.cq-w-golden-major { width: 61.8cqi; }
+.cq-w-golden-minor { width: 38.2cqi; }
+
+/* Fluid typography using container width */
+.cq-text-fluid {
+  font-size: clamp(0.875rem, 2cqi + 0.5rem, 1.5rem);
+}
+
+.cq-heading-fluid {
+  font-size: clamp(1.25rem, 4cqi + 0.75rem, 3rem);
+  line-height: var(--leading-tight);
+}
+
+/* =============================================================================
+   FALLBACK FOR OLDER BROWSERS
+   Graceful degradation using @supports
+   ============================================================================= */
+
+@supports not (container-type: inline-size) {
+  /* Fallback: use viewport-based media queries */
+  .\@container,
+  [data-container] {
+    /* No container query support, components use viewport fallback */
+  }
+
+  /* Show a warning in dev (remove in production) */
+  .\@container::before {
+    content: '';
+    /* Uncomment for dev debugging:
+    content: '⚠️ Container queries not supported';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    background: red;
+    color: white;
+    padding: 2px 4px;
+    */
+  }
+
+  /* Viewport-based fallbacks for critical utilities */
+  @media (min-width: 640px) {
+    .cq-sm\:block { display: block; }
+    .cq-sm\:flex { display: flex; }
+    .cq-sm\:hidden { display: none; }
+    .cq-sm\:flex-row { flex-direction: row; }
+  }
+
+  @media (min-width: 768px) {
+    .cq-md\:block { display: block; }
+    .cq-md\:flex { display: flex; }
+    .cq-md\:hidden { display: none; }
+    .cq-md\:flex-row { flex-direction: row; }
+    .cq-md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .cq-md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 1024px) {
+    .cq-lg\:block { display: block; }
+    .cq-lg\:flex { display: flex; }
+    .cq-lg\:hidden { display: none; }
+    .cq-lg\:flex-row { flex-direction: row; }
+    .cq-lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  }
+}

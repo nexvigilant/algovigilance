@@ -1,0 +1,142 @@
+[
+  {
+    "cpaId": "CPA-1",
+    "epaId": "EPA-01",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-1",
+    "epaId": "EPA-02",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-1",
+    "epaId": "EPA-03",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-2",
+    "epaId": "EPA-05",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-2",
+    "epaId": "EPA-06",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-2",
+    "epaId": "EPA-02",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-3",
+    "epaId": "EPA-07",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-3",
+    "epaId": "EPA-08",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-3",
+    "epaId": "EPA-06",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-4",
+    "epaId": "EPA-09",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-4",
+    "epaId": "EPA-10",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-4",
+    "epaId": "EPA-01",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-5",
+    "epaId": "EPA-10",
+    "relationship": "AI Gateway"
+  },
+  {
+    "cpaId": "CPA-6",
+    "epaId": "EPA-03",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-6",
+    "epaId": "EPA-08",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-7",
+    "epaId": "EPA-02",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-7",
+    "epaId": "EPA-05",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-7",
+    "epaId": "EPA-08",
+    "relationship": "Key EPA"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-10",
+    "relationship": "Prerequisite (L4+)"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-01",
+    "relationship": "Integration"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-02",
+    "relationship": "Integration"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-03",
+    "relationship": "Integration"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-04",
+    "relationship": "Integration"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-05",
+    "relationship": "Integration"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-06",
+    "relationship": "Integration"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-07",
+    "relationship": "Integration"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-08",
+    "relationship": "Integration"
+  },
+  {
+    "cpaId": "CPA-8",
+    "epaId": "EPA-09",
+    "relationship": "Integration"
+  }
+]

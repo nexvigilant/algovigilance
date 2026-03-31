@@ -1,0 +1,1 @@
+export { NeuralNetworkSVG } from './NeuralNetworkSVG';

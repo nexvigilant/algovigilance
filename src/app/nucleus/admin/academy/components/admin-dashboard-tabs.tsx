@@ -1,0 +1,167 @@
+'use client';
+
+import Link from 'next/link';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Pencil, Activity, Settings, Briefcase, Sparkles, ChevronRight } from 'lucide-react';
+import { usePersistedTab } from '@/hooks/use-persisted-tab';
+import { AdminNavCard } from './admin-nav-card';
+import {
+  getCardsByCategory,
+  categoryMeta,
+  type CardCategory,
+} from './admin-nav-config';
+
+const VALID_TABS = ['create', 'monitor', 'admin'] as const;
+
+const tabIcons: Record<CardCategory, typeof Pencil> = {
+  create: Pencil,
+  monitor: Activity,
+  admin: Settings,
+};
+
+interface QuickActionProps {
+  href: string;
+  icon: typeof Briefcase;
+  label: string;
+  variant: 'emerald' | 'violet';
+}
+
+function QuickAction({ href, icon: Icon, label, variant }: QuickActionProps) {
+  const styles = {
+    emerald: 'border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500/50',
+    violet: 'border-violet-500/30 text-violet-400 hover:bg-violet-500/10 hover:border-violet-500/50',
+  };
+
+  return (
+    <Button asChild variant="outline" size="sm" className={`gap-2 ${styles[variant]}`}>
+      <Link href={href}>
+        <Icon className="h-4 w-4" />
+        {label}
+        <ChevronRight className="h-3 w-3 opacity-50" />
+      </Link>
+    </Button>
+  );
+}
+
+export interface AdminDashboardTabsProps {
+  /** Optional badge counts for each category */
+  badgeCounts?: Partial<Record<CardCategory, number>>;
+  /** Cards to hide based on permissions (by card id) */
+  hiddenCards?: string[];
+}
+
+export function AdminDashboardTabs({ badgeCounts, hiddenCards = [] }: AdminDashboardTabsProps) {
+  const { activeTab, setActiveTab, mounted } = usePersistedTab({
+    storageKey: 'academy-admin-tab',
+    validTabs: VALID_TABS,
+    roleDefaults: {
+      admin: 'monitor',
+      moderator: 'monitor',
+      default: 'create',
+    },
+  });
+
+  // Handle tab change
+  const handleTabChange = (value: string) => {
+    setActiveTab(value as CardCategory);
+  };
+
+  // Filter cards by permission
+  const getVisibleCards = (category: CardCategory) => {
+    return getCardsByCategory(category).filter(
+      (card) => !hiddenCards.includes(card.id)
+    );
+  };
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return (
+      <div className="space-y-6">
+        <div className="h-10 bg-nex-surface/50 rounded-lg animate-pulse" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[...Array(4)].map((_, i) => (
+            <div key={i} className="h-48 bg-nex-surface/50 rounded-xl animate-pulse" />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Quick Actions - Surface most common tasks */}
+      <div className="flex flex-wrap items-center gap-3">
+        <span className="text-xs font-mono uppercase tracking-widest text-slate-dim">Quick:</span>
+        <QuickAction
+          href="/nucleus/admin/academy/my-work"
+          icon={Briefcase}
+          label="My Work"
+          variant="emerald"
+        />
+        <QuickAction
+          href="/nucleus/admin/academy/content-pipeline"
+          icon={Sparkles}
+          label="Launch Pipeline"
+          variant="violet"
+        />
+      </div>
+
+      {/* Tabbed Navigation */}
+      <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
+        <TabsList className="grid w-full grid-cols-3 bg-nex-surface border border-nex-light mb-6">
+          {(Object.keys(categoryMeta) as CardCategory[]).map((category) => {
+            const Icon = tabIcons[category];
+            const meta = categoryMeta[category];
+            const count = badgeCounts?.[category];
+
+            return (
+              <TabsTrigger
+                key={category}
+                value={category}
+                className="data-[state=active]:bg-cyan/10 data-[state=active]:text-cyan gap-2"
+              >
+                <Icon className="h-4 w-4" />
+                <span className="hidden sm:inline">{meta.label}</span>
+                {count !== undefined && count > 0 && (
+                  <Badge variant="secondary" className="ml-1 h-5 min-w-5 px-1.5 text-xs">
+                    {count > 99 ? '99+' : count}
+                  </Badge>
+                )}
+              </TabsTrigger>
+            );
+          })}
+        </TabsList>
+
+        {(Object.keys(categoryMeta) as CardCategory[]).map((category) => {
+          const cards = getVisibleCards(category);
+          return (
+            <TabsContent key={category} value={category} className="mt-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {cards.map((card) => (
+                  <AdminNavCard
+                    key={card.id}
+                    icon={card.icon}
+                    title={card.title}
+                    description={card.description}
+                    href={card.href}
+                    actionLabel={card.actionLabel}
+                    variant={card.variant}
+                    badge={card.badge}
+                    badgeVariant={card.badgeVariant}
+                  />
+                ))}
+              </div>
+              {cards.length === 0 && (
+                <div className="text-center py-12 text-slate-dim">
+                  No items available in this category
+                </div>
+              )}
+            </TabsContent>
+          );
+        })}
+      </Tabs>
+    </div>
+  );
+}

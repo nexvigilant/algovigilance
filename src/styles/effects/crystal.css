@@ -1,0 +1,367 @@
+/**
+ * Crystal Card System & Glassmorphism Effects
+ *
+ * Polished Blue Zircon gemstone aesthetic for premium cards
+ * with faceted appearance, specular highlights, and prismatic borders
+ *
+ * IMPORTANT: Keep text white/gray for accessibility - NO blue text
+ */
+
+/* =============================================================================
+   TEXT GRADIENT UTILITIES
+   ============================================================================= */
+
+.text-gradient {
+  background: linear-gradient(to right, rgb(var(--nex-cyan-rgb)), rgb(var(--nex-cyan-glow-rgb)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(to right, rgb(var(--nex-gold-rgb)), rgb(var(--nex-gold-bright-rgb)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-grid-mask {
+  mask-image: linear-gradient(to bottom, transparent, black, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black, transparent);
+}
+
+/* =============================================================================
+   BASE CRYSTAL CARD
+   Multi-layer depth with sharp highlights
+   ============================================================================= */
+
+.crystal-card {
+  position: relative;
+  background: linear-gradient(
+    165deg,
+    var(--crystal-bg-1) 0%,
+    var(--crystal-bg-2) 40%,
+    var(--crystal-bg-3) 70%,
+    var(--crystal-bg-4) 100%
+  );
+  border: 1px solid rgba(var(--nex-cyan-glow-rgb), 0.15);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 4px 6px -1px rgba(var(--nex-black-rgb), 0.3),
+    0 10px 20px -5px rgba(var(--nex-crystal-cool-rgb), 0.15),
+    inset 0 1px 0 rgba(var(--nex-white-rgb), 0.05);
+}
+
+/* Specular highlight overlay - top-left facet catch */
+.crystal-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(var(--nex-white-rgb), 0.08) 0%,
+      rgba(var(--nex-cyan-glow-rgb), 0.06) 15%,
+      transparent 40%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 60%,
+      rgba(var(--nex-cyan-glow-rgb), 0.03) 85%,
+      rgba(var(--nex-white-rgb), 0.02) 100%
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Prismatic border edge - subtle rainbow refraction */
+.crystal-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--nex-cyan-glow-rgb), 0.3) 0%,
+    rgba(var(--nex-spectrum-blue-rgb), 0.2) 25%,
+    rgba(var(--nex-spectrum-violet-rgb), 0.15) 50%,
+    rgba(var(--nex-gold-bright-rgb), 0.2) 75%,
+    rgba(var(--nex-cyan-glow-rgb), 0.3) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+/* Firefox fallback: mask-composite not fully supported, use solid border */
+@supports not (mask-composite: exclude) {
+  .crystal-card::after {
+    -webkit-mask: none;
+    mask: none;
+    background: none;
+    border: 1px solid rgba(var(--nex-cyan-glow-rgb), 0.2);
+  }
+}
+
+.crystal-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(var(--nex-cyan-glow-rgb), 0.25);
+  box-shadow:
+    0 6px 12px -2px rgba(var(--nex-black-rgb), 0.4),
+    0 15px 30px -5px rgba(var(--nex-crystal-warm-rgb), 0.2),
+    0 0 20px rgba(var(--nex-cyan-glow-rgb), 0.15),
+    inset 0 1px 0 rgba(var(--nex-white-rgb), 0.08);
+}
+
+.crystal-card:hover::after {
+  opacity: 0.6;
+}
+
+/* =============================================================================
+   CRYSTAL CARD VARIANT - CYAN ACCENT
+   For active/selected states
+   ============================================================================= */
+
+.crystal-card-cyan {
+  border-color: rgba(var(--nex-cyan-glow-rgb), 0.25);
+  box-shadow:
+    0 4px 6px -1px rgba(var(--nex-black-rgb), 0.3),
+    0 10px 20px -5px rgba(var(--nex-crystal-warm-rgb), 0.2),
+    0 0 15px rgba(var(--nex-cyan-glow-rgb), 0.1),
+    inset 0 1px 0 rgba(var(--nex-cyan-glow-rgb), 0.1);
+}
+
+.crystal-card-cyan:hover {
+  box-shadow:
+    0 6px 12px -2px rgba(var(--nex-black-rgb), 0.4),
+    0 15px 30px -5px rgba(var(--nex-crystal-warm-rgb), 0.25),
+    0 0 25px rgba(var(--nex-cyan-glow-rgb), 0.2),
+    inset 0 1px 0 rgba(var(--nex-cyan-glow-rgb), 0.15);
+}
+
+/* =============================================================================
+   CRYSTAL CARD VARIANT - GOLD ACCENT
+   For premium/featured elements
+   ============================================================================= */
+
+.crystal-card-gold {
+  border-color: rgba(var(--nex-gold-rgb), 0.2);
+  box-shadow:
+    0 4px 6px -1px rgba(var(--nex-black-rgb), 0.3),
+    0 10px 20px -5px rgba(100, 80, 30, 0.15),
+    0 0 15px rgba(var(--nex-gold-rgb), 0.08),
+    inset 0 1px 0 rgba(var(--nex-gold-rgb), 0.1);
+}
+
+.crystal-card-gold::after {
+  background: linear-gradient(
+    135deg,
+    rgba(var(--nex-gold-rgb), 0.3) 0%,
+    rgba(var(--nex-gold-bright-rgb), 0.25) 25%,
+    rgba(255, 248, 220, 0.15) 50%,
+    rgba(var(--nex-gold-rgb), 0.25) 75%,
+    rgba(var(--nex-gold-bright-rgb), 0.3) 100%
+  );
+}
+
+.crystal-card-gold:hover {
+  box-shadow:
+    0 6px 12px -2px rgba(var(--nex-black-rgb), 0.4),
+    0 15px 30px -5px rgba(120, 100, 40, 0.2),
+    0 0 25px rgba(var(--nex-gold-rgb), 0.15),
+    inset 0 1px 0 rgba(var(--nex-gold-rgb), 0.15);
+}
+
+/* =============================================================================
+   CRYSTAL CARD VARIANT - SUBTLE
+   For dense UIs with minimal distraction
+   ============================================================================= */
+
+.crystal-card-subtle {
+  background: linear-gradient(
+    165deg,
+    var(--crystal-subtle-1) 0%,
+    var(--crystal-subtle-2) 100%
+  );
+  border-color: rgba(var(--nex-cyan-glow-rgb), 0.08);
+  box-shadow:
+    0 2px 4px rgba(var(--nex-black-rgb), 0.2),
+    inset 0 1px 0 rgba(var(--nex-white-rgb), 0.03);
+}
+
+.crystal-card-subtle::before {
+  background: linear-gradient(
+    135deg,
+    rgba(var(--nex-white-rgb), 0.04) 0%,
+    transparent 30%
+  );
+}
+
+.crystal-card-subtle::after {
+  opacity: 0.2;
+}
+
+.crystal-card-subtle:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 8px rgba(var(--nex-black-rgb), 0.25),
+    0 0 10px rgba(var(--nex-cyan-glow-rgb), 0.08),
+    inset 0 1px 0 rgba(var(--nex-white-rgb), 0.05);
+}
+
+/* =============================================================================
+   PRISMATIC BORDER UTILITY
+   Add rainbow refraction border to any element
+   ============================================================================= */
+
+.prismatic-border {
+  position: relative;
+}
+
+.prismatic-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--nex-spectrum-red-rgb), 0.15) 0%,
+    rgba(var(--nex-spectrum-orange-rgb), 0.18) 14%,
+    rgba(var(--nex-spectrum-yellow-rgb), 0.2) 28%,
+    rgba(var(--nex-spectrum-green-rgb), 0.18) 42%,
+    rgba(var(--nex-cyan-glow-rgb), 0.35) 57%,
+    rgba(var(--nex-spectrum-indigo-rgb), 0.2) 71%,
+    rgba(var(--nex-spectrum-violet-rgb), 0.18) 85%,
+    rgba(var(--nex-spectrum-pink-rgb), 0.15) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: prismatic-border-sweep 8s linear infinite;
+}
+
+/* Firefox fallback: mask-composite not fully supported */
+@supports not (mask-composite: exclude) {
+  .prismatic-border::before {
+    -webkit-mask: none;
+    mask: none;
+    background: none;
+    border: 1px solid rgba(var(--nex-cyan-glow-rgb), 0.3);
+  }
+}
+
+@keyframes prismatic-border-sweep {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* =============================================================================
+   CRYSTAL HIGHLIGHT UTILITY
+   Specular overlay for any element
+   ============================================================================= */
+
+.crystal-highlight {
+  position: relative;
+}
+
+.crystal-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 40%;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--nex-white-rgb), 0.1) 0%,
+    rgba(var(--nex-cyan-glow-rgb), 0.08) 30%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+/* =============================================================================
+   CRYSTAL SHADOW UTILITIES
+   ============================================================================= */
+
+.shadow-crystal {
+  box-shadow:
+    0 4px 6px -1px rgba(var(--nex-black-rgb), 0.3),
+    0 10px 20px -5px rgba(var(--nex-crystal-cool-rgb), 0.2),
+    0 20px 40px -10px rgba(var(--nex-crystal-glow-rgb), 0.1);
+}
+
+.shadow-crystal-hover {
+  box-shadow:
+    0 6px 10px -1px rgba(var(--nex-black-rgb), 0.4),
+    0 15px 30px -5px rgba(var(--nex-crystal-cool-rgb), 0.25),
+    0 25px 50px -10px rgba(var(--nex-crystal-glow-rgb), 0.15),
+    0 0 20px rgba(var(--nex-cyan-glow-rgb), 0.2);
+}
+
+/* =============================================================================
+   REDUCED MOTION SUPPORT
+   ============================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .crystal-card,
+  .crystal-card-cyan,
+  .crystal-card-gold,
+  .crystal-card-subtle {
+    transition: none;
+  }
+
+  .crystal-card:hover,
+  .crystal-card-cyan:hover,
+  .crystal-card-gold:hover,
+  .crystal-card-subtle:hover {
+    transform: none;
+  }
+
+  .prismatic-border::before {
+    animation: none;
+  }
+}
+
+/* =============================================================================
+   BROWSER TESTING NOTES
+   =============================================================================
+
+   CHROMIUM (Chrome, Edge, Opera):
+   ✓ Full prismatic border animations with mask-composite
+   ✓ All CSS variable rgba() expressions
+   ✓ Smooth box-shadow animations
+
+   FIREFOX:
+   ✓ Falls back to solid borders via @supports not (mask-composite: exclude)
+   ✓ rgba(var(--token), alpha) works correctly
+   ✓ Border displays as static cyan line instead of prismatic gradient
+   ⚠ Prismatic effect degrades gracefully to single-color border
+
+   SAFARI:
+   ✓ mask-composite: xor supported via -webkit-mask-composite
+   ✓ Backdrop-filter with -webkit- prefix
+   ⚠ Test glassmorphism effects on iOS Safari
+
+   TOKENS USED:
+   - --nex-cyan-glow-rgb, --nex-cyan-rgb (primary effects)
+   - --nex-gold-rgb, --nex-gold-bright-rgb (gold variant)
+   - --nex-crystal-cool-rgb, --nex-crystal-warm-rgb (shadows)
+   - --nex-spectrum-* (prismatic rainbow gradient)
+   - --nex-black-rgb, --nex-white-rgb (utility)
+
+   ============================================================================= */

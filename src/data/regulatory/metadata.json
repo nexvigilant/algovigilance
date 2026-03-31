@@ -1,0 +1,32 @@
+{
+  "version": "1.2.0",
+  "exportedAt": "2025-12-23T08:15:23.986Z",
+  "lastMergedAt": "2025-12-23T08:30:00.000Z",
+  "sourceSpreadsheetId": "1xqZMCavHmweesd79rw2CsFxe_1NClf2f6z6nTyLWt0c",
+  "totalRegulations": 341,
+  "totalTimelines": 69,
+  "totalCrossReferences": 71,
+  "totalMappings": 48,
+  "totalAcronyms": 162,
+  "totalGaps": 53,
+  "ksbIntegration": {
+    "totalKsbRegulationLinks": 3968,
+    "regulationsWithKsbLinks": 37,
+    "regulationsCoverage": "10.9%",
+    "unmappedRegulations": 304,
+    "topDomainsByLinks": {
+      "D06": 1040,
+      "D14": 639,
+      "D07": 455,
+      "D11": 400,
+      "D08": 368
+    }
+  },
+  "fixes": {
+    "v1.2.0": [
+      "Fixed effectiveDate extraction with multi-format parser",
+      "Fixed gap analysis regId extraction (filtered summary rows)",
+      "Added unmapped-regulations.json for tracking"
+    ]
+  }
+}

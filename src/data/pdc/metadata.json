@@ -1,0 +1,14 @@
+{
+  "exportedAt": "2025-12-22T05:13:11.022Z",
+  "sourceSpreadsheetId": "1hnTOoJHclvKgtbozmUgkvRg6iSMBd_nWjgEEZBAwf10",
+  "version": "4.1",
+  "counts": {
+    "epas": 21,
+    "cpas": 8,
+    "domains": 15,
+    "ksbs": 1286,
+    "epaDomainMappings": 115,
+    "cpaEpaMappings": 28,
+    "activityAnchors": 658
+  }
+}

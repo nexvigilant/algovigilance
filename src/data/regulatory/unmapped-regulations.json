@@ -1,0 +1,2152 @@
+{
+  "generatedAt": "2025-12-23T08:17:10.984Z",
+  "totalUnmapped": 304,
+  "coveragePercentage": "10.9",
+  "byJurisdiction": {
+    "FDA": 108,
+    "EMA": 61,
+    "WHO": 4,
+    "International": 73,
+    "UK-MHRA": 20,
+    "ICH": 38
+  },
+  "byCategory": {
+    "ICSR Reporting": 14,
+    "Expedited Reporting": 23,
+    "Post-Marketing Studies": 11,
+    "Periodic Reporting": 13,
+    "Risk Management": 14,
+    "PV System Quality": 208,
+    "Signal Detection": 21
+  },
+  "unmappedRegulations": [
+    {
+      "regId": "FDA-CFR-005",
+      "title": "Postmarketing Reporting of Adverse Experiences (Biologics)",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "FDA-CFR-007",
+      "title": "OTC Drug Safety Reporting",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "FDA-CFR-008",
+      "title": "Investigator Reports to Sponsor",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-CFR-009",
+      "title": "BA/BE Study Safety Reporting",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-CFR-010",
+      "title": "Biological Product Deviation Reporting",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-STAT-003",
+      "title": "Reports of Postmarketing Studies",
+      "jurisdiction": "FDA",
+      "documentType": "US Statute",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "FDA-STAT-004",
+      "title": "Pediatric Research Equity Act",
+      "jurisdiction": "FDA",
+      "documentType": "US Statute",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-STAT-005",
+      "title": "National Childhood Vaccine Injury Act - Reporting Requirements",
+      "jurisdiction": "FDA",
+      "documentType": "US Statute",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "FDA-GUID-002",
+      "title": "Safety Reporting Requirements for INDs and BA/BE Studies",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-GUID-003",
+      "title": "Postmarketing Studies and Clinical Trials—Implementation of Section 505(o)(3)",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-GUID-004",
+      "title": "Format and Content of a REMS Document",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "FDA-GUID-005",
+      "title": "REMS Modifications and Revisions",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "EMA-REG-003",
+      "title": "Pharmacovigilance Activities and Good Pharmacovigilance Practices",
+      "jurisdiction": "EMA",
+      "documentType": "Commission Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "WHO-001",
+      "title": "International Drug Monitoring: The Role of National Centres",
+      "jurisdiction": "WHO",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "WHO-002",
+      "title": "Surveillance Manual for Adverse Events Following Immunization",
+      "jurisdiction": "WHO",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "CIOMS-001",
+      "title": "International Reporting of Adverse Drug Reactions (CIOMS Form)",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "CIOMS-002",
+      "title": "Current Challenges in Pharmacovigilance: Pragmatic Approaches",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "EMA-GVP-007",
+      "title": "Pharmacovigilance Inspections",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-008",
+      "title": "Pharmacovigilance Audits",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-013",
+      "title": "Definitions (Rev 4)",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-HMR-001",
+      "title": "Human Medicines Regulations 2012 - Pharmacovigilance Provisions",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-001",
+      "title": "Exceptions and Modifications to EU GVP for UK",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-002",
+      "title": "MHRA Yellow Card ADR Reporting Scheme",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "UK-MHRA-003",
+      "title": "Qualified Person for Pharmacovigilance and National Contact Person Requirements",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-004",
+      "title": "UK Pharmacovigilance System Master File Requirements",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-005",
+      "title": "Category 1 and Category 2 Product Classification",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-006",
+      "title": "Individual Case Safety Report Submission to MHRA",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "UK-MHRA-007",
+      "title": "Emerging Safety Issue Notification Requirements",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-008",
+      "title": "Periodic Safety Update Report Submission to MHRA",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "UK-MHRA-010",
+      "title": "Black Triangle Enhanced Monitoring in UK",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-012",
+      "title": "Post-Authorisation Safety Study Requirements for UK",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "UK-MHRA-013",
+      "title": "Signal Detection and Management Requirements for UK",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-014",
+      "title": "MHRA Pharmacovigilance Inspections",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-011",
+      "title": "Requirements on Content and Format of Labeling for Human Prescription Drug and Biological Products",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-012",
+      "title": "Supplements and Other Changes to an Approved NDA",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-008",
+      "title": "Good Clinical Practice: Integrated Addendum to ICH E6(R1)",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-013",
+      "title": "Clinical Holds and Requests for Modification",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-019",
+      "title": "GVP Module XVI Addendum I: Risk Minimisation Measures for Medicinal Products with Embryo-Fetal Risks (Pregnancy Prevention Programmes)",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-020",
+      "title": "GVP Chapter P.III: Pharmacovigilance for Pregnant and Breastfeeding Women",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-021",
+      "title": "GVP Chapter P.IV: Product- or Population-Specific Considerations IV: Paediatric Population",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-005",
+      "title": "Concerning the Examination of Variations to the Terms of Marketing Authorisations for Medicinal Products for Human Use",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-009",
+      "title": "General Considerations for Clinical Studies",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-010",
+      "title": "Statistical Principles for Clinical Trials: Addendum on Estimands and Sensitivity Analysis",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-011",
+      "title": "General Principles for Planning and Design of Multi-Regional Clinical Trials",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-007",
+      "title": "Data Integrity and Compliance With Drug CGMP: Questions and Answers",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-016",
+      "title": "GXP Data Integrity Guidance and Definitions; Revision 1",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-014",
+      "title": "Review of Ongoing Investigations - Sponsor Oversight",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-015",
+      "title": "Institutional Review Boards - Safety Reporting Requirements",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-016",
+      "title": "Protection of Human Subjects - Informed Consent and Risk Disclosure",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-017",
+      "title": "Postmarketing Studies for Approved Abbreviated New Drug Applications (ANDAs)",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-CFR-018",
+      "title": "Annual Progress Reports of Postmarketing Studies for Licensed Biological Products",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-CFR-019",
+      "title": "Complaint Files - Current Good Manufacturing Practice",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-020",
+      "title": "Responsibilities of Quality Control Unit - CGMP",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-021",
+      "title": "Production Record Review - Investigation of Discrepancies",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-022",
+      "title": "Product- or Population-Specific Considerations IV: Blood Components",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "ICH-012",
+      "title": "Electronic Standards for the Transfer of Regulatory Information (ESTRI)",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "ICH-013",
+      "title": "Common Technical Document - Efficacy (including Integrated Summaries)",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "ICH-015",
+      "title": "Optimization of Safety Data Collection",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "EMA-POL-001",
+      "title": "EudraVigilance Access Policy for Medicines for Human Use",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "EMA-GVP-023",
+      "title": "Format for the Pharmacovigilance System Master File (PSMF)",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-024",
+      "title": "MAH Reporting of ICSRs to EudraVigilance - Detailed Guidance",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "UK-MHRA-017",
+      "title": "Innovative Licensing and Access Pathway (ILAP)",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "UK-MHRA-018",
+      "title": "Conditional Marketing Authorisation (CMA) - UK Requirements",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "FDA-IG-001",
+      "title": "FDA Implementation Guide for E2B(R3) Electronic Transmission of ICSRs",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "EMA-IG-001",
+      "title": "EU Individual Case Safety Report (ICSR) Implementation Guide",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "UK-IG-001",
+      "title": "MHRA Implementation Guide for E2B(R3) ICSR Submissions",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "ICH-016",
+      "title": "Adaptive Clinical Trials",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "EMA-SPOR-001",
+      "title": "Substance, Product, Organisation and Referential (SPOR) Master Data",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PICS-001",
+      "title": "Good Practices for Data Management and Integrity in Regulated GMP/GDP Environments",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-022",
+      "title": "Medical Device Reporting (MDR)",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-CFR-023",
+      "title": "Complaint Files - Quality System Regulation (Devices)",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-024",
+      "title": "Regulation of Combination Products",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "WHO-003",
+      "title": "WHO Global Individual Case Safety Report Database",
+      "jurisdiction": "WHO",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "WHO-004",
+      "title": "WHO National Pharmacovigilance Database System",
+      "jurisdiction": "WHO",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "CIOMS-005",
+      "title": "Management of Safety Information from Clinical Trials",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "CIOMS-006",
+      "title": "Practical Approaches to Risk Minimisation for Medicinal Products",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "CIOMS-007",
+      "title": "Patient Involvement in Drug Development and Safe Use of Medicines",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ISO-001",
+      "title": "Identification of Medicinal Products Standards",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-025",
+      "title": "Changes to an Approved Biologics License Application (BLA)",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-026",
+      "title": "General Requirements for Records and Reports - CGMP",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-027",
+      "title": "General Requirements for Laboratory Controls - CGMP",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-008",
+      "title": "FDA Sentinel System - Active Post-Market Risk Identification and Analysis",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-009",
+      "title": "Establishing Pregnancy Exposure Registries - FDA Guidance",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-GUID-010",
+      "title": "Drug Safety Communications - FDA Public Safety Announcements",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-011",
+      "title": "MedWatch: FDA Safety Reporting Program - Forms and Instructions",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-GUID-012",
+      "title": "Clinical Pharmacology Data to Support Biosimilar Products - Safety Considerations",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "FDA-GUID-013",
+      "title": "How to Comply with the Pediatric Research Equity Act (PREA) - Safety Requirements",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-CFR-028",
+      "title": "Electronic Records; Electronic Signatures",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-014",
+      "title": "REMS: FDA's Application of Statutory Factors in Determining When a REMS is Necessary",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "FDA-GUID-015",
+      "title": "Postmarketing Adverse Event Reporting for Nonprescription Human Drug Products Marketed Without an Approved Application",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-GUID-016",
+      "title": "Providing Regulatory Submissions in Electronic Format - FAERS Data Quality Standards",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "EMA-REG-006",
+      "title": "Amendment to Pharmacovigilance Implementing Regulation (EU) No 520/2012",
+      "jurisdiction": "EMA",
+      "documentType": "Commission Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-017",
+      "title": "Considerations for the Use of Artificial Intelligence to Support Regulatory Decision-Making for Drug and Biological Products",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-001",
+      "title": "Reflection Paper on the Use of Artificial Intelligence (AI) in the Medicinal Product Lifecycle",
+      "jurisdiction": "EMA",
+      "documentType": "Reflection Paper",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-024",
+      "title": "GVP Module VI Addendum II - Masking of Personal Data in Individual Case Safety Reports Submitted to EudraVigilance",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-025",
+      "title": "GVP Module XVI Addendum I - Risk Minimisation Measures for Medicinal Products with Embryo-Fetal Risks",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-008",
+      "title": "Artificial Intelligence in Pharmacovigilance - Working Group XIV Report",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-018",
+      "title": "Human Gene Therapy Products Incorporating Human Genome Editing",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-019",
+      "title": "Considerations for the Development of Chimeric Antigen Receptor (CAR) T Cell Products",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-007",
+      "title": "Advanced Therapy Medicinal Products (ATMP) Regulation",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-002",
+      "title": "CAR-T Cell Therapy Secondary Malignancy Labeling Requirements",
+      "jurisdiction": "EMA",
+      "documentType": "Safety Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-008",
+      "title": "Amendment to Variations Regulation (EC) No 1234/2008",
+      "jurisdiction": "EMA",
+      "documentType": "Commission Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-029",
+      "title": "Quality Management System Regulation (Medical Devices) - Harmonized with ISO 13485:2016",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-PROG-001",
+      "title": "Emerging Drug Safety Technology Program (EDSTP) and EDSTM Meetings",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "TRANSCELERATE-001",
+      "title": "Intelligent Automation Opportunities in Pharmacovigilance - Validation Frameworks",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-020",
+      "title": "Innovative Designs for Clinical Trials of Cellular and Gene Therapy Products in Small Populations",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EU-AI-001",
+      "title": "EU Artificial Intelligence Act",
+      "jurisdiction": "International",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PMDA-001",
+      "title": "Post-Marketing All-Case Surveillance (PACS) for Cell and Gene Therapies",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "HC-001",
+      "title": "Canada Food and Drugs Act - Pharmacovigilance Requirements",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "HC-002",
+      "title": "Guidance Document: Post-Market Surveillance of Natural Health Products and Non-Prescription Drugs",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "TGA-001",
+      "title": "Australia Therapeutic Goods Act - Adverse Event Reporting Requirements",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "TGA-002",
+      "title": "Australian Requirements and Recommendations for Pharmacovigilance Responsibilities of Sponsors",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "SWISS-001",
+      "title": "Swiss Federal Act on Medicinal Products and Medical Devices (Heilmittelgesetz)",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "SWISS-002",
+      "title": "Swissmedic Guidance Document: Pharmacovigilance Requirements",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-030",
+      "title": "Protocol Amendments - Safety-Related Changes",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-031",
+      "title": "Withdrawal of IND",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-032",
+      "title": "Expanded Access - Individual Patients",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-CFR-033",
+      "title": "Expanded Access - Intermediate-Size Populations",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-CFR-034",
+      "title": "Expanded Access - Widespread Treatment Use",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-CFR-035",
+      "title": "Foreign Clinical Studies Not Conducted Under an IND",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-036",
+      "title": "Field Alert Reports",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-CFR-037",
+      "title": "Withdrawal Procedures - Accelerated Approval",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "FDA-CFR-038",
+      "title": "Accelerated Approval of Biological Products",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "FDA-CFR-039",
+      "title": "Good Laboratory Practice for Nonclinical Laboratory Studies",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-040",
+      "title": "Medication Guides",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-041",
+      "title": "Prescription Drug Advertising - Labeling Requirements",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-042",
+      "title": "Prescription Drug Advertising",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-043",
+      "title": "Written Procedures; Deviations",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-044",
+      "title": "Sampling and Testing of In-Process Materials and Drug Products",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-045",
+      "title": "Expiration Dating",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-021",
+      "title": "Drug-Induced Liver Injury: Premarketing Clinical Evaluation",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-022",
+      "title": "Clinical Evaluation of QT/QTc Interval Prolongation and Proarrhythmic Potential",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-023",
+      "title": "Suicidality in Drug Evaluation: Assessment and Reporting",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-024",
+      "title": "Medication Error Reports: Postmarketing",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Expedited Reporting"
+    },
+    {
+      "regId": "FDA-GUID-025",
+      "title": "Immunogenicity Assessment for Therapeutic Protein Products",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-026",
+      "title": "Clinical Lactation Studies: Considerations for Study Design",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-GUID-027",
+      "title": "Real-World Evidence Program",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-028",
+      "title": "Rare Pediatric Disease Priority Review Vouchers",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-GUID-029",
+      "title": "Postmarketing Studies and Clinical Trials: Implementation of FDAAA",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "FDA-GUID-030",
+      "title": "Patient-Focused Drug Development: Selecting, Developing, or Modifying Fit-for-Purpose Clinical Outcome Assessments",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-031",
+      "title": "Clinical Trial Diversity",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-032",
+      "title": "Diversity Action Plans to Improve Enrollment in Clinical Studies",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-CFR-046",
+      "title": "Definitions - Biological Products",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-047",
+      "title": "Establishment Standards - Biologics",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-STAT-006",
+      "title": "Records and Reports - Postmarketing Safety",
+      "jurisdiction": "FDA",
+      "documentType": "US Statute",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "FDA-STAT-007",
+      "title": "Safety Labeling Changes - FDA Authority",
+      "jurisdiction": "FDA",
+      "documentType": "US Statute",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-PROG-002",
+      "title": "FDA Adverse Event Reporting System",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-PROG-003",
+      "title": "Vaccine Adverse Event Reporting System",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-CFR-048",
+      "title": "Protocol Amendments",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-049",
+      "title": "Withdrawal of IND",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-050",
+      "title": "Expanded Access - General Provisions",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-051",
+      "title": "Expanded Access - Treatment IND/Protocol",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-052",
+      "title": "Foreign Clinical Studies Not Conducted Under an IND",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-053",
+      "title": "NDA Field Alert Reports",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-054",
+      "title": "Accelerated Approval - Withdrawal Procedures",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-055",
+      "title": "Accelerated Approval of Biological Products",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-056",
+      "title": "Good Laboratory Practice for Nonclinical Laboratory Studies",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-057",
+      "title": "Written Procedures; Deviations",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-058",
+      "title": "Sampling and Testing of In-Process Materials and Drug Products",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-059",
+      "title": "Expiration Dating",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-060",
+      "title": "General Biological Products Standards",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-061",
+      "title": "Prescription Drug Labeling Requirements",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-062",
+      "title": "Prescription Drug Advertising",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-CFR-063",
+      "title": "Medication Guides",
+      "jurisdiction": "FDA",
+      "documentType": "CFR",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-033",
+      "title": "Guidance for Industry: Postmarketing Studies and Clinical Trials — Implementation of Section 505(o)(3) of the FD&C Act",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-034",
+      "title": "Guidance for Industry: Safety Reporting Requirements for INDs and BA/BE Studies - Medication Errors",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-035",
+      "title": "Guidance for Industry: Suicidal Ideation and Behavior — Prospective Assessment of Occurrence in Clinical Trials",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-036",
+      "title": "Guidance for Industry: Drug-Induced Liver Injury — Premarketing Clinical Evaluation",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-037",
+      "title": "Guidance for Industry: E14 Clinical Evaluation of QT/QTc Interval Prolongation and Proarrhythmic Potential for Non-Antiarrhythmic Drugs",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-038",
+      "title": "Guidance for Industry: Immunogenicity Assessment for Therapeutic Protein Products",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-039",
+      "title": "Guidance for Industry: Clinical Lactation Studies — Study Design, Data Analysis, and Recommendations for Labeling",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-GUID-040",
+      "title": "Guidance for Industry: Safety Assessment for IND Safety Reporting",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "FDA-GUID-041",
+      "title": "Framework for FDA's Real-World Evidence Program",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-PROG-004",
+      "title": "Rare Pediatric Disease Priority Review Voucher Program",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "FDA-PROG-005",
+      "title": "FDA Cooperative Research and Development Agreements (CRADA) and Research Collaborations",
+      "jurisdiction": "FDA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-009",
+      "title": "Pharmacovigilance Directive - Amending Directive 2001/83/EC",
+      "jurisdiction": "EMA",
+      "documentType": "EU Directive",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-010",
+      "title": "Pharmacovigilance Regulation - Amending Regulation (EC) No 726/2004",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-011",
+      "title": "Falsified Medicines Directive - Safety Features (Serialization)",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-026",
+      "title": "Public Participation in Pharmacovigilance",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-027",
+      "title": "Continuous Pharmacovigilance - Post-Authorisation Safety Studies",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "EMA-GVP-028",
+      "title": "Pharmacovigilance for Pregnant and Breastfeeding Women",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-012",
+      "title": "Medical Device Regulation (MDR)",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-013",
+      "title": "In Vitro Diagnostic Regulation (IVDR)",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-014",
+      "title": "HERA Regulation - Serious Cross-Border Health Threats",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-015",
+      "title": "Veterinary Medicinal Products Regulation",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-003",
+      "title": "Guideline on the Investigation of Drug Interactions",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-004",
+      "title": "ICH E14 Implementation - QT/QTc Studies and Proarrhythmic Risk",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-005",
+      "title": "ICH S7B Implementation - Nonclinical Cardiac Safety (hERG)",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-006",
+      "title": "Guideline on the Evaluation of Anticancer Medicinal Products in Man",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-007",
+      "title": "Guideline on Clinical Investigation of Medicinal Products in the Treatment of Depression",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROC-001",
+      "title": "PRAC Mandate, Objectives and Rules of Procedure",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROC-002",
+      "title": "Article 31/20/107i Referral Procedures",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROC-003",
+      "title": "EU Rapid Alert System for Quality Defects",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROC-004",
+      "title": "EudraVigilance Data Analysis System (EVDAS) User Guide",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "EMA-PROC-005",
+      "title": "EudraVigilance Registration and Access Guide",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROC-006",
+      "title": "CMDh Best Practice Guide on PSUR Worksharing and Safety Variations",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-STRAT-001",
+      "title": "EMA Regulatory Science Strategy to 2025",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROG-001",
+      "title": "Data Analysis and Real World Interrogation Network",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROG-002",
+      "title": "Accelerating Clinical Trials in the EU",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-016",
+      "title": "Proposed EU Pharmaceutical Legislation Reform",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-008",
+      "title": "Guideline on Good Pharmacovigilance Practices for Biological Medicinal Products",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "HC-003",
+      "title": "Adverse Drug Reaction Reporting - Prescription Drugs",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "HC-004",
+      "title": "Vanessa's Law - Enhanced Pharmacovigilance Authority",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "HC-005",
+      "title": "Guidance Document: Submission of Periodic Safety Update Reports and Periodic Benefit-Risk Evaluation Reports",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "HC-006",
+      "title": "Guidance Document: Submission of Risk Management Plans and Follow-up Commitments",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "HC-007",
+      "title": "Canada Vigilance Program - National ADR Collection and Analysis",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "HC-008",
+      "title": "Special Access Programme - Safety Reporting Requirements",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "HC-009",
+      "title": "Guidance Document: Signal Assessment and Management",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "HC-010",
+      "title": "Notice of Compliance with Conditions (NOC/c) - Post-Market Commitments",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "HC-011",
+      "title": "Risk Management Measures and Distribution Restrictions",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "HC-012",
+      "title": "Clinical Trial Safety Reporting Requirements - Food and Drug Regulations Part C, Division 5",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PMDA-002",
+      "title": "Act on Securing Quality, Efficacy and Safety of Products Including Pharmaceuticals and Medical Devices",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PMDA-003",
+      "title": "Good Vigilance Practice - Japanese GVP Standards",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PMDA-004",
+      "title": "Good Post-Marketing Study Practice",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Post-Marketing Studies"
+    },
+    {
+      "regId": "PMDA-005",
+      "title": "Adverse Drug Reaction Reporting Rules and Timelines",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "PMDA-006",
+      "title": "Japanese E2B(R3) Implementation Guide for ICSR Submissions",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PMDA-007",
+      "title": "Post-Approval Re-examination of New Drugs",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PMDA-008",
+      "title": "Enhanced Surveillance During Initial Marketing Period",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PMDA-009",
+      "title": "PMDA Safety Communications and Precautions",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "PMDA-010",
+      "title": "Periodic Safety Update Report Requirements for Japan",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "PMDA-011",
+      "title": "Guideline on Risk Management Plan for Pharmaceutical Products",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "TGA-003",
+      "title": "Therapeutic Goods Regulations 1990 - Pharmacovigilance Provisions",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "TGA-004",
+      "title": "Reporting Adverse Events - Medicine and Vaccine Sponsors",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "TGA-005",
+      "title": "Periodic Safety Update Reports for Prescription Medicines",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "TGA-006",
+      "title": "Australian Risk Management Plan Requirements",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "TGA-007",
+      "title": "Australian Register of Therapeutic Goods - Product Identification for PV",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "TGA-008",
+      "title": "Provisional Approval - Enhanced Pharmacovigilance Requirements",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "TGA-009",
+      "title": "Australian Black Triangle Scheme for Additional Monitoring",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "TGA-010",
+      "title": "TGA Signal Detection and Investigation Process",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "SWISS-003",
+      "title": "Swiss Ordinance on Medicinal Products - Pharmacovigilance Requirements",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "SWISS-004",
+      "title": "Swissmedic Electronic Vigilance System (ElViS) User Guide",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "SWISS-005",
+      "title": "Periodic Safety Update Report Requirements for Switzerland",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "SWISS-006",
+      "title": "Risk Management Plan Requirements for Switzerland",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "UK-MHRA-019",
+      "title": "Clinical Trial Safety Reporting Requirements Post-Brexit",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-020",
+      "title": "MHRA Defect Reporting Centre - Quality Defects and Recalls",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "UK-MHRA-021",
+      "title": "UK Framework for Paediatric Medicines Regulation Post-Brexit",
+      "jurisdiction": "UK-MHRA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-029",
+      "title": "Medication Errors",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-STRAT-002",
+      "title": "EU Medicines Agencies Network Strategy to 2028",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROG-003",
+      "title": "Data Analysis and Real World Interrogation Network - Expansion Phase",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EU-EHDS-001",
+      "title": "European Health Data Space Regulation",
+      "jurisdiction": "International",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-030",
+      "title": "Collection, Management and Submission of Reports of Suspected Adverse Reactions to Medicinal Products (Revision 3)",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "EMA-PROG-004",
+      "title": "Joint Big Data Steering Group - AI and Data Analytics in Medicines Regulation",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EU-PHARMA-001",
+      "title": "EU Pharmaceutical Legislation Reform - Commission Proposals",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-031",
+      "title": "Format for the Periodic Safety Update Report in the EU",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "EMA-POL-002",
+      "title": "EMA Policy on Publication of Clinical Data for Medicinal Products for Human Use",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROC-007",
+      "title": "PRAC Signal Assessment and Recommendation Procedures",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GVP-032",
+      "title": "Signal Management (Revision 2)",
+      "jurisdiction": "EMA",
+      "documentType": "EU GVP Module",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-REG-017",
+      "title": "Veterinary Medicinal Products Regulation",
+      "jurisdiction": "EMA",
+      "documentType": "EU Regulation",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-SYS-001",
+      "title": "EudraVigilance Data Analysis System",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Signal Detection"
+    },
+    {
+      "regId": "EMA-SYS-002",
+      "title": "Extended EudraVigilance Medicinal Product Dictionary",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-PROC-008",
+      "title": "Scientific Advice and Protocol Assistance - Pharmacovigilance Aspects",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "EMA-GUID-009",
+      "title": "SmPC Guideline - Presentation of Safety Information",
+      "jurisdiction": "EMA",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-017",
+      "title": "The Extent of Population Exposure to Assess Clinical Safety for Drugs Intended for Long-Term Treatment of Non-Life-Threatening Conditions",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-018",
+      "title": "Safety Pharmacology Studies for Human Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-019",
+      "title": "Nonclinical Evaluation of the Potential for Delayed Ventricular Repolarization (QT Interval Prolongation) by Human Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-020",
+      "title": "Clinical and Nonclinical Evaluation of QT/QTc Interval Prolongation and Proarrhythmic Potential - Questions and Answers",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-021",
+      "title": "Ethnic Factors in the Acceptability of Foreign Clinical Data",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-022",
+      "title": "Studies in Support of Special Populations: Geriatrics",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-023",
+      "title": "Clinical Investigation of Medicinal Products in the Pediatric Population",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-024",
+      "title": "Statistical Principles for Clinical Trials",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-025",
+      "title": "Choice of Control Group and Related Issues in Clinical Trials",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-026",
+      "title": "Genomic Sampling and Management of Genomic Data",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-027",
+      "title": "Bioanalytical Method Validation and Study Sample Analysis",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-028",
+      "title": "Drug Interaction Studies",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-029",
+      "title": "Pharmaceutical Quality System",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-030",
+      "title": "Comparability of Biotechnological/Biological Products Subject to Changes in Their Manufacturing Process",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-031",
+      "title": "Assessment and Control of DNA Reactive (Mutagenic) Impurities in Pharmaceuticals to Limit Potential Carcinogenic Risk",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-032",
+      "title": "Preclinical Safety Evaluation of Biotechnology-Derived Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-033",
+      "title": "Nonclinical Evaluation for Anticancer Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-009",
+      "title": "International Reporting of Periodic Drug-Safety Update Summaries",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "CIOMS-010",
+      "title": "Guidelines for Preparing Core Clinical-Safety Information on Drugs",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-011",
+      "title": "Benefit-Risk Balance for Marketed Drugs: Evaluating Safety Signals",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-012",
+      "title": "Development Safety Update Report (DSUR): Harmonizing the Format and Content for Periodic Safety Reporting During Clinical Trials",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "CIOMS-013",
+      "title": "Drug-Induced Liver Injury: A CIOMS Working Group Report",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-014",
+      "title": "Real-World Data and Real-World Evidence in Drug Development and Pharmacovigilance",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-015",
+      "title": "Definition and Application of Terms for Vaccine Pharmacovigilance",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-016",
+      "title": "Guide to Active Vaccine Safety Surveillance",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-017",
+      "title": "Guide to Vaccine Safety Communication",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-018",
+      "title": "Development and Rational Use of Standardised MedDRA Queries (SMQs) - Second Edition",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-019",
+      "title": "Benefit-Risk Balance for Medicinal Products",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-020",
+      "title": "Pharmacoepidemiology for Public Health",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "CIOMS-021",
+      "title": "Development Safety Update Report (DSUR) - Update",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "CIOMS-022",
+      "title": "Long-term Safety of Medicinal Products",
+      "jurisdiction": "International",
+      "documentType": "CIOMS Report",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-034",
+      "title": "Guidance on the Need for Carcinogenicity Studies of Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-035",
+      "title": "Testing for Carcinogenicity of Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-036",
+      "title": "Dose Selection for Carcinogenicity Studies of Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-037",
+      "title": "Guidance on Genotoxicity Testing and Data Interpretation for Pharmaceuticals Intended for Human Use",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-038",
+      "title": "Note for Guidance on Toxicokinetics: The Assessment of Systemic Exposure in Toxicity Studies",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-039",
+      "title": "Pharmacokinetics: Guidance for Repeated Dose Tissue Distribution Studies",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-040",
+      "title": "Duration of Chronic Toxicity Testing in Animals (Rodent and Non-Rodent Toxicity Testing)",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-041",
+      "title": "Detection of Reproductive and Developmental Toxicity for Human Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-042",
+      "title": "Immunotoxicity Studies for Human Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-043",
+      "title": "Photosafety Evaluation of Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-044",
+      "title": "Nonclinical Safety Testing in Support of Development of Paediatric Pharmaceuticals",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-045",
+      "title": "Nonclinical Biodistribution Considerations for Gene Therapy Products",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "NMPA-001",
+      "title": "Drug Administration Law of the People's Republic of China (2019 Revision)",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "NMPA-002",
+      "title": "Measures for the Reporting and Monitoring of Adverse Drug Reactions",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "ICSR Reporting"
+    },
+    {
+      "regId": "NMPA-003",
+      "title": "Guidelines for Good Pharmacovigilance Practice",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "NMPA-004",
+      "title": "Requirements for Periodic Safety Update Reports in China",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "ANVISA-001",
+      "title": "Resolution RDC 406/2020 - Good Pharmacovigilance Practices",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ANVISA-002",
+      "title": "Resolution RDC 753/2022 - Periodic Safety Update Reports",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Periodic Reporting"
+    },
+    {
+      "regId": "ANVISA-003",
+      "title": "Resolution RDC 657/2022 - Risk Management Plans",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "Risk Management"
+    },
+    {
+      "regId": "CDSCO-001",
+      "title": "New Drugs and Clinical Trials Rules, 2019",
+      "jurisdiction": "International",
+      "documentType": "FDA Guidance",
+      "pvActivityCategory": "PV System Quality"
+    },
+    {
+      "regId": "ICH-046",
+      "title": "Good Clinical Practice - Complete Revision (Step 4 Final)",
+      "jurisdiction": "ICH",
+      "documentType": "ICH Guideline",
+      "pvActivityCategory": "PV System Quality"
+    }
+  ]
+}

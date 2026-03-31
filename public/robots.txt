@@ -1,0 +1,37 @@
+# robots.txt for NexVigilant — agent-friendly crawling
+# Drug safety pages, Station tools, and Academy are open to all crawlers.
+
+User-agent: *
+Allow: /
+Allow: /drugs/
+Allow: /station
+Allow: /academy
+Allow: /live-feed
+Disallow: /nucleus/
+Disallow: /api/
+Disallow: /auth/
+Disallow: /admin/
+Disallow: /_next/
+
+# AI agents and MCP clients — welcome
+User-agent: GPTBot
+Allow: /drugs/
+Allow: /station
+Allow: /live-feed
+
+User-agent: ClaudeBot
+Allow: /drugs/
+Allow: /station
+Allow: /live-feed
+
+User-agent: PerplexityBot
+Allow: /drugs/
+Allow: /station
+Allow: /live-feed
+
+User-agent: ChatGPT-User
+Allow: /drugs/
+Allow: /station
+Allow: /live-feed
+
+Sitemap: https://www.nexvigilant.com/sitemap.xml

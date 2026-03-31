@@ -1,0 +1,1361 @@
+{
+  "crossReferences": [
+    {
+      "topicArea": "Serious Adverse Event Definition",
+      "keyRequirement": "Death, life-threatening, hospitalization, disability, congenital anomaly, medically important",
+      "fda": {
+        "citation": "21 CFR 312.32(a)",
+        "document": "IND Safety Reporting Final Rule"
+      },
+      "ema": {
+        "citation": "Dir 2001/83/EC Art 1(12)",
+        "document": "GVP Annex IV"
+      },
+      "ich": {
+        "citation": "ICH E2A Section II.A",
+        "document": "E2A Guideline"
+      },
+      "who": null,
+      "cioms": "CIOMS I",
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "Minor wording differences; 'medically important' interpretation may vary"
+    },
+    {
+      "topicArea": "Unexpected Adverse Reaction Definition",
+      "keyRequirement": "Not in reference document (IB, SmPC, or labeling)",
+      "fda": {
+        "citation": "21 CFR 312.32(a)",
+        "document": "IND Safety Guidance 2012"
+      },
+      "ema": {
+        "citation": "Dir 2001/83/EC Art 1(13)",
+        "document": "GVP Annex IV"
+      },
+      "ich": {
+        "citation": "ICH E2A Section II.B",
+        "document": "E2A Guideline"
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Substantially Harmonized",
+      "varianceNotes": "Reference document differs: FDA uses IB/USPI; EMA uses RSI/SmPC"
+    },
+    {
+      "topicArea": "Expedited Reporting Timeframe",
+      "keyRequirement": "15 calendar days for serious unexpected",
+      "fda": {
+        "citation": "21 CFR 312.32; 21 CFR 314.80",
+        "document": "Multiple CFR sections"
+      },
+      "ema": {
+        "citation": "GVP VI.C.2",
+        "document": "GVP Module VI"
+      },
+      "ich": {
+        "citation": "ICH E2A; E2D",
+        "document": "E2A/E2D Guidelines"
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "15-day timeline harmonized globally"
+    },
+    {
+      "topicArea": "Periodic Safety Report Format",
+      "keyRequirement": "PBRER format with benefit-risk evaluation",
+      "fda": {
+        "citation": "Accepts PBRER",
+        "document": "FDA accepts per guidance"
+      },
+      "ema": {
+        "citation": "PBRER mandatory",
+        "document": "GVP Module VII"
+      },
+      "ich": {
+        "citation": "ICH E2C(R2)",
+        "document": "E2C(R2) Guideline"
+      },
+      "who": null,
+      "cioms": "CIOMS II (predecessor)",
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "FDA still accepts PADER; EMA mandates PBRER"
+    },
+    {
+      "topicArea": "ICSR Electronic Format",
+      "keyRequirement": "E2B(R3) XML standard",
+      "fda": {
+        "citation": "FDA E2B(R3) IG",
+        "document": "FDA Implementation Guide"
+      },
+      "ema": {
+        "citation": "EU E2B(R3) IG",
+        "document": "EudraVigilance Business Rules"
+      },
+      "ich": {
+        "citation": "ICH E2B(R3)",
+        "document": "E2B(R3) Guideline"
+      },
+      "who": "VigiBase compatible",
+      "cioms": null,
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "Regional implementation guides have minor extensions"
+    },
+    {
+      "topicArea": "Causality Assessment",
+      "keyRequirement": "Sponsor/MAH assessment of drug-event relationship",
+      "fda": {
+        "citation": "21 CFR 312.32; guidance",
+        "document": "IND Safety Guidance"
+      },
+      "ema": {
+        "citation": "GVP VI.C.1.2.4",
+        "document": "GVP Module VI"
+      },
+      "ich": {
+        "citation": "ICH E2A",
+        "document": "E2A Guideline"
+      },
+      "who": "WHO-UMC system",
+      "cioms": "CIOMS V",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "FDA 'associated with'; ICH 'reasonable possibility'; methods vary"
+    },
+    {
+      "topicArea": "Risk Management Planning",
+      "keyRequirement": "Systematic approach to risk identification and minimization",
+      "fda": {
+        "citation": "REMS per 21 U.S.C. 355-1",
+        "document": "REMS guidance documents"
+      },
+      "ema": {
+        "citation": "RMP per GVP Module V",
+        "document": "GVP Module V"
+      },
+      "ich": {
+        "citation": "ICH E2E",
+        "document": "E2E Guideline"
+      },
+      "who": null,
+      "cioms": "CIOMS IV",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "REMS (FDA) vs RMP (EMA) have different structures; ETASU vs aRMM"
+    },
+    {
+      "topicArea": "QPPV/Safety Officer",
+      "keyRequirement": "Designated individual responsible for PV system",
+      "fda": {
+        "citation": "No equivalent requirement",
+        "document": ""
+      },
+      "ema": {
+        "citation": "QPPV mandatory in EU/EEA",
+        "document": "Dir 2001/83/EC Art 104(3); GVP I"
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "QPPV is EU-specific requirement; no FDA equivalent"
+    },
+    {
+      "topicArea": "PV System Master File",
+      "keyRequirement": "Documentation of PV system",
+      "fda": {
+        "citation": "Written procedures required",
+        "document": "21 CFR 314.80(b)"
+      },
+      "ema": {
+        "citation": "PSMF mandatory",
+        "document": "GVP Module I; Reg 520/2012"
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "PSMF specific format EU-only; FDA requires written procedures but not PSMF"
+    },
+    {
+      "topicArea": "Signal Detection Requirements",
+      "keyRequirement": "Systematic review of safety data for new risks",
+      "fda": {
+        "citation": "Not prescriptive",
+        "document": "Good PV Practices guidance"
+      },
+      "ema": {
+        "citation": "Mandatory continuous monitoring",
+        "document": "GVP Module IX"
+      },
+      "ich": null,
+      "who": "UMC signal detection",
+      "cioms": "CIOMS VIII",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "EMA more prescriptive; FDA principles-based; methods similar"
+    },
+    {
+      "topicArea": "Literature Monitoring",
+      "keyRequirement": "Systematic review of published literature for safety information",
+      "fda": {
+        "citation": "Review all sources per 21 CFR 314.80(b)",
+        "document": "314.80 regulations"
+      },
+      "ema": {
+        "citation": "MLM Service mandatory for EMA-designated list",
+        "document": "GVP VI.C.1.1.3"
+      },
+      "ich": {
+        "citation": "ICH E2D",
+        "document": "E2D Guideline"
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "EMA has centralized MLM service for specific substances; FDA requires but no central service"
+    },
+    {
+      "topicArea": "Medication Error Reporting",
+      "keyRequirement": "Reporting of medication errors with/without patient harm",
+      "fda": {
+        "citation": "MedWatch for errors with harm",
+        "document": "FDA guidance"
+      },
+      "ema": {
+        "citation": "Report if ADR criteria met",
+        "document": "GVP VI.C.1.2.2"
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "FDA MedWatch for errors with harm; EMA if meets ADR definition"
+    },
+    {
+      "topicArea": "Development Safety Update Report",
+      "keyRequirement": "Annual safety report during clinical development",
+      "fda": {
+        "citation": "Accepts DSUR for IND",
+        "document": "21 CFR 312.33"
+      },
+      "ema": {
+        "citation": "DSUR mandatory per CT Regulation",
+        "document": "CT Reg 536/2014 Art 44"
+      },
+      "ich": {
+        "citation": "ICH E2F",
+        "document": "E2F Guideline"
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "Harmonized DSUR format; submission timelines aligned"
+    },
+    {
+      "topicArea": "MedDRA Coding",
+      "keyRequirement": "Standardized medical terminology for adverse events",
+      "fda": {
+        "citation": "Required for FAERS",
+        "document": "FDA electronic submission requirements"
+      },
+      "ema": {
+        "citation": "Required for EudraVigilance",
+        "document": "EMA guidance"
+      },
+      "ich": {
+        "citation": "ICH M1",
+        "document": "MedDRA maintenance by MSSO"
+      },
+      "who": "Recommended",
+      "cioms": null,
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "MedDRA is global standard; version timing may vary slightly"
+    },
+    {
+      "topicArea": "Medication Error Reporting",
+      "keyRequirement": "",
+      "fda": {
+        "citation": "",
+        "document": ""
+      },
+      "ema": {
+        "citation": "",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Lack of Efficacy Reporting",
+      "keyRequirement": "",
+      "fda": {
+        "citation": "",
+        "document": ""
+      },
+      "ema": {
+        "citation": "",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Pregnancy/Lactation Reporting",
+      "keyRequirement": "",
+      "fda": {
+        "citation": "",
+        "document": ""
+      },
+      "ema": {
+        "citation": "",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Overdose Reporting",
+      "keyRequirement": "",
+      "fda": {
+        "citation": "",
+        "document": ""
+      },
+      "ema": {
+        "citation": "",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Abuse/Misuse Reporting",
+      "keyRequirement": "",
+      "fda": {
+        "citation": "",
+        "document": ""
+      },
+      "ema": {
+        "citation": "",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Occupational Exposure",
+      "keyRequirement": "",
+      "fda": {
+        "citation": "",
+        "document": ""
+      },
+      "ema": {
+        "citation": "",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "QPPV/National Contact Person",
+      "keyRequirement": "No equivalent",
+      "fda": {
+        "citation": "N/A (US Agent concept different)",
+        "document": "Dir 2001/83/EC Art 104"
+      },
+      "ema": {
+        "citation": "GVP Module I",
+        "document": ""
+      },
+      "ich": null,
+      "who": "HMR 2012 Reg 182",
+      "cioms": "MHRA GVP Guidance",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "EU and UK both require QPPV; UK adds NCP if QPPV not UK-based; FDA has no equivalent"
+    },
+    {
+      "topicArea": "Product Category Classification",
+      "keyRequirement": "",
+      "fda": {
+        "citation": "",
+        "document": ""
+      },
+      "ema": {
+        "citation": "",
+        "document": ""
+      },
+      "ich": null,
+      "who": "Windsor Framework Amendments 2024",
+      "cioms": "MHRA PV Guidance",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "UK-unique Category 1/2 system determining which PV requirements apply; result of Brexit/Windsor Framework"
+    },
+    {
+      "topicArea": "Emerging Safety Issue Timeline",
+      "keyRequirement": "21 CFR 314.80",
+      "fda": {
+        "citation": "No specific timeline",
+        "document": "GVP Module IX"
+      },
+      "ema": {
+        "citation": "Without undue delay",
+        "document": ""
+      },
+      "ich": null,
+      "who": "HMR 2012; MHRA Guidance",
+      "cioms": "3 working days",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "UK most prescriptive at 3 working days; EU \"without undue delay\"; FDA no specific requirement"
+    },
+    {
+      "topicArea": "National Spontaneous Reporting System",
+      "keyRequirement": "21 CFR 310.305",
+      "fda": {
+        "citation": "MedWatch/FAERS",
+        "document": "Reg 726/2004"
+      },
+      "ema": {
+        "citation": "EudraVigilance (HCP/patient)",
+        "document": "E2D"
+      },
+      "ich": {
+        "citation": "WHO Programme",
+        "document": "CIOMS I"
+      },
+      "who": "HMR 2012",
+      "cioms": "Yellow Card Scheme",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "All regions have national systems; Yellow Card since 1964; reporting voluntary for HCPs"
+    },
+    {
+      "topicArea": "NI/GB Regulatory Divergence",
+      "keyRequirement": "",
+      "fda": {
+        "citation": "",
+        "document": "Various (apply to NI)"
+      },
+      "ema": {
+        "citation": "EU GVP Modules",
+        "document": ""
+      },
+      "ich": null,
+      "who": "Windsor Framework",
+      "cioms": "Category 1/2 determination",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "Category 2 products in NI may require dual compliance with UK and EU requirements; unique post-Brexit situation"
+    },
+    {
+      "topicArea": "Safety Labeling Update Mechanisms",
+      "keyRequirement": "Divergent",
+      "fda": {
+        "citation": "21 CFR 314.70 (CBE-0, CBE-30, PAS)",
+        "document": "EC 1234/2008 (Type IA, IB, II variations)"
+      },
+      "ema": {
+        "citation": "UK variations regulation (follows EU)",
+        "document": "None - Regional mechanisms"
+      },
+      "ich": {
+        "citation": "FDA CBE-0 allows immediate implementation of safety labeling strengthening; EU/UK Type II variation requires pre-approval (typically 60-90 days). FDA fastest mechanism for urgent safety updates.",
+        "document": ""
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Medical Literature Monitoring",
+      "keyRequirement": "Harmonized",
+      "fda": {
+        "citation": "21 CFR 314.80(b), FDA guidance",
+        "document": "EU GVP Module VI.B.1.1.1"
+      },
+      "ema": {
+        "citation": "Follows EU GVP VI",
+        "document": "ICH E2D Section 3.2"
+      },
+      "ich": {
+        "citation": "Core requirements harmonized: monitor worldwide literature, report serious unexpected cases within 15 days. EMA provides centralized MLM service for certain CAPs - unique to EU. Day zero determination consistent across regions.",
+        "document": ""
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Clinical Trial Safety Conduct",
+      "keyRequirement": "Harmonized",
+      "fda": {
+        "citation": "21 CFR 312.32, 312.64",
+        "document": "EU CT Regulation 536/2014"
+      },
+      "ema": {
+        "citation": "UK SI 2004/1031 as amended",
+        "document": "ICH E6(R2)"
+      },
+      "ich": {
+        "citation": "ICH GCP provides harmonized foundation for clinical trial safety conduct. Regional regulations implement GCP with some local variations. ICH E6(R3) under development for principles-based modernization.",
+        "document": ""
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Clinical Trial Suspension for Safety",
+      "keyRequirement": "Partially Harmonized",
+      "fda": {
+        "citation": "21 CFR 312.42 (Clinical Hold)",
+        "document": "EU CT Regulation Art. 77 (Urgent Safety Measures)"
+      },
+      "ema": {
+        "citation": "UK equivalent urgent safety measures",
+        "document": "None specific"
+      },
+      "ich": {
+        "citation": "All regions have authority to halt/suspend trials for safety. US uses clinical hold mechanism (FDA-initiated); EU/UK use urgent safety measures (can be sponsor or authority initiated). Different procedural requirements.",
+        "document": ""
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Prescribing Information Content",
+      "keyRequirement": "Partially Harmonized",
+      "fda": {
+        "citation": "21 CFR 201.56/201.57 (PLR format)",
+        "document": "EMA QRD template (SmPC)"
+      },
+      "ema": {
+        "citation": "UK SmPC (follows EU QRD)",
+        "document": "ICH M4E (CTD format)"
+      },
+      "ich": {
+        "citation": "Content requirements similar (warnings, precautions, adverse reactions) but format differs significantly. FDA PLR format unique to US; EU/UK use SmPC/QRD template. Safety information sections broadly equivalent.",
+        "document": ""
+      },
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Pregnancy Prevention Programmes",
+      "keyRequirement": "PPP vs REMS with ETASU",
+      "fda": {
+        "citation": "PARTIALLY HARMONIZED",
+        "document": "EMA-GVP-019; FDA REMS guidance"
+      },
+      "ema": {
+        "citation": "EU uses structured PPP with specific elements (testing, contraception, acknowledgment). US uses REMS with ETASU for teratogenic products (iPLEDGE for isotretinoin, THALOMID REMS). Core requirements similar but procedural differences.",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Paediatric PV Requirements",
+      "keyRequirement": "Age-stratified safety analysis",
+      "fda": {
+        "citation": "HARMONIZED",
+        "document": "EMA-GVP-021; FDA PREA/BPCA; ICH E11"
+      },
+      "ema": {
+        "citation": "Core requirements harmonized: age-appropriate analysis, developmental considerations, long-term follow-up. EU Paediatric Regulation and US PREA/BPCA both mandate paediatric studies.",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Variation Procedures for Safety",
+      "keyRequirement": "Safety labeling change mechanisms",
+      "fda": {
+        "citation": "DIVERGENT",
+        "document": "EC 1234/2008; 21 CFR 314.70"
+      },
+      "ema": {
+        "citation": "CRITICAL DIVERGENCE: FDA CBE-0 allows immediate implementation of safety labeling strengthening. EU Type II variation requires pre-approval (60-90 days). FDA mechanism faster for urgent safety updates.",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Clinical Study Quality Framework",
+      "keyRequirement": "Quality by Design / CtQ Factors",
+      "fda": {
+        "citation": "HARMONIZED",
+        "document": "ICH E8(R1)"
+      },
+      "ema": {
+        "citation": "ICH E8(R1) provides harmonized framework for quality in clinical studies. Critical to Quality factors approach adopted globally. Foundation for ICH GCP renovation.",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Estimand Framework",
+      "keyRequirement": "Treatment effect specification",
+      "fda": {
+        "citation": "HARMONIZED",
+        "document": "ICH E9(R1)"
+      },
+      "ema": {
+        "citation": "ICH E9(R1) addendum globally adopted. Estimands with intercurrent event strategies required in protocols. Strengthens alignment between objectives, design, and analysis.",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Multi-Regional Trial Design",
+      "keyRequirement": "MRCT consistency evaluation",
+      "fda": {
+        "citation": "HARMONIZED",
+        "document": "ICH E17"
+      },
+      "ema": {
+        "citation": "ICH E17 provides harmonized approach to MRCT planning. Enables global submissions with single pivotal study. Regional requirements may vary for additional local data.",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Data Integrity Standards",
+      "keyRequirement": "ALCOA/ALCOA+ requirements",
+      "fda": {
+        "citation": "HARMONIZED",
+        "document": "FDA DI Guidance; MHRA GxP DI; PIC/S PI 041"
+      },
+      "ema": {
+        "citation": "Core ALCOA principles harmonized across FDA, EMA, MHRA, WHO, PIC/S. MHRA guidance covers all GxP (broader scope). Over 60% of FDA warning letters cite data integrity issues.",
+        "document": ""
+      },
+      "ich": null,
+      "who": null,
+      "cioms": null,
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": ""
+    },
+    {
+      "topicArea": "Generic Drug PMR/PMC",
+      "keyRequirement": "ANDA postmarketing study obligations",
+      "fda": {
+        "citation": "21 CFR 314.98",
+        "document": "Incorporates 314.81(b)(2)(vii) by reference"
+      },
+      "ema": {
+        "citation": "N/A - Different pathway",
+        "document": "EU generics via DCP/MRP"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Regional requirement"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "US extends PMR/PMC to ANDAs; EU generic PV via reference product/MAH obligations"
+    },
+    {
+      "topicArea": "Biologics Labeling Changes",
+      "keyRequirement": "Safety-related labeling updates for licensed biologics",
+      "fda": {
+        "citation": "21 CFR 601.70",
+        "document": "Annual progress report format"
+      },
+      "ema": {
+        "citation": "Per RMP update schedule",
+        "document": "GVP Module V; Type II variations"
+      },
+      "ich": {
+        "citation": "ICH E2E basis",
+        "document": "Pharmacovigilance planning"
+      },
+      "who": "WHO prequalification",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "FDA annual report format; EMA integrates with RMP; Labeling change mechanisms differ"
+    },
+    {
+      "topicArea": "Manufacturing/PV Interface",
+      "keyRequirement": "Quality complaint handling with AE identification",
+      "fda": {
+        "citation": "21 CFR 211.198",
+        "document": "CGMP Complaint Files"
+      },
+      "ema": {
+        "citation": "EU GMP Chapter 8",
+        "document": "GVP Module VI interface"
+      },
+      "ich": {
+        "citation": "ICH Q10",
+        "document": "Pharmaceutical Quality System"
+      },
+      "who": "WHO GMP",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Concept aligned; US 211.198 more prescriptive; Critical inspection focus area"
+    },
+    {
+      "topicArea": "Quality Unit Responsibilities",
+      "keyRequirement": "Deviation handling and PV coordination",
+      "fda": {
+        "citation": "21 CFR 211.22(d)",
+        "document": "CGMP Quality Control Unit"
+      },
+      "ema": {
+        "citation": "EU GMP Part I Chapter 1",
+        "document": "Quality Management System"
+      },
+      "ich": {
+        "citation": "ICH Q10",
+        "document": "PQS guidance"
+      },
+      "who": "WHO GMP",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "US designates formal quality unit; EU uses quality system concept; Top FDA 483 citation"
+    },
+    {
+      "topicArea": "Failure Investigation Requirements",
+      "keyRequirement": "OOS and deviation investigation",
+      "fda": {
+        "citation": "21 CFR 211.192",
+        "document": "Production Record Review"
+      },
+      "ema": {
+        "citation": "EU GMP Annex 15",
+        "document": "Qualification and Validation"
+      },
+      "ich": {
+        "citation": "ICH Q10",
+        "document": "PQS guidance"
+      },
+      "who": "WHO GMP",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "#1 FDA 483 citation; US explicitly prohibits testing into compliance; Data integrity link"
+    },
+    {
+      "topicArea": "Blood Product Pharmacovigilance",
+      "keyRequirement": "Haemovigilance and traceability requirements",
+      "fda": {
+        "citation": "21 CFR 600.14; 606",
+        "document": "BPDR; Blood establishment regulations"
+      },
+      "ema": {
+        "citation": "Directive 2002/98/EC",
+        "document": "GVP Module P.IV"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Product-specific"
+      },
+      "who": "WHO blood safety",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Haemovigilance systems vary by region; Traceability mandatory; Look-back procedures"
+    },
+    {
+      "topicArea": "Electronic Regulatory Submission Standards",
+      "keyRequirement": "eCTD and ICSR transmission",
+      "fda": {
+        "citation": "FDA ESG specifications",
+        "document": "E2B(R3) Implementation Guide"
+      },
+      "ema": {
+        "citation": "EudraVigilance technical specs",
+        "document": "EU E2B(R3) IG"
+      },
+      "ich": {
+        "citation": "ICH M2; E2B(R3)",
+        "document": "ESTRI framework"
+      },
+      "who": "WHO electronic standards",
+      "cioms": "N/A",
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "Core standards harmonized; Regional implementation guides provide local specifications"
+    },
+    {
+      "topicArea": "EudraVigilance Access/EVDAS",
+      "keyRequirement": "MAH access to safety database for signal detection",
+      "fda": {
+        "citation": "FDA FAERS public dashboard",
+        "document": "OpenFDA; FAERS quarterly files"
+      },
+      "ema": {
+        "citation": "EudraVigilance Access Policy",
+        "document": "eRMR; Line listings; EVDAS tools"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Regional databases"
+      },
+      "who": "VigiBase (WHO)",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "EU most comprehensive MAH access; FDA FAERS limited; VigiBase aggregate global data"
+    },
+    {
+      "topicArea": "PSMF Requirements",
+      "keyRequirement": "Pharmacovigilance System Master File",
+      "fda": {
+        "citation": "N/A - No equivalent",
+        "document": "21 CFR 314.80(b) written procedures"
+      },
+      "ema": {
+        "citation": "GVP Annex II format",
+        "document": "Mandatory PSMF; Inspection primary"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "EU/UK specific"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "PSMF unique to EU/UK; US requires written procedures but no consolidated master file"
+    },
+    {
+      "topicArea": "Conditional Approval Pathways",
+      "keyRequirement": "Approval before complete data",
+      "fda": {
+        "citation": "FDA Accelerated Approval",
+        "document": "21 CFR 314.510; 601.41"
+      },
+      "ema": {
+        "citation": "EU CMA / UK CMA",
+        "document": "Reg 726/2004 Art 14-a; UK guidance"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Regional mechanisms"
+      },
+      "who": "WHO EUL",
+      "cioms": "N/A",
+      "harmonizationLevel": "Substantially Harmonized",
+      "varianceNotes": "Similar concept globally; Annual renewal EU/UK; Surrogate endpoint focus FDA"
+    },
+    {
+      "topicArea": "Priority Review Pathways",
+      "keyRequirement": "Accelerated development/access for innovative medicines",
+      "fda": {
+        "citation": "FDA Breakthrough Therapy",
+        "document": "FDASIA Section 902"
+      },
+      "ema": {
+        "citation": "EMA PRIME",
+        "document": "EMA/649988/2024"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Regional mechanisms"
+      },
+      "who": "WHO PQ",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "UK ILAP unique with TDP concept; FDA/EMA have separate priority programs"
+    },
+    {
+      "topicArea": "Regional E2B(R3) Implementation",
+      "keyRequirement": "ICSR transmission specifications",
+      "fda": {
+        "citation": "FDA E2B(R3) IG v3.5",
+        "document": "FDA ESG specifications"
+      },
+      "ema": {
+        "citation": "EU E2B(R3) IG",
+        "document": "EudraVigilance technical specs"
+      },
+      "ich": {
+        "citation": "ICH E2B(R3)",
+        "document": "Base standard"
+      },
+      "who": "VigiFlow",
+      "cioms": "N/A",
+      "harmonizationLevel": "Substantially Harmonized",
+      "varianceNotes": "Core E2B(R3) harmonized; Regional IGs add local requirements, validation rules"
+    },
+    {
+      "topicArea": "Adaptive Clinical Trial Safety",
+      "keyRequirement": "Safety monitoring in adaptive designs",
+      "fda": {
+        "citation": "FDA Adaptive Designs Guidance",
+        "document": "FDA guidance (2019)"
+      },
+      "ema": {
+        "citation": "EMA Reflection Paper",
+        "document": "EMA adaptive design paper"
+      },
+      "ich": {
+        "citation": "ICH E20",
+        "document": "ICH E20 guideline"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "ICH E20 provides harmonized framework; DMC requirements central to safety monitoring"
+    },
+    {
+      "topicArea": "Medical Device Reporting",
+      "keyRequirement": "Adverse event reporting for devices",
+      "fda": {
+        "citation": "21 CFR 803",
+        "document": "MDR regulations; eMDR"
+      },
+      "ema": {
+        "citation": "EU MDR 2017/745",
+        "document": "EUDAMED vigilance"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Device-specific"
+      },
+      "who": "IMDRF harmonization",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Timelines differ (30 vs 15 days); Forms differ; IMDRF working toward alignment"
+    },
+    {
+      "topicArea": "Combination Product Safety",
+      "keyRequirement": "Reporting for drug-device combinations",
+      "fda": {
+        "citation": "21 CFR Part 4",
+        "document": "OCP guidance; PMOA determination"
+      },
+      "ema": {
+        "citation": "EU combined approach",
+        "document": "Per constituent type"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Regional frameworks"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "FDA PMOA approach unique; EU MDR has different provisions; May require dual reporting"
+    },
+    {
+      "topicArea": "Global Safety Database (VigiBase)",
+      "keyRequirement": "WHO global ICSR aggregation",
+      "fda": {
+        "citation": "FAERS data flows to VigiBase",
+        "document": "National centres contribute"
+      },
+      "ema": {
+        "citation": "EudraVigilance data flows",
+        "document": "National centres contribute"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "N/A"
+      },
+      "who": "WHO-UMC VigiBase",
+      "cioms": "N/A",
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "Global aggregate database; NCAs submit, not MAHs; 30M+ reports from 140+ countries"
+    },
+    {
+      "topicArea": "Product Identification (IDMP)",
+      "keyRequirement": "Global medicinal product identification",
+      "fda": {
+        "citation": "FDA UNII; NDC",
+        "document": "Substance/product codes"
+      },
+      "ema": {
+        "citation": "EMA SPOR",
+        "document": "ISO IDMP implementation"
+      },
+      "ich": {
+        "citation": "ISO 11615/11616/11238",
+        "document": "IDMP standards"
+      },
+      "who": "WHO Drug Dictionary",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "ISO IDMP is global standard; EU most advanced; FDA/others developing"
+    },
+    {
+      "topicArea": "PIC/S Data Integrity",
+      "keyRequirement": "ALCOA+ requirements for GxP",
+      "fda": {
+        "citation": "FDA Data Integrity Guidance",
+        "document": "2018 Q&A guidance"
+      },
+      "ema": {
+        "citation": "EMA Data Integrity Q&A",
+        "document": "EU GMP Annex 11"
+      },
+      "ich": {
+        "citation": "ICH Q10",
+        "document": "PQS; Computerized systems"
+      },
+      "who": "WHO Data Integrity",
+      "cioms": "N/A",
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "PIC/S PI 041 adopted by 54 authorities; ALCOA+ principles universal"
+    },
+    {
+      "topicArea": "Clinical Trial Safety Management",
+      "keyRequirement": "Safety data collection and assessment",
+      "fda": {
+        "citation": "21 CFR 312.32",
+        "document": "IND safety regulations"
+      },
+      "ema": {
+        "citation": "EU CTR 536/2014",
+        "document": "GVP Module VI"
+      },
+      "ich": {
+        "citation": "ICH E2A; E6",
+        "document": "GCP basis"
+      },
+      "who": "WHO GCP",
+      "cioms": "CIOMS VI",
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "ICH/CIOMS provide harmonized framework; Regional implementation via GCP"
+    },
+    {
+      "topicArea": "Risk Minimisation Effectiveness",
+      "keyRequirement": "RMM evaluation approaches",
+      "fda": {
+        "citation": "REMS assessments",
+        "document": "FDA REMS guidance"
+      },
+      "ema": {
+        "citation": "GVP Module XVI",
+        "document": "RMP effectiveness"
+      },
+      "ich": {
+        "citation": "ICH E2E",
+        "document": "PV planning"
+      },
+      "who": "N/A",
+      "cioms": "CIOMS IX",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "CIOMS IX provides global framework; REMS vs RMP implementation differs"
+    },
+    {
+      "topicArea": "Patient Involvement in PV",
+      "keyRequirement": "Patient engagement in safety",
+      "fda": {
+        "citation": "FDA PFDD",
+        "document": "Patient-Focused Drug Development"
+      },
+      "ema": {
+        "citation": "EMA patient engagement",
+        "document": "EMA framework"
+      },
+      "ich": {
+        "citation": "ICH E8(R1)",
+        "document": "Quality considerations"
+      },
+      "who": "WHO patient safety",
+      "cioms": "CIOMS XI",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Growing global emphasis; CIOMS XI provides framework; Implementation varies"
+    },
+    {
+      "topicArea": "Biologics Labeling Supplements",
+      "keyRequirement": "Changes to approved BLA including safety",
+      "fda": {
+        "citation": "21 CFR 601.12",
+        "document": "CBE-0/CBE-30/PAS for biologics"
+      },
+      "ema": {
+        "citation": "Type II variations",
+        "document": "EC 1234/2008"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Biologics-specific"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "FDA CBE-0 faster for safety; Parallel to 314.70 for drugs"
+    },
+    {
+      "topicArea": "Record Retention for PV",
+      "keyRequirement": "Complaint and safety record retention",
+      "fda": {
+        "citation": "21 CFR 211.180",
+        "document": "1 year post-expiry or 3 years"
+      },
+      "ema": {
+        "citation": "EU GMP Chapter 4",
+        "document": "5 years or 1 year post-expiry"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Varies by record type"
+      },
+      "who": "WHO GMP",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Retention periods vary; Complaints must be available for inspection"
+    },
+    {
+      "topicArea": "Electronic Records/Signatures",
+      "keyRequirement": "PV database compliance requirements",
+      "fda": {
+        "citation": "21 CFR Part 11",
+        "document": "Validation, audit trails, e-sigs"
+      },
+      "ema": {
+        "citation": "EU GMP Annex 11",
+        "document": "Computerised systems"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Principles-based"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Part 11 most prescriptive; Audit trail requirements critical for PV systems"
+    },
+    {
+      "topicArea": "Active Surveillance Systems",
+      "keyRequirement": "Post-market active safety monitoring",
+      "fda": {
+        "citation": "FDA Sentinel",
+        "document": "Claims/EHR data analysis"
+      },
+      "ema": {
+        "citation": "ENCePP",
+        "document": "EU network studies"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Regional systems"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "US Sentinel most advanced; FDA may cite Sentinel data in safety actions"
+    },
+    {
+      "topicArea": "Pregnancy Exposure Registries",
+      "keyRequirement": "Prospective pregnancy outcome data",
+      "fda": {
+        "citation": "FDA Pregnancy Registry Guidance",
+        "document": "Registry design and conduct"
+      },
+      "ema": {
+        "citation": "GVP Module P.III",
+        "document": "PPP and pregnancy monitoring"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "Guidance"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "US registry-focused; EU PPP more prescriptive; Both require pregnancy outcome follow-up"
+    },
+    {
+      "topicArea": "Biosimilar Safety Monitoring",
+      "keyRequirement": "Immunogenicity and product-specific AEs",
+      "fda": {
+        "citation": "BPCIA; FDA biosimilar guidance",
+        "document": "Immunogenicity assessment"
+      },
+      "ema": {
+        "citation": "EMA biosimilar guidelines",
+        "document": "Enhanced monitoring"
+      },
+      "ich": {
+        "citation": "ICH S6",
+        "document": "Biotechnology"
+      },
+      "who": "WHO biosimilar",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Immunogenicity focus aligned; US interchangeability requirements unique"
+    },
+    {
+      "topicArea": "Pediatric Safety Requirements",
+      "keyRequirement": "Age-specific safety monitoring",
+      "fda": {
+        "citation": "PREA; BPCA",
+        "document": "Pediatric Study Plan"
+      },
+      "ema": {
+        "citation": "EU Paediatric Regulation",
+        "document": "PIP requirements"
+      },
+      "ich": {
+        "citation": "ICH E11",
+        "document": "Pediatric guidance"
+      },
+      "who": "WHO essential meds",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Both US/EU require pediatric studies; Process and timelines differ"
+    },
+    {
+      "topicArea": "OTC Drug Safety Reporting",
+      "keyRequirement": "Non-prescription drug AE reporting",
+      "fda": {
+        "citation": "21 CFR 310.305",
+        "document": "OTC monograph products"
+      },
+      "ema": {
+        "citation": "Per national requirements",
+        "document": "OTC safety per GVP"
+      },
+      "ich": {
+        "citation": "N/A",
+        "document": "OTC"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "US OTC monograph unique; EU OTC requires national/MRP authorization"
+    },
+    {
+      "topicArea": "REMS vs RMP Comparison",
+      "keyRequirement": "Risk management program differences",
+      "fda": {
+        "citation": "FDCA 505-1; REMS guidance",
+        "document": "ETASU; Assessments"
+      },
+      "ema": {
+        "citation": "GVP Module V, XVI",
+        "document": "RMP; aRMM"
+      },
+      "ich": {
+        "citation": "ICH E2E",
+        "document": "PV Planning"
+      },
+      "who": "N/A",
+      "cioms": "CIOMS IX",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "REMS with ETASU more restrictive than RMP; Assessment timelines differ; Shared REMS US-unique"
+    },
+    {
+      "topicArea": "AI/ML in Pharmacovigilance",
+      "keyRequirement": "AI systems for case processing, signal detection, automation",
+      "fda": {
+        "citation": "FDA Draft AI Guidance (Jan 2025); EDSTP",
+        "document": "Credibility assessment; EDSTM meetings"
+      },
+      "ema": {
+        "citation": "EMA AI Reflection Paper (Oct 2024)",
+        "document": "Risk-based approach; GVP alignment"
+      },
+      "ich": {
+        "citation": "N/A - Regional",
+        "document": "N/A"
+      },
+      "who": "N/A",
+      "cioms": "CIOMS XIV (Draft 2025)",
+      "harmonizationLevel": "Divergent",
+      "varianceNotes": "First regulatory frameworks emerging; FDA/EMA similar risk-based approach; EU AI Act adds layer for high-risk systems; CIOMS XIV expected to set global standards"
+    },
+    {
+      "topicArea": "Cell and Gene Therapy PV",
+      "keyRequirement": "CGT-specific safety monitoring and LTFU",
+      "fda": {
+        "citation": "FDA CGT Guidances (2024); 15-year LTFU",
+        "document": "CAR-T, genome editing, RMAT"
+      },
+      "ema": {
+        "citation": "Reg 1394/2007 (ATMP); CAT",
+        "document": "Enhanced traceability; LTFU"
+      },
+      "ich": {
+        "citation": "N/A - Regional",
+        "document": "N/A"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Partially Harmonized",
+      "varianceNotes": "Long-term follow-up expectations aligned; Japan PACS most stringent (all-case surveillance); EMA CAR-T secondary malignancy labeling 2024"
+    },
+    {
+      "topicArea": "GCP E6(R3) Safety Reporting",
+      "keyRequirement": "Modernized GCP safety requirements",
+      "fda": {
+        "citation": "FDA finalized Sep 2025",
+        "document": "Risk-based monitoring; SUSAR streamlined"
+      },
+      "ema": {
+        "citation": "EMA effective Jul 2025",
+        "document": "Principles-based; Data governance"
+      },
+      "ich": {
+        "citation": "ICH E6(R3)",
+        "document": "Step 4 Jan 2025"
+      },
+      "who": "N/A",
+      "cioms": "N/A",
+      "harmonizationLevel": "Fully Harmonized",
+      "varianceNotes": "Major GCP modernization; Replaces E6(R2); Annex 2 for non-traditional trials under development"
+    },
+    {
+      "topicArea": "Regional PV Requirements (CA/AU/CH)",
+      "keyRequirement": "Expedited reporting, periodic reports, signal management",
+      "fda": {
+        "citation": "15 days serious; PBRER accepted",
+        "document": "Canada Vigilance; MedEffect"
+      },
+      "ema": {
+        "citation": "15 days serious; PBRER accepted",
+        "document": "DAEN; TGA portal"
+      },
+      "ich": {
+        "citation": "ICH aligned",
+        "document": "ICH Step 4 auto-adoption"
+      },
+      "who": "WHO member states",
+      "cioms": "N/A",
+      "harmonizationLevel": "Substantially Harmonized",
+      "varianceNotes": "All three ICH members with aligned timelines. CA: Canada Vigilance. AU: DAEN/TGA. CH: ElViS/Swissmedic. All accept PBRER. Minor local variations."
+    }
+  ]
+}

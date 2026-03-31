@@ -1,0 +1,397 @@
+/**
+ * Golden Scale Design Tokens
+ *
+ * Mathematical foundation for NexVigilant's typography, spacing, and layout system.
+ * Based on the Golden Ratio (φ = 1.618033988749895) for optimal cognitive processing.
+ *
+ * KEY RATIOS:
+ * - φ (phi) = 1.618 — The golden ratio
+ * - φ⁻¹ = 0.618 — Inverse (minor : major)
+ * - φ² = 2.618 — Squared
+ * - φ³ = 4.236 — Cubed
+ *
+ * USAGE:
+ * - Typography: Each step multiplies by φ (base × φⁿ)
+ * - Spacing: 8px base × φⁿ for golden spacing scale
+ * - Layout: 61.8% / 38.2% splits for golden proportions
+ *
+ * @see docs/design-system/VISUAL-DIRECTION.md (brand visual direction)
+ * @see docs/design-system/COLORS.md (color tokens)
+ */
+
+:root {
+  /* ============================================
+   * CORE CONSTANTS
+   * ============================================ */
+  --phi: 1.618;
+  --phi-inverse: 0.618;
+  --phi-squared: 2.618;
+  --phi-cubed: 4.236;
+
+  /* ============================================
+   * BRAND COLORS (RGB for rgba() usage)
+   * These enable: rgba(var(--nex-cyan-rgb), 0.5)
+   * ============================================ */
+
+  /* Primary brand */
+  --nex-cyan-rgb: 123, 149, 181;        /* Steel blue accent */
+  --nex-cyan-glow-rgb: 148, 171, 197;   /* Steel blue glow */
+  --nex-ember-rgb: 220, 38, 38;         /* Ember red - primary CTA */
+  --nex-ember-glow-rgb: 239, 68, 68;    /* Ember red glow */
+  --nex-gold-rgb: 212, 175, 55;         /* #D4AF37 - Primary gold */
+  --nex-gold-bright-rgb: 244, 208, 63;  /* #F4D03F - Bright gold */
+
+  /* Charcoal Steel background scale */
+  --nex-navy-deep-rgb: 11, 13, 19;      /* Charcoal steel - deepest */
+  --nex-navy-dark-rgb: 20, 24, 32;      /* Charcoal steel - secondary */
+  --nex-navy-surface-rgb: 30, 36, 48;   /* Charcoal steel - cards */
+  --nex-navy-light-rgb: 42, 48, 60;     /* Charcoal steel - borders */
+
+  /* Crystal steel temperatures */
+  --nex-crystal-cool-rgb: 40, 55, 80;   /* Steel deep */
+  --nex-crystal-warm-rgb: 60, 75, 100;  /* Steel mid */
+  --nex-crystal-glow-rgb: 123, 149, 181; /* Steel bright */
+
+  /* Base colors */
+  --nex-white-rgb: 255, 255, 255;
+  --nex-black-rgb: 0, 0, 0;
+
+  /* Status colors */
+  --nex-red-rgb: 239, 68, 68;           /* Error/danger */
+  --nex-green-rgb: 34, 197, 94;         /* Success */
+
+  /* Rainbow spectrum (for prismatic effects) */
+  --nex-spectrum-red-rgb: 255, 100, 100;
+  --nex-spectrum-orange-rgb: 255, 180, 100;
+  --nex-spectrum-yellow-rgb: 255, 255, 100;
+  --nex-spectrum-green-rgb: 100, 255, 100;
+  --nex-spectrum-blue-rgb: 100, 200, 255;
+  --nex-spectrum-indigo-rgb: 100, 100, 255;
+  --nex-spectrum-violet-rgb: 200, 100, 255;
+  --nex-spectrum-pink-rgb: 255, 100, 200;
+
+  /* HSL references for Tailwind compatibility */
+  --nex-cyan-500: 197 100% 47%;
+  --nex-cyan-400: 191 100% 50%;
+  --nex-gold-500: 43 65% 52%;
+
+  /* ============================================
+   * CRYSTAL CARD GRADIENT STOPS (HSL)
+   * Used in crystal.css gradient backgrounds
+   * ============================================ */
+  --crystal-bg-1: hsl(210 60% 12%);     /* Gradient start */
+  --crystal-bg-2: hsl(210 58% 10%);     /* 40% stop */
+  --crystal-bg-3: hsl(215 62% 8%);      /* 70% stop - cooler hue */
+  --crystal-bg-4: hsl(210 55% 7%);      /* Gradient end */
+
+  /* Crystal subtle variant */
+  --crystal-subtle-1: hsl(210 55% 11%);
+  --crystal-subtle-2: hsl(210 52% 9%);
+
+  /* ============================================
+   * HEX COLOR REFERENCES
+   * Direct hex values for contexts requiring them
+   * ============================================ */
+  --color-cyan: #7B95B5;           /* Steel blue accent */
+  --color-cyan-glow: #94ABC5;      /* Steel blue glow */
+  --color-gold: #D4AF37;
+  --color-gold-bright: #F4D03F;
+  --color-navy-deep: #0B0D13;      /* Charcoal steel */
+  --color-navy-dark: #141820;      /* Charcoal steel dark */
+  --color-navy-surface: #1E2430;   /* Charcoal steel surface */
+  --color-navy-light: #2A303C;     /* Charcoal steel border */
+  --color-slate-light: #E6F1FF;
+  --color-slate-dim: #a8b2d1;      /* WCAG AA compliant */
+
+  /* ============================================
+   * TRANSITION TIMING
+   * φ-based duration scale
+   * ============================================ */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;             /* Quick feedback */
+  --duration-normal: 250ms;           /* Standard transitions */
+  --duration-slow: 400ms;             /* Deliberate animations */
+  --duration-slower: 600ms;           /* Emphasis animations */
+
+  /* ============================================
+   * EASING FUNCTIONS
+   * Curated curves for consistent motion
+   * ============================================ */
+  --ease-linear: linear;
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);      /* Material Design standard */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);            /* Accelerate */
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);           /* Decelerate */
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);      /* Smooth both ends */
+  --ease-electric: cubic-bezier(0.22, 1, 0.36, 1);  /* Snappy, energetic */
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1); /* Overshoot bounce */
+  --ease-glitch: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Glitch effect */
+
+  /* ============================================
+   * TYPOGRAPHY SCALE
+   * Base: 16px (1rem)
+   * Each step: base × φⁿ
+   * ============================================ */
+
+  /**
+   * Static Scale (fixed pixel values)
+   *
+   * ⚠️ ACCESSIBILITY WARNING:
+   * Sizes below --type-xs (12px) are below WCAG AA minimum font size
+   * recommendations for readable text.
+   *
+   * DECORATIVE-ONLY tokens (--type-decorative-*):
+   * These are intentionally named to prevent accidental use in UI text.
+   * ACCEPTABLE uses (with aria-hidden="true" or equivalent):
+   * - Purely decorative text
+   * - Background watermarks
+   * - Non-essential supplementary info
+   *
+   * NEVER use decorative sizes for:
+   * - Navigation links or buttons
+   * - Form labels or error messages
+   * - Primary content or headings
+   * - Any user-actionable text
+   */
+
+  /* Accessible sizes (WCAG AA compliant) */
+  --type-xs:  0.764rem;   /* 12.22px - Small metadata (minimum readable) */
+  --type-sm:  0.875rem;   /* 14px    - Secondary text */
+  --type-base: 1rem;      /* 16px    - Body copy */
+  --type-lg:  1.236rem;   /* 19.78px - Lead paragraphs */
+  --type-xl:  1.618rem;   /* 25.89px - H4, subheadings */
+  --type-2xl: 2.618rem;   /* 41.89px - H3, section headers */
+  --type-3xl: 4.236rem;   /* 67.78px - H2, page titles */
+  --type-4xl: 6.854rem;   /* 109.66px - H1, hero headlines */
+  --type-5xl: 11.089rem;  /* 177.43px - Display, marketing */
+
+  /* Fluid Scale (responsive with clamp)
+   * Formula: clamp(min, preferred, max)
+   * Preferred uses viewport units for smooth scaling
+   * Range: 320px (20rem) to 1280px (80rem) viewport
+   */
+  --type-base-fluid:  clamp(0.875rem, 0.85rem + 0.15vw, 1rem);
+  --type-lg-fluid:    clamp(1rem, 0.9rem + 0.4vw, 1.236rem);
+  --type-xl-fluid:    clamp(1.25rem, 1rem + 0.8vw, 1.618rem);
+  --type-2xl-fluid:   clamp(1.618rem, 1.2rem + 1.5vw, 2.618rem);
+  --type-3xl-fluid:   clamp(2rem, 1.5rem + 2.5vw, 4.236rem);
+  --type-4xl-fluid:   clamp(2.618rem, 1.8rem + 4vw, 6.854rem);
+  --type-5xl-fluid:   clamp(3.5rem, 2.5rem + 5vw, 11.089rem);
+
+  /* ============================================
+   * LINE HEIGHT SCALE
+   * Based on φ for optimal readability
+   * ============================================ */
+  --leading-none:    1;
+  --leading-tight:   1.2;           /* Display, headlines */
+  --leading-snug:    1.382;         /* Subheadings (φ × 0.854) */
+  --leading-normal:  1.5;           /* Standard body (close to φ) */
+  --leading-golden:  1.618;         /* Optimal body copy (φ) */
+  --leading-relaxed: 1.854;         /* Spaced paragraphs (φ + 0.236) */
+  --leading-loose:   2;             /* Double-spaced */
+
+  /* ============================================
+   * LETTER SPACING
+   * Tighter for large, looser for small
+   * ============================================ */
+  --tracking-tighter: -0.03em;      /* Hero headlines */
+  --tracking-tight:   -0.02em;      /* Display text */
+  --tracking-snug:    -0.01em;      /* Headings */
+  --tracking-normal:  0;            /* Body copy */
+  --tracking-wide:    0.01em;       /* Buttons, labels */
+  --tracking-wider:   0.02em;       /* ALL CAPS text */
+  --tracking-widest:  0.05em;       /* Spaced capitals */
+
+  /* ============================================
+   * SPACING SCALE
+   * 8pt grid base with φ multipliers
+   * ============================================ */
+
+  /* Core spacing (8pt grid aligned) */
+  --space-0:   0;
+  --space-px:  1px;
+  --space-0-5: 0.125rem;  /* 2px */
+  --space-1:   0.25rem;   /* 4px */
+  --space-1-5: 0.375rem;  /* 6px */
+  --space-2:   0.5rem;    /* 8px - Base unit */
+  --space-2-5: 0.625rem;  /* 10px */
+  --space-3:   0.75rem;   /* 12px */
+  --space-3-5: 0.875rem;  /* 14px */
+  --space-4:   1rem;      /* 16px */
+
+  /* Golden spacing (φ-scaled from 8px base) */
+  --space-golden-1:  0.5rem;    /* 8px - Base */
+  --space-golden-2:  0.809rem;  /* 12.94px ≈ 13px */
+  --space-golden-3:  1.309rem;  /* 20.94px ≈ 21px */
+  --space-golden-4:  2.118rem;  /* 33.88px ≈ 34px */
+  --space-golden-5:  3.426rem;  /* 54.82px ≈ 55px */
+  --space-golden-6:  5.544rem;  /* 88.70px ≈ 89px */
+  --space-golden-7:  8.970rem;  /* 143.52px ≈ 144px */
+  --space-golden-8:  14.514rem; /* 232.22px ≈ 232px */
+
+  /* ============================================
+   * LAYOUT PROPORTIONS
+   * Golden section ratios
+   * ============================================ */
+  --layout-major:    61.8%;         /* φ-inverse as percentage */
+  --layout-minor:    38.2%;         /* 1 - φ-inverse */
+
+  /* Content widths */
+  --content-reading: 65ch;          /* Optimal line length */
+
+  /* ============================================
+   * BORDER RADIUS
+   * φ-based radius scale
+   * ============================================ */
+  --radius-none:   0;
+  --radius-sm:     0.25rem;   /* 4px */
+  --radius-base:   0.5rem;    /* 8px */
+  --radius-md:     0.618rem;  /* 9.89px - Golden */
+  --radius-lg:     1rem;      /* 16px */
+  --radius-xl:     1.618rem;  /* 25.89px - Golden */
+  --radius-2xl:    2rem;      /* 32px */
+  --radius-full:   9999px;    /* Pill shape */
+
+  /* ============================================
+   * ASPECT RATIOS
+   * Common ratios including golden
+   * ============================================ */
+  --aspect-square:  1 / 1;
+  --aspect-video:   16 / 9;
+  --aspect-golden:  1.618 / 1;
+  --aspect-golden-portrait: 1 / 1.618;
+  --aspect-photo:   4 / 3;
+  --aspect-cinema:  21 / 9;
+
+  /* ============================================
+   * COMPONENT TOKENS
+   * Pre-calculated values for common patterns
+   * ============================================ */
+
+  /* Button sizes */
+  --btn-height-sm: 2rem;           /* 32px */
+  --btn-height-md: 2.618rem;       /* 41.89px - Golden */
+  --btn-height-lg: 3.236rem;       /* 51.78px */
+  --btn-height-xl: 4.236rem;       /* 67.78px - Golden² */
+
+  --btn-padding-x-sm: var(--space-golden-2);  /* 13px */
+  --btn-padding-x-md: var(--space-golden-3);  /* 21px */
+  --btn-padding-x-lg: var(--space-golden-4);  /* 34px */
+
+  /* Card tokens */
+  --card-padding-sm: var(--space-golden-3);   /* 21px */
+  --card-padding-md: var(--space-golden-4);   /* 34px */
+  --card-padding-lg: var(--space-golden-5);   /* 55px */
+  --card-radius: var(--radius-lg);            /* 16px */
+
+  /* Section tokens */
+  --section-padding-sm: var(--space-golden-5);  /* 55px */
+  --section-padding-md: var(--space-golden-6);  /* 89px */
+  --section-padding-lg: var(--space-golden-7);  /* 144px */
+
+  /* Hero tokens */
+  --hero-padding-y: var(--space-golden-7);      /* 144px */
+  --hero-padding-x: var(--space-golden-5);      /* 55px */
+  --hero-gap: var(--space-golden-4);            /* 34px */
+
+  /* ============================================
+   * SEMANTIC TYPOGRAPHY TOKENS
+   * Use-case based names mapping to scale values
+   * ============================================ */
+
+  /* Headings - descending hierarchy */
+  --heading-hero:     var(--type-4xl-fluid);    /* Hero headlines (H1) */
+  --heading-page:     var(--type-3xl-fluid);    /* Page titles (H1/H2) */
+  --heading-section:  var(--type-2xl-fluid);    /* Section headers (H2/H3) */
+  --heading-card:     var(--type-xl-fluid);     /* Card headers (H3/H4) */
+  --heading-label:    var(--type-lg);           /* Labels, subheadings (H5/H6) */
+
+  /* Body text */
+  --text-body:        var(--type-base);         /* Standard body copy */
+  --text-body-lg:     var(--type-lg);           /* Lead paragraphs */
+  --text-caption:     var(--type-sm);           /* Captions, secondary text */
+  --text-micro:       var(--type-xs);           /* Metadata, timestamps */
+
+  /* UI text */
+  --text-button:      var(--type-sm);           /* Button labels */
+  --text-input:       var(--type-base);         /* Input fields */
+  --text-nav:         var(--type-sm);           /* Navigation items */
+  --text-badge:       var(--type-xs);           /* Badges, tags */
+
+  /* ============================================
+   * SEMANTIC SPACING TOKENS
+   * Context-based names mapping to scale values
+   * ============================================ */
+
+  /* Component internal spacing */
+  --spacing-inline-xs:  var(--space-1);         /* 4px - Tight inline */
+  --spacing-inline-sm:  var(--space-2);         /* 8px - Small inline */
+  --spacing-inline-md:  var(--space-3);         /* 12px - Medium inline */
+  --spacing-inline-lg:  var(--space-4);         /* 16px - Large inline */
+
+  /* Stack spacing (vertical gaps) */
+  --spacing-stack-xs:   var(--space-2);         /* 8px - Compact list */
+  --spacing-stack-sm:   var(--space-3);         /* 12px - List items */
+  --spacing-stack-md:   var(--space-4);         /* 16px - Paragraphs */
+  --spacing-stack-lg:   var(--space-golden-3);  /* 21px - Section content */
+  --spacing-stack-xl:   var(--space-golden-4);  /* 34px - Major sections */
+
+  /* Container padding */
+  --padding-card:       var(--space-golden-3);  /* 21px - Card content */
+  --padding-section:    var(--space-golden-5);  /* 55px - Section padding */
+  --padding-page:       var(--space-golden-4);  /* 34px - Page margins */
+
+  /* Gap between items */
+  --gap-items:          var(--space-3);         /* 12px - Between list items */
+  --gap-cards:          var(--space-golden-3);  /* 21px - Card grid gap */
+  --gap-sections:       var(--space-golden-5);  /* 55px - Between sections */
+}
+
+/* ============================================
+ * UTILITY CLASSES
+ * Ready-to-use golden scale classes
+ * ============================================ */
+
+/* Typography utilities */
+.text-golden-xs   { font-size: var(--type-xs); }
+.text-golden-sm   { font-size: var(--type-sm); }
+.text-golden-base { font-size: var(--type-base); }
+.text-golden-lg   { font-size: var(--type-lg); }
+.text-golden-xl   { font-size: var(--type-xl); }
+.text-golden-2xl  { font-size: var(--type-2xl); }
+.text-golden-3xl  { font-size: var(--type-3xl); }
+.text-golden-4xl  { font-size: var(--type-4xl); }
+
+/* Fluid typography utilities */
+.text-fluid-base { font-size: var(--type-base-fluid); }
+.text-fluid-lg   { font-size: var(--type-lg-fluid); }
+.text-fluid-xl   { font-size: var(--type-xl-fluid); }
+.text-fluid-2xl  { font-size: var(--type-2xl-fluid); }
+.text-fluid-3xl  { font-size: var(--type-3xl-fluid); }
+.text-fluid-4xl  { font-size: var(--type-4xl-fluid); }
+
+/* Line height utilities */
+.leading-golden  { line-height: var(--leading-golden); }
+.leading-snug    { line-height: var(--leading-snug); }
+.leading-relaxed { line-height: var(--leading-relaxed); }
+
+/* Golden spacing utilities */
+.gap-golden-1 { gap: var(--space-golden-1); }
+.gap-golden-2 { gap: var(--space-golden-2); }
+.gap-golden-3 { gap: var(--space-golden-3); }
+.gap-golden-4 { gap: var(--space-golden-4); }
+.gap-golden-5 { gap: var(--space-golden-5); }
+
+.p-golden-1 { padding: var(--space-golden-1); }
+.p-golden-2 { padding: var(--space-golden-2); }
+.p-golden-3 { padding: var(--space-golden-3); }
+.p-golden-4 { padding: var(--space-golden-4); }
+.p-golden-5 { padding: var(--space-golden-5); }
+
+/* Golden layout utilities */
+.w-golden-major { width: var(--layout-major); }
+.w-golden-minor { width: var(--layout-minor); }
+.max-w-reading  { max-width: var(--content-reading); }
+
+/* Golden aspect ratio */
+.aspect-golden { aspect-ratio: var(--aspect-golden); }
+.aspect-golden-portrait { aspect-ratio: var(--aspect-golden-portrait); }

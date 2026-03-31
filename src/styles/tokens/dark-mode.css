@@ -1,0 +1,227 @@
+/**
+ * Dark Mode Tokens
+ *
+ * System-level dark mode support using prefers-color-scheme.
+ * Works alongside the .dark class for manual toggle support.
+ *
+ * STRATEGY:
+ * - prefers-color-scheme: Respects OS/browser preference automatically
+ * - .dark class: Allows manual override via toggle button
+ * - Both methods share the same token overrides for consistency
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+ */
+
+/* =============================================================================
+   DARK MODE TOKEN OVERRIDES
+   Semantic color mappings for dark theme contexts
+   ============================================================================= */
+
+/**
+ * Dark mode mixin (shared between media query and .dark class)
+ * Using CSS custom property overrides for theme switching
+ */
+
+/* System preference: automatic dark mode */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    /* Background surfaces - darker navy scale */
+    --color-background: var(--color-navy-deep);
+    --color-surface: var(--color-navy-dark);
+    --color-surface-elevated: var(--color-navy-surface);
+    --color-surface-overlay: var(--color-navy-light);
+
+    /* Text colors - high contrast for dark backgrounds */
+    --color-text-primary: var(--color-slate-light);
+    --color-text-secondary: var(--color-slate-dim);
+    --color-text-muted: rgba(var(--nex-white-rgb), 0.5);
+
+    /* Border colors - subtle visibility */
+    --color-border: rgba(var(--nex-white-rgb), 0.1);
+    --color-border-hover: rgba(var(--nex-cyan-rgb), 0.3);
+    --color-border-focus: rgba(var(--nex-cyan-rgb), 0.5);
+
+    /* Shadow adjustments - deeper for dark mode */
+    --shadow-sm: 0 1px 2px rgba(var(--nex-black-rgb), 0.4);
+    --shadow-md: 0 4px 6px rgba(var(--nex-black-rgb), 0.5);
+    --shadow-lg: 0 10px 15px rgba(var(--nex-black-rgb), 0.6);
+    --shadow-xl: 0 20px 25px rgba(var(--nex-black-rgb), 0.7);
+
+    /* Glow effects - more prominent in dark mode */
+    --glow-cyan: 0 0 20px rgba(var(--nex-cyan-rgb), 0.3);
+    --glow-gold: 0 0 20px rgba(var(--nex-gold-rgb), 0.25);
+    --glow-cyan-strong: 0 0 40px rgba(var(--nex-cyan-rgb), 0.4);
+
+    /* Form elements */
+    --color-input-bg: rgba(var(--nex-navy-surface-rgb), 0.8);
+    --color-input-border: rgba(var(--nex-white-rgb), 0.15);
+    --color-input-focus: rgba(var(--nex-cyan-rgb), 0.4);
+
+    /* Scrollbar theming */
+    --color-scrollbar-track: var(--color-navy-deep);
+    --color-scrollbar-thumb: rgba(var(--nex-white-rgb), 0.2);
+    --color-scrollbar-thumb-hover: rgba(var(--nex-cyan-rgb), 0.4);
+  }
+}
+
+/* Manual toggle: .dark class on html/body */
+.dark {
+  /* Background surfaces */
+  --color-background: var(--color-navy-deep);
+  --color-surface: var(--color-navy-dark);
+  --color-surface-elevated: var(--color-navy-surface);
+  --color-surface-overlay: var(--color-navy-light);
+
+  /* Text colors */
+  --color-text-primary: var(--color-slate-light);
+  --color-text-secondary: var(--color-slate-dim);
+  --color-text-muted: rgba(var(--nex-white-rgb), 0.5);
+
+  /* Border colors */
+  --color-border: rgba(var(--nex-white-rgb), 0.1);
+  --color-border-hover: rgba(var(--nex-cyan-rgb), 0.3);
+  --color-border-focus: rgba(var(--nex-cyan-rgb), 0.5);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(var(--nex-black-rgb), 0.4);
+  --shadow-md: 0 4px 6px rgba(var(--nex-black-rgb), 0.5);
+  --shadow-lg: 0 10px 15px rgba(var(--nex-black-rgb), 0.6);
+  --shadow-xl: 0 20px 25px rgba(var(--nex-black-rgb), 0.7);
+
+  /* Glows */
+  --glow-cyan: 0 0 20px rgba(var(--nex-cyan-rgb), 0.3);
+  --glow-gold: 0 0 20px rgba(var(--nex-gold-rgb), 0.25);
+  --glow-cyan-strong: 0 0 40px rgba(var(--nex-cyan-rgb), 0.4);
+
+  /* Form elements */
+  --color-input-bg: rgba(var(--nex-navy-surface-rgb), 0.8);
+  --color-input-border: rgba(var(--nex-white-rgb), 0.15);
+  --color-input-focus: rgba(var(--nex-cyan-rgb), 0.4);
+
+  /* Scrollbar */
+  --color-scrollbar-track: var(--color-navy-deep);
+  --color-scrollbar-thumb: rgba(var(--nex-white-rgb), 0.2);
+  --color-scrollbar-thumb-hover: rgba(var(--nex-cyan-rgb), 0.4);
+}
+
+/* =============================================================================
+   LIGHT MODE TOKEN OVERRIDES
+   Optional: explicit light mode for .light class override
+   ============================================================================= */
+
+/* System preference: automatic light mode */
+@media (prefers-color-scheme: light) {
+  :root:not(.dark) {
+    /* Background surfaces - light scale */
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #ffffff;
+    --color-surface-overlay: #f1f5f9;
+
+    /* Text colors - dark for light backgrounds */
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-muted: #94a3b8;
+
+    /* Border colors */
+    --color-border: rgba(var(--nex-black-rgb), 0.1);
+    --color-border-hover: rgba(var(--nex-cyan-rgb), 0.4);
+    --color-border-focus: rgba(var(--nex-cyan-rgb), 0.6);
+
+    /* Shadows - lighter for light mode */
+    --shadow-sm: 0 1px 2px rgba(var(--nex-black-rgb), 0.05);
+    --shadow-md: 0 4px 6px rgba(var(--nex-black-rgb), 0.1);
+    --shadow-lg: 0 10px 15px rgba(var(--nex-black-rgb), 0.1);
+    --shadow-xl: 0 20px 25px rgba(var(--nex-black-rgb), 0.15);
+
+    /* Glows - subtle in light mode */
+    --glow-cyan: 0 0 15px rgba(var(--nex-cyan-rgb), 0.15);
+    --glow-gold: 0 0 15px rgba(var(--nex-gold-rgb), 0.12);
+    --glow-cyan-strong: 0 0 30px rgba(var(--nex-cyan-rgb), 0.2);
+
+    /* Form elements */
+    --color-input-bg: #ffffff;
+    --color-input-border: rgba(var(--nex-black-rgb), 0.15);
+    --color-input-focus: rgba(var(--nex-cyan-rgb), 0.5);
+
+    /* Scrollbar */
+    --color-scrollbar-track: #f1f5f9;
+    --color-scrollbar-thumb: rgba(var(--nex-black-rgb), 0.2);
+    --color-scrollbar-thumb-hover: rgba(var(--nex-cyan-rgb), 0.5);
+  }
+}
+
+/* Manual toggle: .light class override */
+.light {
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-surface-overlay: #f1f5f9;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+  --color-border: rgba(var(--nex-black-rgb), 0.1);
+  --color-border-hover: rgba(var(--nex-cyan-rgb), 0.4);
+  --color-border-focus: rgba(var(--nex-cyan-rgb), 0.6);
+  --shadow-sm: 0 1px 2px rgba(var(--nex-black-rgb), 0.05);
+  --shadow-md: 0 4px 6px rgba(var(--nex-black-rgb), 0.1);
+  --shadow-lg: 0 10px 15px rgba(var(--nex-black-rgb), 0.1);
+  --shadow-xl: 0 20px 25px rgba(var(--nex-black-rgb), 0.15);
+  --glow-cyan: 0 0 15px rgba(var(--nex-cyan-rgb), 0.15);
+  --glow-gold: 0 0 15px rgba(var(--nex-gold-rgb), 0.12);
+  --glow-cyan-strong: 0 0 30px rgba(var(--nex-cyan-rgb), 0.2);
+  --color-input-bg: #ffffff;
+  --color-input-border: rgba(var(--nex-black-rgb), 0.15);
+  --color-input-focus: rgba(var(--nex-cyan-rgb), 0.5);
+  --color-scrollbar-track: #f1f5f9;
+  --color-scrollbar-thumb: rgba(var(--nex-black-rgb), 0.2);
+  --color-scrollbar-thumb-hover: rgba(var(--nex-cyan-rgb), 0.5);
+}
+
+/* =============================================================================
+   SCROLLBAR STYLING
+   Uses semantic tokens defined above
+   ============================================================================= */
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track, var(--color-navy-deep));
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb, rgba(var(--nex-white-rgb), 0.2));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover, rgba(var(--nex-cyan-rgb), 0.4));
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar-thumb, rgba(255, 255, 255, 0.2))
+                   var(--color-scrollbar-track, #020c1b);
+}
+
+/* =============================================================================
+   COLOR SCHEME META
+   Helps browser UI elements match theme
+   ============================================================================= */
+
+:root {
+  color-scheme: light dark;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.light {
+  color-scheme: light;
+}

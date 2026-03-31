@@ -1,0 +1,109 @@
+[
+  {
+    "id": "CPA-1",
+    "name": "Case Management Activities",
+    "focusArea": "Case Management",
+    "primaryIntegration": "Clinical + Communication",
+    "careerStage": "Foundation-Advanced",
+    "executiveSummary": "Transforms adverse event information into actionable safety intelligence through systematic case processing, pattern recognition, and quality documentation.",
+    "aiIntegration": "Natural language processing, pattern recognition, quality validation",
+    "keyEPAs": [
+      "EPA-01",
+      "EPA-02",
+      "EPA-03"
+    ]
+  },
+  {
+    "id": "CPA-2",
+    "name": "Signal Management Activities",
+    "focusArea": "Signal Management",
+    "primaryIntegration": "Analytics + Detection",
+    "careerStage": "Foundation-Advanced",
+    "executiveSummary": "Transforms data patterns into validated safety signals through sophisticated analytical approaches, multi-source integration, and stakeholder communication.",
+    "aiIntegration": "Machine learning detection, predictive analytics, automated validation",
+    "keyEPAs": [
+      "EPA-05",
+      "EPA-06",
+      "EPA-02"
+    ]
+  },
+  {
+    "id": "CPA-3",
+    "name": "Risk Management Activities",
+    "focusArea": "Risk Management",
+    "primaryIntegration": "Strategy + Prevention",
+    "careerStage": "Foundation-Advanced",
+    "executiveSummary": "Develops and implements targeted interventions that minimize medication risks while preserving therapeutic access, with emphasis on medication error prevention.",
+    "aiIntegration": "Predictive risk modeling, effectiveness monitoring, behavioral analytics",
+    "keyEPAs": [
+      "EPA-07",
+      "EPA-08",
+      "EPA-06"
+    ]
+  },
+  {
+    "id": "CPA-4",
+    "name": "Quality and Compliance Activities",
+    "focusArea": "Quality & Compliance",
+    "primaryIntegration": "Systems + Standards",
+    "careerStage": "Foundation-Advanced",
+    "executiveSummary": "Ensures systematic quality across all pharmacovigilance processes through comprehensive compliance management, audit readiness, and continuous improvement.",
+    "aiIntegration": "Compliance automation",
+    "keyEPAs": [
+      "EPA-09",
+      "EPA-10",
+      "EPA-01"
+    ]
+  },
+  {
+    "id": "CPA-5",
+    "name": "Data and Technology Activities",
+    "focusArea": "Data & Technology",
+    "primaryIntegration": "Information + AI",
+    "careerStage": "Foundation-Advanced",
+    "executiveSummary": "Leverages data analytics and AI capabilities to transform pharmacovigilance efficiency while maintaining data integrity and regulatory compliance.",
+    "aiIntegration": "Digital transformation, predictive analytics, automation",
+    "keyEPAs": [
+      "EPA-10"
+    ]
+  },
+  {
+    "id": "CPA-6",
+    "name": "Communication and Stakeholder Activities",
+    "focusArea": "Communication & Stakeholders",
+    "primaryIntegration": "Engagement + Influence",
+    "careerStage": "Foundation-Advanced",
+    "executiveSummary": "Creates and delivers impactful safety communications tailored to diverse audiences while building stakeholder trust and facilitating informed decision-making.",
+    "aiIntegration": "Enhanced communication",
+    "keyEPAs": [
+      "EPA-03",
+      "EPA-08"
+    ]
+  },
+  {
+    "id": "CPA-7",
+    "name": "Research and Development Activities",
+    "focusArea": "Research & Development",
+    "primaryIntegration": "Science + Innovation",
+    "careerStage": "Foundation-Advanced",
+    "executiveSummary": "Conducts rigorous research that advances pharmacovigilance science through methodology development, evidence generation, and knowledge dissemination.",
+    "aiIntegration": "AI-enhanced research, research innovation",
+    "keyEPAs": [
+      "EPA-02",
+      "EPA-05",
+      "EPA-08"
+    ]
+  },
+  {
+    "id": "CPA-8",
+    "name": "AI-Enhanced Pharmacovigilance Activities (Capstone)",
+    "focusArea": "AI-Enhanced Practice",
+    "primaryIntegration": "Transformation + Leadership",
+    "careerStage": "Advanced-Executive",
+    "executiveSummary": "Represents the pinnacle achievement in AI-integrated pharmacovigilance practice, requiring EPA10 Level 4+ mastery and demonstrating comprehensive AI leadership across all domains.",
+    "aiIntegration": "Complete integration across all domains",
+    "keyEPAs": [
+      "ALL EPAS (EPA-10 PREREQUISITE)"
+    ]
+  }
+]

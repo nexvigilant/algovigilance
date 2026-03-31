@@ -1,0 +1,432 @@
+[
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D01",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D02",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D03",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D04",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D05",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D06",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D08",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D09",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D10",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D13",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D14",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-1",
+    "domainId": "D15",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D02",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D03",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D05",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D06",
+    "derivedFrom": "EPA-06"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D08",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D09",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D10",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D11",
+    "derivedFrom": "EPA-06"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D12",
+    "derivedFrom": "EPA-06"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D14",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-2",
+    "domainId": "D15",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D01",
+    "derivedFrom": "EPA-08"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D02",
+    "derivedFrom": "EPA-06"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D03",
+    "derivedFrom": "EPA-07"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D05",
+    "derivedFrom": "EPA-08"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D06",
+    "derivedFrom": "EPA-07"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D08",
+    "derivedFrom": "EPA-08"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D10",
+    "derivedFrom": "EPA-07"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D11",
+    "derivedFrom": "EPA-07"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D12",
+    "derivedFrom": "EPA-06"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D13",
+    "derivedFrom": "EPA-07"
+  },
+  {
+    "cpaId": "CPA-3",
+    "domainId": "D14",
+    "derivedFrom": "EPA-07"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D01",
+    "derivedFrom": "EPA-09"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D02",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D03",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D04",
+    "derivedFrom": "EPA-09"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D05",
+    "derivedFrom": "EPA-09"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D06",
+    "derivedFrom": "EPA-09"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D07",
+    "derivedFrom": "EPA-09"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D08",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D11",
+    "derivedFrom": "EPA-09"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D12",
+    "derivedFrom": "EPA-09"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D14",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-4",
+    "domainId": "D15",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-5",
+    "domainId": "D01",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-5",
+    "domainId": "D03",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-5",
+    "domainId": "D06",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-5",
+    "domainId": "D08",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-5",
+    "domainId": "D12",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-5",
+    "domainId": "D14",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-5",
+    "domainId": "D15",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-6",
+    "domainId": "D01",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-6",
+    "domainId": "D02",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-6",
+    "domainId": "D03",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-6",
+    "domainId": "D05",
+    "derivedFrom": "EPA-08"
+  },
+  {
+    "cpaId": "CPA-6",
+    "domainId": "D08",
+    "derivedFrom": "EPA-08"
+  },
+  {
+    "cpaId": "CPA-6",
+    "domainId": "D10",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-6",
+    "domainId": "D13",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-6",
+    "domainId": "D14",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D01",
+    "derivedFrom": "EPA-08"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D02",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D03",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D05",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D08",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D09",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D10",
+    "derivedFrom": "EPA-05"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D13",
+    "derivedFrom": "EPA-08"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D14",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-7",
+    "domainId": "D15",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D01",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D02",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D03",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D04",
+    "derivedFrom": "EPA-01"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D05",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D06",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D07",
+    "derivedFrom": "EPA-04"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D08",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D09",
+    "derivedFrom": "EPA-02"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D10",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D11",
+    "derivedFrom": "EPA-06"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D12",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D13",
+    "derivedFrom": "EPA-03"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D14",
+    "derivedFrom": "EPA-10"
+  },
+  {
+    "cpaId": "CPA-8",
+    "domainId": "D15",
+    "derivedFrom": "EPA-10"
+  }
+]

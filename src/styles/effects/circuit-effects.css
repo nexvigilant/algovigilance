@@ -1,0 +1,116 @@
+/**
+ * Circuit Visual Effects
+ *
+ * Trace animations, glow utilities, text gradients, and glitch effects
+ */
+
+/* =============================================================================
+   CIRCUIT TRACE
+   SVG trace path animations
+   ============================================================================= */
+
+.circuit-trace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.circuit-trace line {
+  stroke: rgba(var(--nex-cyan-rgb), 0.3);
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: trace-draw 4s ease-in-out infinite;
+}
+
+/* =============================================================================
+   GLOW UTILITIES
+   Quick glow effects for elements
+   ============================================================================= */
+
+.glow-cyan {
+  box-shadow: 0 0 4px rgba(var(--nex-cyan-rgb), 0.6);
+}
+
+.glow-gold {
+  box-shadow: 0 0 4px rgba(var(--nex-gold-rgb), 0.6);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 3px rgba(var(--nex-cyan-rgb), 0.9);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 3px rgba(var(--nex-gold-rgb), 0.9);
+}
+
+/* =============================================================================
+   TEXT GRADIENT ANIMATED
+   Shifting gradient text effect
+   ============================================================================= */
+
+.text-gradient-animated {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--nex-cyan-rgb), 1),
+    rgba(var(--nex-gold-rgb), 1),
+    rgba(var(--nex-cyan-rgb), 1)
+  );
+  background-size: 200% auto;
+  /* Firefox requires explicit color: transparent (not just -webkit-text-fill-color) */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+/* =============================================================================
+   GLITCH TEXT EFFECT
+   Cyberpunk-style glitch on hover
+   ============================================================================= */
+
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.glitch-text::before {
+  color: rgba(var(--nex-cyan-rgb), 0.7);
+  z-index: -1;
+}
+
+.glitch-text::after {
+  color: rgba(var(--nex-gold-rgb), 0.7);
+  z-index: -2;
+}
+
+/**
+ * PERF FIX: Animation only runs on hover
+ * Previously ran infinitely even when hidden (opacity: 0), wasting GPU cycles.
+ * Now animations start when visible and stop when not hovered.
+ */
+.glitch-text:hover::before {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  opacity: 1;
+}
+
+.glitch-text:hover::after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse infinite;
+  opacity: 1;
+}

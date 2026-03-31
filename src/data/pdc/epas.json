@@ -1,0 +1,715 @@
+[
+  {
+    "id": "EPA-01",
+    "name": "Process and Evaluate ICSRs",
+    "focusArea": "Case Processing",
+    "tier": "Core",
+    "description": "Independently process and evaluate individual adverse event reports from receipt through regulatory submission, ensuring accuracy, completeness, and compliance with global requirements while recognizing important ADR patterns.",
+    "primaryDomains": [
+      {
+        "domainId": "D04",
+        "level": "L3"
+      },
+      {
+        "domainId": "D02",
+        "level": "L3"
+      },
+      {
+        "domainId": "D03",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D01",
+        "level": "L2"
+      },
+      {
+        "domainId": "D14",
+        "level": "L2"
+      },
+      {
+        "domainId": "D06",
+        "level": "L2"
+      }
+    ],
+    "portRange": "3001-3003"
+  },
+  {
+    "id": "EPA-02",
+    "name": "Literature Screening and Evaluation",
+    "focusArea": "Literature",
+    "tier": "Core",
+    "description": "Systematically search, evaluate, and synthesize scientific literature including clinical trial publications to identify potential safety signals and support comprehensive safety assessments.",
+    "primaryDomains": [
+      {
+        "domainId": "D15",
+        "level": "L3"
+      },
+      {
+        "domainId": "D08",
+        "level": "L3"
+      },
+      {
+        "domainId": "D02",
+        "level": "L3"
+      },
+      {
+        "domainId": "D05",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D09",
+        "level": "L2"
+      },
+      {
+        "domainId": "D14",
+        "level": "L2"
+      }
+    ],
+    "portRange": "3004-3005"
+  },
+  {
+    "id": "EPA-03",
+    "name": "Prepare and Present Safety Information",
+    "focusArea": "Communication",
+    "tier": "Core",
+    "description": "Develop and deliver clear, accurate, and actionable safety communications tailored to diverse stakeholder needs and contexts, leveraging foundational pharmacovigilance principles.",
+    "primaryDomains": [
+      {
+        "domainId": "D14",
+        "level": "L3"
+      },
+      {
+        "domainId": "D10",
+        "level": "L3"
+      },
+      {
+        "domainId": "D01",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D13",
+        "level": "L2"
+      },
+      {
+        "domainId": "D02",
+        "level": "L3"
+      },
+      {
+        "domainId": "D03",
+        "level": "L2"
+      }
+    ],
+    "portRange": "3006-3008"
+  },
+  {
+    "id": "EPA-04",
+    "name": "Post-Marketing Surveillance Data Analysis",
+    "focusArea": "Surveillance",
+    "tier": "Core",
+    "description": "Design, execute, and interpret analyses of post-marketing safety data including clinical trial extension data to identify patterns, trends, and potential safety concerns.",
+    "primaryDomains": [
+      {
+        "domainId": "D07",
+        "level": "L3"
+      },
+      {
+        "domainId": "D09",
+        "level": "L3"
+      },
+      {
+        "domainId": "D08",
+        "level": "L3"
+      },
+      {
+        "domainId": "D05",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D15",
+        "level": "L3"
+      },
+      {
+        "domainId": "D10",
+        "level": "L2"
+      },
+      {
+        "domainId": "D06",
+        "level": "L2"
+      }
+    ],
+    "portRange": "3009-3010"
+  },
+  {
+    "id": "EPA-05",
+    "name": "Detect and Validate Safety Signals",
+    "focusArea": "Signal Detection",
+    "tier": "Core",
+    "description": "Apply systematic approaches to identify, evaluate, and validate potential safety signals from multiple data sources, with emphasis on recognizing important ADR patterns.",
+    "primaryDomains": [
+      {
+        "domainId": "D08",
+        "level": "L4"
+      },
+      {
+        "domainId": "D02",
+        "level": "L3"
+      },
+      {
+        "domainId": "D10",
+        "level": "L3"
+      },
+      {
+        "domainId": "D03",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D15",
+        "level": "L3"
+      },
+      {
+        "domainId": "D14",
+        "level": "L3"
+      },
+      {
+        "domainId": "D05",
+        "level": "L2"
+      }
+    ],
+    "portRange": "3011-3012"
+  },
+  {
+    "id": "EPA-06",
+    "name": "Develop Safety Sections for Regulatory Documents",
+    "focusArea": "Regulatory",
+    "tier": "Core",
+    "description": "Create comprehensive, accurate, and compliant safety sections for regulatory submissions and product labeling, ensuring complete representation of safety profile.",
+    "primaryDomains": [
+      {
+        "domainId": "D12",
+        "level": "L3"
+      },
+      {
+        "domainId": "D11",
+        "level": "L3"
+      },
+      {
+        "domainId": "D14",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D10",
+        "level": "L3"
+      },
+      {
+        "domainId": "D02",
+        "level": "L2"
+      },
+      {
+        "domainId": "D06",
+        "level": "L2"
+      },
+      {
+        "domainId": "D03",
+        "level": "L2"
+      }
+    ],
+    "portRange": "3013-3015"
+  },
+  {
+    "id": "EPA-07",
+    "name": "Design and Implement Risk Minimization",
+    "focusArea": "Risk Management",
+    "tier": "Core",
+    "description": "Develop, implement, and evaluate targeted interventions to minimize identified medication risks including medication errors while preserving patient access.",
+    "primaryDomains": [
+      {
+        "domainId": "D11",
+        "level": "L4"
+      },
+      {
+        "domainId": "D13",
+        "level": "L3"
+      },
+      {
+        "domainId": "D14",
+        "level": "L3"
+      },
+      {
+        "domainId": "D06",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D10",
+        "level": "L3"
+      },
+      {
+        "domainId": "D03",
+        "level": "L2"
+      }
+    ],
+    "portRange": "3016-3017"
+  },
+  {
+    "id": "EPA-08",
+    "name": "Lead Cross-Functional Safety Investigations",
+    "focusArea": "Investigations",
+    "tier": "Core",
+    "description": "Coordinate and lead multidisciplinary teams in investigating complex safety issues, integrating diverse expertise to develop comprehensive understanding and actionable recommendations.",
+    "primaryDomains": [
+      {
+        "domainId": "D08",
+        "level": "L4"
+      },
+      {
+        "domainId": "D14",
+        "level": "L4"
+      },
+      {
+        "domainId": "D01",
+        "level": "L3"
+      },
+      {
+        "domainId": "D10",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D13",
+        "level": "L3"
+      },
+      {
+        "domainId": "D05",
+        "level": "L3"
+      }
+    ],
+    "portRange": "3018-3019"
+  },
+  {
+    "id": "EPA-09",
+    "name": "Ensure PV Quality and Compliance",
+    "focusArea": "Quality",
+    "tier": "Core",
+    "description": "Design, implement, and maintain quality systems that ensure pharmacovigilance activities across all areas meet regulatory requirements and industry best practices.",
+    "primaryDomains": [
+      {
+        "domainId": "D12",
+        "level": "L4"
+      },
+      {
+        "domainId": "D01",
+        "level": "L3"
+      },
+      {
+        "domainId": "D11",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D04",
+        "level": "L3"
+      },
+      {
+        "domainId": "D07",
+        "level": "L3"
+      },
+      {
+        "domainId": "D05",
+        "level": "L3"
+      },
+      {
+        "domainId": "D06",
+        "level": "L2"
+      }
+    ],
+    "portRange": "3020-3022"
+  },
+  {
+    "id": "EPA-10",
+    "name": "Implement and Validate AI Tools",
+    "focusArea": "AI Gateway",
+    "tier": "Core",
+    "description": "Lead the implementation, validation, and optimization of AI tools to enhance pharmacovigilance capabilities. AI Gateway to CPA8. Enables progression to AI-Enhanced PV Activities.",
+    "primaryDomains": [
+      {
+        "domainId": "D01",
+        "level": "L4"
+      },
+      {
+        "domainId": "D08",
+        "level": "L4"
+      },
+      {
+        "domainId": "D12",
+        "level": "L3"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D15",
+        "level": "L3"
+      },
+      {
+        "domainId": "D14",
+        "level": "L3"
+      },
+      {
+        "domainId": "D03",
+        "level": "L3"
+      },
+      {
+        "domainId": "D06",
+        "level": "L3"
+      }
+    ],
+    "portRange": "3023-3024"
+  },
+  {
+    "id": "EPA-11",
+    "name": "Develop Global PV Strategy",
+    "focusArea": "Strategy",
+    "tier": "Executive",
+    "description": "Create and implement comprehensive pharmacovigilance strategies that align safety objectives with business goals while ensuring global regulatory compliance and operational excellence.",
+    "primaryDomains": [
+      {
+        "domainId": "D13",
+        "level": "L5"
+      },
+      {
+        "domainId": "D11",
+        "level": "L5"
+      },
+      {
+        "domainId": "D12",
+        "level": "L5"
+      },
+      {
+        "domainId": "D01",
+        "level": "L5"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D10",
+        "level": "L4"
+      }
+    ],
+    "portRange": "3025-3026"
+  },
+  {
+    "id": "EPA-12",
+    "name": "Lead Digital Transformation",
+    "focusArea": "Digital",
+    "tier": "Executive",
+    "description": "Drive enterprise-wide digital transformation initiatives that fundamentally reimagine pharmacovigilance operations through advanced technology adoption and process innovation.",
+    "primaryDomains": [
+      {
+        "domainId": "D15",
+        "level": "L5"
+      },
+      {
+        "domainId": "D14",
+        "level": "L5"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D11",
+        "level": "L4"
+      }
+    ],
+    "portRange": "3027-3028"
+  },
+  {
+    "id": "EPA-13",
+    "name": "Build and Lead PV Teams",
+    "focusArea": "Leadership",
+    "tier": "Executive",
+    "description": "Develop, inspire, and lead diverse, globally distributed teams that consistently exceed performance expectations while fostering innovation and professional growth.",
+    "primaryDomains": [
+      {
+        "domainId": "D14",
+        "level": "L5"
+      },
+      {
+        "domainId": "D13",
+        "level": "L5"
+      },
+      {
+        "domainId": "D01",
+        "level": "L5"
+      }
+    ],
+    "supportingDomains": [],
+    "portRange": "3029-3030"
+  },
+  {
+    "id": "EPA-14",
+    "name": "Shape Regulatory Policy",
+    "focusArea": "Policy",
+    "tier": "Executive",
+    "description": "Shape regulatory thinking and industry practices through thought leadership, strategic engagement with authorities, and active participation in standard-setting initiatives.",
+    "primaryDomains": [
+      {
+        "domainId": "D12",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D01",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D13",
+        "level": "L5"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D14",
+        "level": "L5"
+      },
+      {
+        "domainId": "D10",
+        "level": "L5"
+      },
+      {
+        "domainId": "D05",
+        "level": "L4"
+      }
+    ],
+    "portRange": "3031-3032"
+  },
+  {
+    "id": "EPA-15",
+    "name": "Advance PV Science",
+    "focusArea": "Innovation",
+    "tier": "Executive",
+    "description": "Lead breakthrough innovations that advance the science and practice of pharmacovigilance, creating new methodologies, technologies, or approaches adopted across the industry.",
+    "primaryDomains": [
+      {
+        "domainId": "D08",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D09",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D10",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D05",
+        "level": "L5+"
+      }
+    ],
+    "supportingDomains": [],
+    "portRange": "3033-3034"
+  },
+  {
+    "id": "EPA-16",
+    "name": "Manage Safety Crises",
+    "focusArea": "Crisis",
+    "tier": "Executive",
+    "description": "Lead organization-wide risk management and crisis response efforts for major safety issues, with emphasis on real-time decision-making and stakeholder coordination.",
+    "primaryDomains": [
+      {
+        "domainId": "D11",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D14",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D13",
+        "level": "L5"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D12",
+        "level": "L5"
+      },
+      {
+        "domainId": "D10",
+        "level": "L5"
+      },
+      {
+        "domainId": "D06",
+        "level": "L4"
+      }
+    ],
+    "portRange": "3035-3036"
+  },
+  {
+    "id": "EPA-17",
+    "name": "Develop Future PV Leaders",
+    "focusArea": "Development",
+    "tier": "Executive",
+    "description": "Design and implement comprehensive leadership development programs that build a sustainable pipeline of pharmacovigilance leaders capable of meeting future industry challenges.",
+    "primaryDomains": [
+      {
+        "domainId": "D14",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D03",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D05",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D06",
+        "level": "L5+"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D01",
+        "level": "L5+"
+      }
+    ],
+    "portRange": "3037-3038"
+  },
+  {
+    "id": "EPA-18",
+    "name": "Build Strategic Partnerships",
+    "focusArea": "Partnerships",
+    "tier": "Executive",
+    "description": "Establish and manage strategic partnerships with academic institutions, technology companies, regulatory bodies, and other organizations to enhance pharmacovigilance capabilities.",
+    "primaryDomains": [
+      {
+        "domainId": "D13",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D14",
+        "level": "L5"
+      },
+      {
+        "domainId": "D12",
+        "level": "L5"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D11",
+        "level": "L4"
+      },
+      {
+        "domainId": "D15",
+        "level": "L4"
+      }
+    ],
+    "portRange": "3039-3040"
+  },
+  {
+    "id": "EPA-19",
+    "name": "Manage Public Perception",
+    "focusArea": "Public Health",
+    "tier": "Executive",
+    "description": "Lead public communication strategies that build trust in medication safety systems, educate stakeholders about benefit-risk balance, and promote informed healthcare decisions.",
+    "primaryDomains": [
+      {
+        "domainId": "D14",
+        "level": "L5++"
+      },
+      {
+        "domainId": "D13",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D10",
+        "level": "L5"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D01",
+        "level": "L5"
+      },
+      {
+        "domainId": "D03",
+        "level": "L4"
+      }
+    ],
+    "portRange": "3041-3042"
+  },
+  {
+    "id": "EPA-20",
+    "name": "Transform Industry Practices",
+    "focusArea": "Transformation",
+    "tier": "Executive",
+    "description": "Conceive and lead multi-stakeholder initiatives that transform pharmacovigilance practices industry-wide, creating new paradigms for ensuring medication safety.",
+    "primaryDomains": [
+      {
+        "domainId": "D01",
+        "level": "L5++"
+      },
+      {
+        "domainId": "D14",
+        "level": "L5++"
+      }
+    ],
+    "supportingDomains": [],
+    "portRange": "3043-3044"
+  },
+  {
+    "id": "EPA-21",
+    "name": "Network Intelligence",
+    "focusArea": "AI Network",
+    "tier": "Advanced",
+    "description": "Federated learning, social signal ingestion, cross-client AI",
+    "primaryDomains": [
+      {
+        "domainId": "D08",
+        "level": "L5++"
+      },
+      {
+        "domainId": "D09",
+        "level": "L5++"
+      },
+      {
+        "domainId": "D10",
+        "level": "L5++"
+      }
+    ],
+    "supportingDomains": [
+      {
+        "domainId": "D04",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D07",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D13",
+        "level": "L5+"
+      },
+      {
+        "domainId": "D14",
+        "level": "L5+"
+      }
+    ],
+    "portRange": "3045-3046"
+  }
+]

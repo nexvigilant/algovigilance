@@ -1,0 +1,149 @@
+/**
+ * Scroll-Driven Animations
+ *
+ * Uses CSS `animation-timeline: view()` for elements that animate
+ * as they scroll into the viewport. Progressive enhancement —
+ * browsers without support get instant visibility.
+ *
+ * BROWSER SUPPORT: Chrome 115+, Edge 115+, Firefox behind flag
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline
+ *
+ * USAGE:
+ * 1. Add `.scroll-reveal` to any element for fade-up on scroll
+ * 2. Add `.scroll-reveal-stagger` to children with `--stagger-index` CSS var
+ * 3. Add `.scroll-reveal-scale` for scale + fade effect
+ */
+
+/* =============================================================================
+   BASE SCROLL REVEAL
+   Fade up from below as element enters viewport
+   ============================================================================= */
+
+@supports (animation-timeline: view()) {
+  .scroll-reveal {
+    animation: scrollRevealUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+
+  .scroll-reveal-scale {
+    animation: scrollRevealScale linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 45%;
+  }
+
+  /* Staggered children: set --stagger-index on each child (0, 1, 2...) */
+  .scroll-reveal-stagger {
+    animation: scrollRevealUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 50%;
+    animation-delay: calc(var(--stagger-index, 0) * 60ms);
+  }
+
+  /* Horizontal slide from left */
+  .scroll-reveal-left {
+    animation: scrollRevealLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+
+  /* Horizontal slide from right */
+  .scroll-reveal-right {
+    animation: scrollRevealRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+}
+
+/* =============================================================================
+   KEYFRAMES
+   ============================================================================= */
+
+@keyframes scrollRevealUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollRevealScale {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes scrollRevealLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollRevealRight {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =============================================================================
+   SECTION HEADER PARALLAX
+   Subtle parallax effect on scroll for section headers
+   ============================================================================= */
+
+@supports (animation-timeline: view()) {
+  .scroll-parallax-slow {
+    animation: scrollParallaxSlow linear both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+  }
+}
+
+@keyframes scrollParallaxSlow {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+/* =============================================================================
+   PROGRESS INDICATORS
+   Elements that fill/grow based on scroll position
+   ============================================================================= */
+
+@supports (animation-timeline: view()) {
+  .scroll-progress-bar {
+    animation: scrollProgressFill linear both;
+    animation-timeline: view();
+    animation-range: entry 20% exit 80%;
+    transform-origin: left center;
+  }
+}
+
+@keyframes scrollProgressFill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

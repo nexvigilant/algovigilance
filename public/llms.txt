@@ -1,0 +1,34 @@
+# NexVigilant — Pharmacovigilance Intelligence
+
+## What We Do
+Drug safety signal detection powered by AI. Query any drug name to get
+live PRR/ROR disproportionality analysis from 20M+ FDA adverse event reports.
+
+## For AI Agents
+Connect to our MCP server at: https://mcp.nexvigilant.com/mcp
+Protocol: MCP 2025-03-26 (Streamable HTTP)
+No API key required. 1,961 tools available.
+
+## Signal Reports
+Live at: https://www.nexvigilant.com/signal-reports
+API: POST https://www.nexvigilant.com/api/report/signal {"drug":"name","event":"name"}
+
+## Quick Connect
+Add to your MCP client:
+{
+  "mcpServers": {
+    "nexvigilant": {
+      "url": "https://mcp.nexvigilant.com/mcp"
+    }
+  }
+}
+
+## Data Sources
+- FDA FAERS (openFDA API) — 20M+ adverse event reports
+- OpenVigil France — disproportionality computation
+- DailyMed — current drug labeling
+- PubMed — safety literature
+- Microgram decision trees — 10,733 self-tested programs
+
+## Compliance
+ICH E2B(R3) | ICH E2E | GVP Module IX | 21 CFR 314.80 | FDA MedWatch 3500

@@ -1,0 +1,62 @@
+/**
+ * Text & Gradient Effects
+ *
+ * Animations for text treatments:
+ * - Gradient shifts
+ * - Glitch effects
+ * - Shape morphing (blob)
+ */
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glitch {
+  0%, 100% {
+    transform: translate(0);
+    text-shadow: none;
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    text-shadow: 2px 0 rgb(var(--nex-cyan-rgb)), -2px 0 rgb(var(--nex-gold-rgb));
+  }
+  40% {
+    transform: translate(2px, -2px);
+    text-shadow: -2px 0 rgb(var(--nex-cyan-rgb)), 2px 0 rgb(var(--nex-gold-rgb));
+  }
+  60% {
+    transform: translate(-1px, 1px);
+    text-shadow: 1px 0 rgb(var(--nex-cyan-rgb)), -1px 0 rgb(var(--nex-gold-rgb));
+  }
+  80% {
+    transform: translate(1px, -1px);
+    text-shadow: -1px 0 rgb(var(--nex-cyan-rgb)), 1px 0 rgb(var(--nex-gold-rgb));
+  }
+}
+
+/* =============================================================================
+   SHAPE MORPHING
+   ============================================================================= */
+
+@keyframes blob-morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  50% {
+    border-radius: 50% 60% 30% 60% / 30% 60% 70% 40%;
+  }
+  75% {
+    border-radius: 60% 40% 60% 30% / 70% 30% 50% 60%;
+  }
+}

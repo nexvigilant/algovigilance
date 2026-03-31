@@ -1,0 +1,96 @@
+/**
+ * Circuit Grid & Data Nodes
+ *
+ * PCB grid patterns and pulsing connection points
+ * for the tech-forward NexVigilant aesthetic
+ */
+
+/* =============================================================================
+   PCB GRID BACKGROUND
+   Substrate pattern for technical surfaces
+   ============================================================================= */
+
+.pcb-grid {
+  position: relative;
+}
+
+.pcb-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(var(--nex-cyan-rgb), 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--nex-cyan-rgb), 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* =============================================================================
+   DATA NODES
+   Pulsing connection points with staggered animations
+   ============================================================================= */
+
+.data-node {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: data-node-pulse 1.5s ease-in-out infinite;
+}
+
+.data-node-cyan {
+  background: rgb(var(--nex-cyan-rgb));
+  box-shadow: 0 0 8px rgb(var(--nex-cyan-rgb));
+}
+
+.data-node-gold {
+  background: rgb(var(--nex-gold-rgb));
+  box-shadow: 0 0 8px rgb(var(--nex-gold-rgb));
+}
+
+/**
+ * Staggered Animation Delays
+ *
+ * Uses CSS custom property for robust stagger sequencing.
+ * Set --stagger-delay on each element via:
+ * - Inline style: style="--stagger-delay: 0.2s"
+ * - Data attribute + JS: element.style.setProperty('--stagger-delay', '0.2s')
+ * - React: style={{ '--stagger-delay': `${index * 0.2}s` } as React.CSSProperties}
+ *
+ * Fallback nth-child selectors preserved for backwards compatibility,
+ * but --stagger-delay takes precedence when set.
+ */
+.data-node {
+  animation-delay: var(--stagger-delay, 0s);
+}
+
+/* Legacy fallback: still works if --stagger-delay not set */
+.data-node:nth-child(1) { --stagger-delay: 0s; }
+.data-node:nth-child(2) { --stagger-delay: 0.2s; }
+.data-node:nth-child(3) { --stagger-delay: 0.4s; }
+.data-node:nth-child(4) { --stagger-delay: 0.6s; }
+.data-node:nth-child(5) { --stagger-delay: 0.8s; }
+
+/* =============================================================================
+   RADIAL ENERGY FIELD
+   Background glow effect for emphasis areas
+   ============================================================================= */
+
+.radial-energy {
+  position: absolute;
+  /* Constrain to viewport to prevent horizontal scrollbar triggers */
+  width: min(800px, 100vw);
+  height: min(800px, 100vh);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(var(--nex-cyan-rgb), 0.15) 0%,
+    transparent 70%
+  );
+  animation: radial-pulse 2s ease-in-out infinite;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}

@@ -1,0 +1,63 @@
+{
+  "description": "Mapping between KSB-style regulation IDs and canonical master directory IDs",
+  "generatedAt": "2025-12-23T08:16:10.926Z",
+  "aliasToCanonical": {
+    "ICH-E2A": "ICH-E2-001",
+    "ICH-E2B(R3)": "ICH-E2-002",
+    "ICH-E2C(R2)": "ICH-E2-003",
+    "ICH-E2D": "ICH-E2-004",
+    "ICH-E2D Sec 3.2": "ICH-E2-004",
+    "ICH-E2E": "ICH-E2-005",
+    "ICH-E2F": "ICH-E2-006",
+    "ICH-E6": "ICH-014",
+    "ICH-M1 (MedDRA)": "ICH-M1-001",
+    "CIOMS-VIII": "CIOMS-003",
+    "CIOMS-X": "CIOMS-004",
+    "EMA-GVP-014": "EMA-GVP-014",
+    "EMA-GVP-015": "EMA-GVP-015",
+    "FDA-GUID-001": "FDA-GUID-001",
+    "FDA-GUID-006": "FDA-GUID-006",
+    "UK-MHRA-011": "UK-MHRA-011",
+    "MULTI-LIT-001": "MULTI-LIT-001"
+  },
+  "canonicalToAliases": {
+    "ICH-E2-001": [
+      "ICH-E2A"
+    ],
+    "ICH-E2-002": [
+      "ICH-E2B(R3)"
+    ],
+    "ICH-E2-003": [
+      "ICH-E2C(R2)"
+    ],
+    "ICH-E2-004": [
+      "ICH-E2D",
+      "ICH-E2D Sec 3.2"
+    ],
+    "ICH-E2-005": [
+      "ICH-E2E"
+    ],
+    "ICH-E2-006": [
+      "ICH-E2F"
+    ],
+    "ICH-014": [
+      "ICH-E6"
+    ],
+    "ICH-M1-001": [
+      "ICH-M1 (MedDRA)"
+    ],
+    "CIOMS-003": [
+      "CIOMS-VIII"
+    ],
+    "CIOMS-004": [
+      "CIOMS-X"
+    ],
+    "EMA-GVP-014": [],
+    "EMA-GVP-015": [],
+    "FDA-GUID-001": [],
+    "FDA-GUID-006": [],
+    "UK-MHRA-011": [],
+    "MULTI-LIT-001": []
+  },
+  "unmatchedKsbRefs": []
+}
